@@ -1,5 +1,8 @@
-import "./Verbs.css";
+import "./VerbsContainer.css";
 import React from "react";
+import Verbs from "./Verbs";
+import Heart from "./Heart";
+import Points from "./Points";
 
 const INITIAL_VERBS = ['befehlen'];
 const NEW_VERBS = ['befahl', 'befohlen'];
@@ -9,11 +12,11 @@ function deepCopy(o) {
 };
 
 function resetVerbs() {
-  return {initialVerbs: deepCopy(INITIAL_VERBS), newVerbs: deepCopy(NEW_VERBS)};
   console.log("reset verbs has been executed");
+  return {initialVerbs: deepCopy(INITIAL_VERBS), newVerbs: deepCopy(NEW_VERBS)};
 };
 
-class Verbs extends React.Component {
+class VerbsContainer extends React.Component {
   constructor(props) {
     super(props);
 
@@ -39,12 +42,15 @@ class Verbs extends React.Component {
       state.verbs.initialVerbs.push(verb);
       console.log("addVerb2 function has been executed");
 
-      state.verbs = {initialVerbs: state.verbs.initialVerbs, newVerbs: state.verbs.newVerbs};
+      state.verbs = {
+        initialVerbs: state.verbs.initialVerbs,
+        newVerbs: state.verbs.newVerbs
+      };
       return state;
     });
   }
 
-  incrementPoint(point) {
+  incrementPoint() {
     this.setState(state => {
       point: state.point++
     });
@@ -52,14 +58,14 @@ class Verbs extends React.Component {
 
   render() {
     return (<div onClick={this.addVerb2} className="container verbs">
+    <Heart/>
       {
         this.state.verbs.initialVerbs.map((verb) => <div>
           <h1>{verb}</h1>
-          <Verbs initialVerb={state.verbs.init} addVerb=this.addVerb />
         </div>)
       }
     </div>);
   }
 }
 
-export default Verbs;
+export default VerbsContainer;

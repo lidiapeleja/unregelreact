@@ -14,7 +14,6 @@ const Heart = () => {
               <span role="img" aria-label="heart">❤️</span>
               <span role="img" aria-label="heart">❤️</span>
             </div>
-            <Verbs/>
           </div>
 };
 
