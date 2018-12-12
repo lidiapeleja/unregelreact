@@ -1,0 +1,32 @@
+body {
+  background-color: #FFDE03;
+  font-style: roboto;
+}
+
+.verbs {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 400px;
+  margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+  .verbs {
+  margin-top: 100px;
+  }
+}
+
+.verbs h1 {
+  font-weight: bolder;
+  height: 70px;
+  font-size: 6rem;
+  text-align: center;
+  color: #FF0266;
+}
+
+@media (max-width: 600px) {
+  .verbs h1 {
+    height: 60px;
+    font-size: 5rem;
+  }
+}

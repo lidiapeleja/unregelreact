@@ -1,0 +1,16 @@
+body {
+  background-color: #FFDE03;
+  font-style: roboto;
+
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  color: #FF0266;
+}
+
+.navbar-default .navbar-brand {
+color: #FF0266;
+}

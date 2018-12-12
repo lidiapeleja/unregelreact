@@ -1,16 +1,13 @@
-import "./SignUp.css";
+import "./SignIn.css";
 import React from "react";
 
-class SignUp extends React.Component {
+class SignIn extends React.Component {
 state = { form : ""};
 
   render () {
     return (
-        <div className="container-fluid bg-light fullscreen">
-          <div className="row">
-          <h2> sign in </h2>
-          </div>
-            <form className="form-inline">
+            <form>
+            <h2> sign in </h2>
               <div className="form-group">
                 <label className="sr-only" for="exampleInputEmail3">Email address</label>
                 <input type="email" className="form-control" id="exampleInputEmail3" placeholder="email" />
@@ -21,14 +18,17 @@ state = { form : ""};
               </div>
               <div className="checkbox">
                 <label>
-                  <input type="checkbox" /> Remember me
+                  <input type="checkbox" /> remember me, please
                 </label>
               </div>
-              <button type="submit" className="btn d-none"> sign in </button>
+              <button type="submit" className="btnsignin btn btn-outline btn-lg"> sign in </button>
+              <span />
+              <h6> Not registered yet? </h6>
+              <button type="submit" className="btnsignup btn btn-outline btn-sm"> sign up
+              </button>
             </form>
-        </div>
         );
       }
     }
 
-export default SignUp;
+export default SignIn;
