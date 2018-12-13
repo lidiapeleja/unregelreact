@@ -8,11 +8,11 @@ const Heart = () => {
   return <div>
             <div className="conta">
               <Points/>
-              <span role="img" aria-label="heart">❤️</span>
-              <span role="img" aria-label="heart">❤️</span>
-              <span role="img" aria-label="heart">❤️</span>
-              <span role="img" aria-label="heart">❤️</span>
-              <span role="img" aria-label="heart">❤️</span>
+              <span role="img" aria-label="heart heart5">❤️</span>
+              <span role="img" aria-label="heart heart4">❤️</span>
+              <span role="img" aria-label="heart heart3">❤️</span>
+              <span role="img" aria-label="heart heart2">❤️</span>
+              <span role="img" aria-label="heart heart1">❤️</span>
             </div>
           </div>
 };

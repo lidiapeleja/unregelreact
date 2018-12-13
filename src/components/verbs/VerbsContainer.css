@@ -6,19 +6,19 @@ body {
 .verbs {
   margin-left: 5%;
   margin-right: 5%;
-  height: 400px;
-  margin-top: 80px;
+  height: 470px;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
   .verbs {
-  margin-top: 100px;
+  margin-top: 10px;
   }
 }
 
 .verbs h1 {
   font-weight: bolder;
-  height: 70px;
+  height: 60px;
   font-size: 6rem;
   text-align: center;
   color: #FF0266;
