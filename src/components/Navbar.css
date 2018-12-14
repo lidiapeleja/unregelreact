@@ -14,3 +14,12 @@ body {
 .navbar-default .navbar-brand {
 color: #FF0266;
 }
+
+
+.gamelink {
+background-color: #FF0266;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}

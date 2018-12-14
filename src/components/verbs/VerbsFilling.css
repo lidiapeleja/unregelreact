@@ -1,0 +1,51 @@
+body {
+  background-color: #FFDE03;
+  font-style: roboto;
+}
+
+.verbs {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 470px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .verbs {
+  margin-top: 10px;
+  }
+}
+
+.verbsfilling h1 {
+  font-weight: bolder;
+  height: 60px;
+  font-size: 6rem;
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .verbs h1 {
+    height: 60px;
+    font-size: 5rem;
+  }
+}
+
+.conta {
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 10%;
+}
+
+input {
+  width: 45px;
+  color: black;
+  border-bottom: solid 6px #FF0266;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #FF0266;
+  background-color: transparent;
+}

@@ -54,6 +54,7 @@ class VerbsContainer extends React.Component {
     this.setState(state => {
       point: state.point++
     });
+    console.log ("points has been incremented")
   };
 
   render() {
