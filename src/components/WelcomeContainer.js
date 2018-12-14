@@ -27,7 +27,7 @@ class WelcomeContainer extends React.Component {
     super(props);
 
     this.state = {
-      animation: ANIMATION_INIT};
+      animations: ANIMATION_INIT};
 
     // This binding is necessary to make `this` work in the callback
   this.handleClick = this.handleClick.bind(this);
@@ -35,13 +35,13 @@ class WelcomeContainer extends React.Component {
 
   handleClick() {
   this.setState(state => {
-    const animations = state.animation.animationClosing.shift();
-    state.animation.animationInit.push(animations);
+    const fullanimation = state.animations.animationClosing.shift();
+    state.animations.animationInit.push(fullanimation);
     console.log("handleClick function has been executed");
 
-    state.animation = {
-    animationInit: state.animation.animationInit,
-    animationClosing: state.animation.animationClosing
+    state.animations = {
+    animationInit: state.animations.animationInit,
+    animationClosing: state.animations.animationClosing
   };
   return state;
   });
@@ -49,7 +49,7 @@ class WelcomeContainer extends React.Component {
 
   render(){
     return (<div onClick={this.handleClick} className="container welcomecontainer">
-    { this.state.animationInit.map((animation) => <div>
+    { this.state.animations.animationInit.map((fullanimation) => <div>
         <div className="welcomecontainer w3 animation1">Die</div>
         <div className="welcomecontainer w1 animation2">176</div>
         <div className="welcomecontainer w6 animation3">UNREGELMÄßIGE</div>
@@ -59,8 +59,8 @@ class WelcomeContainer extends React.Component {
         <div className="welcomecontainer w5 animation7">Sprache</div>
       </div>)}
     </div>);
-
-} }
+}
+}
 
 
 export default WelcomeContainer;
