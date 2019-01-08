@@ -58,10 +58,9 @@ class VerbsContainer extends React.Component {
 
   render() {
     return (<div onClick={this.addVerb} className="container verbs">
-      <Heart/> {
+      <Heart points={this.state.points}/> {
         this.state.verbs.initialVerbs.map((verb) => <div>
           <h1>{verb}</h1>
-          <h2>{this.state.points}</h2>
         </div>)
       }
     </div>);

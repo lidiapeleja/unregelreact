@@ -1,10 +1,11 @@
 import React from "react";
 import "./Points.css";
 
-const Points = () => {
+const Points = (props) => {
   return <div className="container">
-              <div className="points"> 0
-              </div>
+    <div className="points">
+      {props.points}
+    </div>
   </div>
 };
 

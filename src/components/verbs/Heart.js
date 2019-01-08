@@ -4,10 +4,10 @@ import Points from "./Points.js";
 import Verbs from "./Verbs.js";
 
 
-const Heart = () => {
+const Heart = (props) => {
   return <div>
             <div className="conta">
-              <Points/>
+              <Points points={props.points}/>
               <span role="img" aria-label="heart heart5">❤️</span>
               <span role="img" aria-label="heart heart4">❤️</span>
               <span role="img" aria-label="heart heart3">❤️</span>
