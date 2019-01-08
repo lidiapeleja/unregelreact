@@ -16,7 +16,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
         <li>
-          <a href="/sign-in/">sign in
+          <a href="/log-in/">log in
             <span className="sr-only">(current)</span>
           </a>
         </li>

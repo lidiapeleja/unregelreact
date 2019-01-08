@@ -1,6 +1,9 @@
 import "./AppRouter.css";
 import React from "react";
-import SignIn from "./SignIn.js";
+import LogIn from "./LogIn.js";
+import SignUp from "./SignUp.js";
+import Terms from "./Terms.js";
+import Rememberme from "./Rememberme.js";
 import VerbsContainer from "./verbs/VerbsContainer.js";
 import Navbar from "./Navbar.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
@@ -12,9 +15,10 @@ const AppRouter = () => (<Router>
     <Navbar/>
     <div>
       <Route path="/" exact="exact" component={VerbsFilling}/>
-      <Route path="/sign-in" component={SignIn}/>
+      <Route path="/log-in" component={LogIn}/>
+      <Route path="/sign-up" component={SignUp}/>
       <Route path="/verbs" component={VerbsContainer}/>
-      <Route path="/testing" component={WelcomeContainer}/>
+      <Route path="/testing" component={SignUp}/>
     </div>
   </div>
 </Router>);

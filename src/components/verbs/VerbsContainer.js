@@ -25,13 +25,12 @@ class VerbsContainer extends React.Component {
       points: 0
     };
 
-    console.log("nothing happened yet");
     // This binding is necessary to make `this` work in the callback
-    this.addVerb2 = this.addVerb2.bind(this);
+    this.addVerb = this.addVerb.bind(this);
     this.incrementPoint = this.incrementPoint.bind(this);
   }
 
-  addVerb2() {
+  addVerb() {
     this.setState(state => {
       if (state.verbs.newVerbs.length === 0) {
         state.verbs = resetVerbs();
@@ -40,7 +39,6 @@ class VerbsContainer extends React.Component {
 
       const verb = state.verbs.newVerbs.shift();
       state.verbs.initialVerbs.push(verb);
-      console.log("addVerb2 function has been executed");
 
       state.verbs = {
         initialVerbs: state.verbs.initialVerbs,
@@ -48,21 +46,22 @@ class VerbsContainer extends React.Component {
       };
       return state;
     });
+
+    this.incrementPoint();
   }
 
   incrementPoint() {
-    this.setState(state => {
-      point: state.point++
-    });
-    console.log ("points has been incremented")
+    this.setState(state => ({
+      points: state.points + 1
+    }));
   };
 
   render() {
-    return (<div onClick={this.addVerb2} className="container verbs">
-    <Heart/>
-      {
+    return (<div onClick={this.addVerb} className="container verbs">
+      <Heart/> {
         this.state.verbs.initialVerbs.map((verb) => <div>
           <h1>{verb}</h1>
+          <h2>{this.state.points}</h2>
         </div>)
       }
     </div>);

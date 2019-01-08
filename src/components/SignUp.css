@@ -1,6 +1,4 @@
-
 body {
-
 background-color: #FFDE03;
 font-style: roboto;
 border-radius: none;
@@ -8,41 +6,34 @@ font-weight: light;
 }
 
 .form-control {
-  background-color: transparent;
-  border-bottom: solid 2px white;
+  background-color: #FFDE03;
+  border-bottom: solid 1px white;
   box-shadow: none;
   border: 0;
+  font-size: 90%;
 
 }
 
 .form-group {
   border-bottom: solid 1px white;
-  margin-top: 3%;
-  margin-bottom: 1%;
+  margin-top: 0%;
+  margin-bottom: 0%;
   display: block;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+.full-form {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
 @media (max-width: 600px) {
   .form-group {
-    margin-top: 7%;
+    margin-top: 0%;
   }
 }
 
-
-.checkbox {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 0%;
-  margin-top: 0;
-  color: #777;
-}
-
-.checkbox label, .radio label{
-  font-weight: bold;
-  font-size: 80%;
-}
 
 .form-control::-moz-placeholder {
   color: white;
@@ -56,45 +47,39 @@ font-weight: light;
 .form-control::-webkit-input-placeholder {
   color: white;
   font-weight: bolder;
-
 }
-
 
 h2 {
   color: #FF0266;
   margin-top: 3%;
+  margin-bottom: 3%;
   text-align: center;
   font-weight: bolder;
 }
 
-
 .btn {
   margin-top: 2%;
   font-weight: bold;
-  background-color: transparent;
+  background-color: #FFDE03;
   display: block;
   margin: 0 auto;
 }
 
-.btnsignin {
-border: 1px solid #FF0266;
-color: #FFDE03;
-background-color: #FF0266;
-margin-top: 6%;
-
+a {
+  margin-top: 2%;
+  font-weight: bold;
+  background-color: #FFDE03;
+  display: block;
+  margin: 0 auto;
 }
 
-@media (max-width: 600px) {
-  .btnsignin {
-    margin-top: 15%;
-  }
-}
-
-.btnsignup {
+a.btnsignup {
 border: 1px solid blue;
 color: #0336FF;
 margin-top: 5px;
 margin-bottom: 0%;
+display: block;
+margin: 0 auto;
 }
 
 h6 {
@@ -104,5 +89,22 @@ h6 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #FFDE03;
+}
+
+
+
+.btnsignin {
+border: 1px solid #FF0266;
+color: #FFDE03;
+background-color: #FF0266;
+margin-top: 3%;
+
+}
+
+button {
+  background-color: #FFDE03;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
