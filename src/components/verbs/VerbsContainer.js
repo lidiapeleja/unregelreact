@@ -6,6 +6,8 @@ import Points from "./Points";
 
 const INITIAL_VERBS = ['befehlen'];
 const NEW_VERBS = ['befahl', 'befohlen'];
+const WORDS_PER_POINT = 3;
+const REPETITIONS = 6;
 
 function deepCopy(o) {
   return JSON.parse(JSON.stringify(o));
@@ -22,7 +24,8 @@ class VerbsContainer extends React.Component {
 
     this.state = {
       verbs: resetVerbs(),
-      points: 0
+      points: 0,
+      callCount: 0
     };
 
     // This binding is necessary to make `this` work in the callback
@@ -32,8 +35,14 @@ class VerbsContainer extends React.Component {
 
   addVerb() {
     this.setState(state => {
+      state.callCount = state.callCount + 1;
+      if (state.callCount >= WORDS_PER_POINT * REPETITIONS) {
+        return state;
+      }
+
       if (state.verbs.newVerbs.length === 0) {
         state.verbs = resetVerbs();
+        this.incrementPoint();
         return state;
       }
 
@@ -47,12 +56,11 @@ class VerbsContainer extends React.Component {
       return state;
     });
 
-    this.incrementPoint();
   }
 
   incrementPoint() {
     this.setState(state => ({
-      points: state.points + 1
+      points: this.state.points + 1
     }));
   };
 

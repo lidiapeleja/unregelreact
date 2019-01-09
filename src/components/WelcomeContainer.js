@@ -1,6 +1,7 @@
 import React from "react";
 import Welcome from "./Welcome";
 import "./WelcomeContainer.css";
+import {withRouter} from 'react-router-dom'
 
 const WORDS = [
   {
@@ -20,7 +21,7 @@ const WORDS = [
     text: 'der'
   }, {
     classes: 'welcomecontainer w5 animation6',
-    text: 'deutschen'
+    text: 'Deutschen'
   }, {
     classes: 'welcomecontainer w5 animation7',
     text: 'Sprache'
@@ -45,11 +46,12 @@ class WelcomeContainer extends React.Component {
   }
 
   showWord() {
-    this.setState(state => {
-      if (state.hiddenWords.length === 0) {
-        return state;
-      }
+    if (this.state.hiddenWords.length === 0) {
+      this.props.history.push('/verbs')
+      return;
+    }
 
+    this.setState(state => {
       const word = state.hiddenWords.shift();
       state.shownWords.push(word);
       return state;
@@ -57,14 +59,16 @@ class WelcomeContainer extends React.Component {
   }
 
   render() {
-    return (<div onClick={this.showWord} className="container welcomecontainer">
-      {
-        this.state.shownWords.map((obj) => (<div>
-          <div className={obj.classes}>{obj.text}</div>
-        </div>))
-      }
+    return (<div className="containerwelcome" onClick={this.showWord}>
+      <div className="welcomecontainer">
+        {
+          this.state.shownWords.map((obj) => (<div>
+            <div className={obj.classes}>{obj.text}</div>
+          </div>))
+        }
+      </div>
     </div>);
   }
 }
 
-export default WelcomeContainer;
+export default withRouter(WelcomeContainer);

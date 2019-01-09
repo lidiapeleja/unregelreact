@@ -6,6 +6,7 @@ import Terms from "./Terms.js";
 import Rememberme from "./Rememberme.js";
 import VerbsContainer from "./verbs/VerbsContainer.js";
 import Navbar from "./Navbar.js";
+import Loading from "./Loading.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
