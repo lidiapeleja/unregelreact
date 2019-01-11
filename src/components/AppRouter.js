@@ -12,17 +12,20 @@ import Image from "./verbs/Image.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-const AppRouter = () => (<Router>
-  <div>
-    <Navbar/>
+const AppRouter = () => (<div>
+  <Router>
     <div>
-      <Route path="/" exact="exact" component={VerbsFilling}/>
+      <Navbar/>
+      <Route path="/" exact="exact" component={WelcomeContainer}/>
       <Route path="/log-in" component={LogIn}/>
+      <Route path="/loading" component={Loading}/>
       <Route path="/sign-up" component={SignUp}/>
-      <Route path="/verbs" component={WelcomeContainer}/>
+      <Route path="/verbs" component={VerbsFilling}/>
+      <Route path="/welcome" component={WelcomeContainer}/>
+      <Route path="/verbs-memory" component={VerbsContainer}/>
       <Route path="/testing" component={Image}/>
     </div>
-  </div>
-</Router>);
+  </Router>
+</div>);
 
 export default AppRouter;

@@ -3,9 +3,10 @@ import React from "react";
 import Verbs from "./Verbs";
 import Heart from "./Heart";
 import Points from "./Points";
+import {withRouter} from 'react-router-dom'
 
-const INITIAL_VERBS = ['befehlen'];
-const NEW_VERBS = ['befahl', 'befohlen'];
+const INITIAL_VERBS = ['essen'];
+const NEW_VERBS = ['aß', 'gegessen'];
 const WORDS_PER_POINT = 3;
 const REPETITIONS = 6;
 
@@ -37,7 +38,8 @@ class VerbsContainer extends React.Component {
     this.setState(state => {
       state.callCount = state.callCount + 1;
       if (state.callCount >= WORDS_PER_POINT * REPETITIONS) {
-        return state;
+        this.props.history.push('/verbs');
+        return;
       }
 
       if (state.verbs.newVerbs.length === 0) {
@@ -75,4 +77,4 @@ class VerbsContainer extends React.Component {
   }
 }
 
-export default VerbsContainer;
+export default withRouter(VerbsContainer);
