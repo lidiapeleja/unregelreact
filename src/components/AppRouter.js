@@ -4,6 +4,7 @@ import LogIn from "./LogIn.js";
 import SignUp from "./SignUp.js";
 import VerbsContainer from "./verbs/VerbsContainer.js";
 import Navbar from "./Navbar.js";
+import Tryagain from "./Tryagain.js";
 import Loading from "./Loading.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
 import ImageEssen from "./verbs/ImageEssen.js";
@@ -24,7 +25,7 @@ const AppRouter = () => (<div>
       <Route path="/verbs-memory" component={VerbsContainer}/>
       <Route path="/image-essen" component={ImageEssen}/>
       <Route path="/image-bleiben" component={ImageBleiben}/>
-      <Route path="/testing" component={Image}/>
+      <Route path="/testing" component={Tryagain}/>
     </div>
   </Router>
 </div>);

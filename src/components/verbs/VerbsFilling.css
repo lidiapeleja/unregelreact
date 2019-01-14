@@ -40,12 +40,14 @@ body {
 }
 
 input {
-  width: 45px;
+  width: 70px;
   color: black;
   border-bottom: solid 6px #FF0266;
   border-top: none;
   border-left: none;
   border-right: none;
+  margin: 0;
   color: #FF0266;
   background-color: transparent;
+  padding: 0;
 }

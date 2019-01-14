@@ -1,4 +1,4 @@
-.containerbleiben {
+.containerimage {
   width: auto;
   height: 350px;
   margin-left: 20%;
@@ -11,32 +11,31 @@
   box-shadow: 7px 7px #FF0266;
   font-size: 2.3em;
 
-
 }
 
 @media (max-width: 600px) {
-  .containerbleiben {
+  .containerimage {
     width: auto;
     height: 250px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 25%;
     margin-bottom: 15%;
-    box-shadow: 7px 7px;
+    box-shadow: 8px 8px;
     font-size: 1.5em;
   }
 }
 
-.containerbleiben h2 {
+.containerimage h2 {
   color: white;
   font-size: 1em;
   text-align: center;
-  margin-top: 140px;
-  text-shadow: 3px 3px black;
+  margin-top: 150px;
+  text-shadow: 1px 1px black;
  }
 
  @media (max-width: 600px) {
-   .containerbleiben h2 {
+   .containerimage h2 {
      margin-top: 100px;
      font-size: 1em;
      text-shadow: 1px 1px black;

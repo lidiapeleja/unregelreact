@@ -1,17 +1,15 @@
 
  h5 {
-  color: #FF0266;
-  font-size: 0.8em;
+  color: white;
+  font-size: 0.6em;
   text-align: center;
-  text-shadow: 3px 3px black;
+  text-shadow: 1px 1px black;
  }
 
  @media (max-width: 600px) {
 
    h5 {
-     color: #FF0266;
      font-size: 0.8em;
-     text-align: center;
      text-shadow: 1px 1px black;
    }
  }

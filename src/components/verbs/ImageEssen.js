@@ -19,7 +19,7 @@ class ImageEssen extends React.Component {
     return (<div onClick={this.goToNextPage} className="containerimage container" style={{
         backgroundImage: `url(${essen})`
       }}>
-    <h2>Die Kinder ess<font color="#FF0266">e</font>n einen <font color="#FF0266">A</font>pf<font color="#FF0266">e</font>l</h2>
+    <h2>Die Kinder essen einen <font color="#FF0266">A</font>pf<font color="#FF0266">e</font>l</h2>
     <Group/></div>);
   }
 };

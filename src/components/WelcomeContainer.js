@@ -8,7 +8,7 @@ const WORDS = [
     text: 'Die'
   }, {
     classes: 'welcomecontainer w1 animation2',
-    text: '176'
+    text: '174'
   }, {
     classes: 'welcomecontainer w6 animation3',
     text: 'UNREGELMÄßIGEN'

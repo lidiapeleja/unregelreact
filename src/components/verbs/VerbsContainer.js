@@ -3,12 +3,15 @@ import React from "react";
 import HeartPoints from "./HeartPoints";
 import {withRouter} from 'react-router-dom'
 import verbsData from '../../data/verbs.json';
+import {IDX_ESSEN} from '../../utils/verbs-mapping'
 
-const firstVerb = verbsData.verbs[0];
+const firstVerb = verbsData.verbs[IDX_ESSEN];
 const INITIAL_VERBS = [firstVerb.infinitive];
 const NEW_VERBS = [firstVerb.pastTense, firstVerb.pastParticiple];
 const WORDS_PER_POINT = 3;
 const REPETITIONS = 6;
+const ThemeContext = React.createContext(0);
+
 
 function deepCopy(o) {
   return JSON.parse(JSON.stringify(o));

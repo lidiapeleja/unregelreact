@@ -1,6 +1,5 @@
 {
   "verbs": [
-
     {
       "infinitive": "bleiben",
       "pastTense": "blieb",
@@ -8,7 +7,14 @@
       "vowel1": "ei",
       "vowel2": "ie",
       "vowel3": "ie",
-      "sentence": "Ein Bauer isst einen Apfel"
+      "sentence": "Bleibt das Tier hier?",
+      "infinitive1": "bl",
+      "infinitive2": "ben",
+      "pastTense1": "bl",
+      "pastTense2": "b",
+      "pastParticiple0": "ist",
+      "pastParticiple1": "gebl",
+      "pastParticiple2": "ben"
     },
     {
       "infinitive": "essen",
@@ -18,16 +24,30 @@
       "vowel2": "a",
       "vowel3": "e",
       "sentence": "Ein Bauer isst einen Apfel",
-      "group": "e - a - e"
+      "infinitive1": "ess",
+      "infinitive2": "n",
+      "pastTense1": "",
+      "pastTense2": "ß",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "geg",
+      "pastParticiple2": "ssen",
+      "image": ""
     },
     {
-      "infinitive": "sheiden",
+      "infinitive": "scheiden",
       "pastTense": "schied",
       "pastParticiple": "hat/ist geschieden",
       "vowel1": "ei",
       "vowel2": "ie",
       "vowel3": "ie",
-      "sentence": "Mike scheidet sich in Chile"
+      "sentence": "Mike scheidet sich in Chile",
+      "infinitive1": "sh",
+      "infinitive2": "den",
+      "pastTense1": "sch",
+      "pastTense2": "d",
+      "pastParticiple0": "hat/ist",
+      "pastParticiple1": "gesch",
+      "pastParticiple2": "den"
     },
     {
       "infinitive": "fallen",
@@ -36,7 +56,14 @@
       "vowel1": "a",
       "vowel2": "i",
       "vowel3": "a",
-      "sentence": "Der Turm von Pisa ist gefallen"
+      "sentence": "Der Turm von Pisa ist gefallen",
+      "infinitive1": "f",
+      "infinitive2": "llen",
+      "pastTense1": "f",
+      "pastTense2": "l",
+      "pastParticiple0": "ist",
+      "pastParticiple1": "gef",
+      "pastParticiple2": "llen"
     },
     {
       "infinitive": "finden",
@@ -45,7 +72,14 @@
       "vowel1": "i",
       "vowel2": "a",
       "vowel3": "u",
-      "sentence": "Hast du das blaue Auto gefunden?"
+      "sentence": "Hast du das blaue Auto gefunden?",
+      "infinitive1": "f",
+      "infinitive2": "nden",
+      "pastTense1": "f",
+      "pastTense2": "nd",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gef",
+      "pastParticiple2": "nden"
     }
     ,
     {
@@ -55,7 +89,14 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "e",
-      "sentence": "Ich gebe dir mein Lader"
+      "sentence": "Ich gebe dir mein Lader",
+      "infinitive1": "geb",
+      "infinitive2": "n",
+      "pastTense1": "g",
+      "pastTense2": "b",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "geg",
+      "pastParticiple2": "ben"
     }
     ,
     {
@@ -65,7 +106,14 @@
       "vowel1": "e",
       "vowel2": "i",
       "vowel3": "a",
-      "sentence": "Ich gehe zum Seminar"
+      "sentence": "Ich gehe zum Seminar",
+      "infinitive1": "geh",
+      "infinitive2": "n",
+      "pastTense1": "g",
+      "pastTense2": "ng",
+      "pastParticiple0": "ist",
+      "pastParticiple1": "geg",
+      "pastParticiple2": "ngen"
     }
     ,
     {
@@ -75,7 +123,14 @@
       "vowel1": "i",
       "vowel2": "a",
       "vowel3": "o",
-      "sentence": "Ich habe ein Abo gewonnen"
+      "sentence": "Ich habe ein Abo gewonnen",
+      "infinitive1": "gew",
+      "infinitive2": "nnen",
+      "pastTense1": "gew",
+      "pastTense2": "nn",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gew",
+      "pastParticiple2": "nnen"
     }
     ,
     {
@@ -85,7 +140,14 @@
       "vowel1": "a",
       "vowel2": "ie",
       "vowel3": "a",
-      "sentence": "Ich halte Siena für schön"
+      "sentence": "Ich halte Siena für schön",
+      "infinitive1": "h",
+      "infinitive2": "lten",
+      "pastTense1": "h",
+      "pastTense2": "lt",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "geh",
+      "pastParticiple2": "lten"
     }
     ,
     {
@@ -95,7 +157,14 @@
       "vowel1": "ei",
       "vowel2": "ie",
       "vowel3": "ei",
-      "sentence": "Die Tibeterin heißt Dolma"
+      "sentence": "Die Tibeterin heißt Dolma",
+      "infinitive1": "h",
+      "infinitive2": "ßen",
+      "pastTense1": "h",
+      "pastTense2": "ß",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "geh",
+      "pastParticiple2": "ßen"
     }
     ,
     {
@@ -105,17 +174,31 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "o",
-      "sentence": "Kakao hilft beim kochen"
+      "sentence": "Kakao hilft beim kochen",
+      "infinitive1": "h",
+      "infinitive2": "lfen",
+      "pastTense1": "h",
+      "pastTense2": "lf",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "geh",
+      "pastParticiple2": "lfen"
     }
     ,
     {
       "infinitive": "kommen",
       "pastTense": "kam",
-      "pastParticiple": "hat geholfen",
+      "pastParticiple": "hat gekommen",
       "vowel1": "o",
       "vowel2": "a",
       "vowel3": "o",
-      "sentence": "Amor ist gekommen!"
+      "sentence": "Amor ist gekommen!",
+      "infinitive1": "k",
+      "infinitive2": "mmen",
+      "pastTense1": "k",
+      "pastTense2": "m",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gk",
+      "pastParticiple2": "mmen"
     }
     ,
     {
@@ -125,17 +208,31 @@
       "vowel1": "a",
       "vowel2": "ie",
       "vowel3": "a",
-      "sentence": "Lass das Mineral in Ruhe!"
+      "sentence": "Lass das Mineral in Ruhe!",
+      "infinitive1": "l",
+      "infinitive2": "ssen",
+      "pastTense1": "l",
+      "pastTense2": "ß",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gel",
+      "pastParticiple2": "ssen"
     }
     ,
     {
       "infinitive": "laufen",
       "pastTense": "lief",
       "pastParticiple": "hat gelaufen",
-      "vowel1": "u",
+      "vowel1": "au",
       "vowel2": "ie",
       "vowel3": "au",
-      "sentence": "Immer schneller laufen, niveauvoll laufen!"
+      "sentence": "Immer schneller laufen, niveauvoll laufen!",
+      "infinitive1": "l",
+      "infinitive2": "fen",
+      "pastTense1": "l",
+      "pastTense2": "f",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gel",
+      "pastParticiple2": "fen"
     }
     ,
     {
@@ -145,7 +242,14 @@
       "vowel1": "ie",
       "vowel2": "a",
       "vowel3": "e",
-      "sentence": "Bayer liegt in Deutschland"
+      "sentence": "Bayer liegt in Deutschland",
+      "infinitive1": "l",
+      "infinitive2": "gen",
+      "pastTense1": "l",
+      "pastTense2": "g",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gel",
+      "pastParticiple2": "gen"
     }
     ,
     {
@@ -155,7 +259,14 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "o",
-      "sentence": "Nimmt das Fagott!"
+      "sentence": "Nimmt das Fagott!",
+      "infinitive1": "n",
+      "infinitive2": "hmen",
+      "pastTense1": "n",
+      "pastTense2": "hm",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gen",
+      "pastParticiple2": "mmen"
     }
     ,
     {
@@ -165,7 +276,14 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "e",
-      "sentence": "Ich sehe zu viele Gabel"
+      "sentence": "Ich sehe zu viele Gabel",
+      "infinitive1": "s",
+      "infinitive2": "hen",
+      "pastTense1": "s",
+      "pastTense2": "h",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "ges",
+      "pastParticiple2": "hen"
     }
     ,
     {
@@ -175,7 +293,14 @@
       "vowel1": "i",
       "vowel2": "a",
       "vowel3": "e",
-      "sentence": "Ich sitze auf dem Vater"
+      "sentence": "Ich sitze auf dem Vater",
+      "infinitive1": "s",
+      "infinitive2": "tzen",
+      "pastTense1": "s",
+      "pastTense2": "ß",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "ges",
+      "pastParticiple2": "ssen"
     }
     ,
     {
@@ -185,7 +310,14 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "o",
-      "sentence": "Sie spricht über den Barock"
+      "sentence": "Sie spricht über den Barock",
+      "infinitive1": "spr",
+      "infinitive2": "chen",
+      "pastTense1": "spr",
+      "pastTense2": "ch",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gespr",
+      "pastParticiple2": "chen"
     }
     ,
     {
@@ -195,7 +327,14 @@
       "vowel1": "e",
       "vowel2": "a",
       "vowel3": "a",
-      "sentence": "Das Paar steht mit dem Fahrrad"
+      "sentence": "Das Paar steht mit dem Fahrrad",
+      "infinitive1": "st",
+      "infinitive2": "hen",
+      "pastTense1": "st",
+      "pastTense2": "nd",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gest",
+      "pastParticiple2": "nden"
     }
     ,
     {
@@ -205,7 +344,14 @@
       "vowel1": "a",
       "vowel2": "u",
       "vowel3": "a",
-      "sentence": "In den USA trage ich Hut und Schal"
+      "sentence": "In den USA trage ich Hut und Schal",
+      "infinitive1": "tr",
+      "infinitive2": "gen",
+      "pastTense1": "tr",
+      "pastTense2": "g",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "getr",
+      "pastParticiple2": "gen"
     }
     ,
     {
@@ -214,8 +360,15 @@
       "pastParticiple": "hat getan",
       "vowel1": "u",
       "vowel2": "a",
-      "vowel3": "ea",
-      "sentence": "Was tust du mit der Kamera?"
+      "vowel3": "a",
+      "sentence": "Was tun Sie mit Tabak?",
+      "infinitive1": "t",
+      "infinitive2": "n",
+      "pastTense1": "t",
+      "pastTense2": "t",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "get",
+      "pastParticiple2": "n"
     }
     ,
     {
@@ -225,7 +378,14 @@
       "vowel1": "ie",
       "vowel2": "o",
       "vowel3": "o",
-      "sentence": "Ich habe dein Photo verloren"
+      "sentence": "Ich habe dein Photo verloren",
+      "infinitive1": "verl",
+      "infinitive2": "ren",
+      "pastTense1": "verl",
+      "pastTense2": "r",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "verl",
+      "pastParticiple2": "ren"
     }
     ,
     {
@@ -235,7 +395,14 @@
       "vowel1": "ie",
       "vowel2": "o",
       "vowel3": "o",
-      "sentence": "Ein Doofe zieht mein Boot"
+      "sentence": "Ein Doofe zieht mein Boot",
+      "infinitive1": "z",
+      "infinitive2": "hen",
+      "pastTense1": "z",
+      "pastTense2": "g",
+      "pastParticiple0": "hat",
+      "pastParticiple1": "gez",
+      "pastParticiple2": "gen"
     }
   ]
 }
