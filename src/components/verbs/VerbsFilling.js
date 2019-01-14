@@ -1,7 +1,8 @@
 import React from "react";
-import Heart from "./Heart";
 import "./VerbsFilling.css";
+import HeartPoints from "./HeartPoints";
 import {withRouter} from 'react-router-dom'
+const ENTER_KEY = 13
 
 class VerbsFilling extends React.Component {
   constructor(props) {
@@ -16,15 +17,15 @@ class VerbsFilling extends React.Component {
   };
 
   goToNextPage(target) {
-    if (target.charCode == 13) {
-      this.props.history.push('/image')
+    if (target.charCode === ENTER_KEY) {
+      this.props.history.push('/image-essen')
       return;
   };
 }
 
   render() {
-    return (<form onKeyPress={this.goToNextPage}>
-      <div className="verbsfilling"><Heart/>
+    return (<form onKeyPress={this.goToNextPage}><HeartPoints points={this.props.points}/>
+      <div className="verbsfilling">
         <h1>
           ess
           <input type="text" value={this.state.vowel1} onChange={(e) => this.setState({vowel1: e.target.value})} maxLength="1"/>

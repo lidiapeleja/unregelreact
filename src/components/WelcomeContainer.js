@@ -1,5 +1,4 @@
 import React from "react";
-import Welcome from "./Welcome";
 import "./WelcomeContainer.css";
 import {withRouter} from 'react-router-dom'
 
@@ -47,7 +46,7 @@ class WelcomeContainer extends React.Component {
 
   showWord() {
     if (this.state.hiddenWords.length === 0) {
-      this.props.history.push('/verbs')
+      this.props.history.push('/loading')
       return;
     }
 

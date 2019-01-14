@@ -21,7 +21,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
           </a>
         </li>
         <li>
-          <a className="gamelink" href="/verbs/">play!</a>
+          <a className="gamelink" href="/verbs-memory/">play!</a>
         </li>
       </ul>
       <ul className="nav navbar-nav navbar-right">

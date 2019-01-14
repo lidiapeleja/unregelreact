@@ -1,8 +1,6 @@
 import React from "react";
 import "./Heart.css";
 import Points from "./Points.js";
-import Verbs from "./Verbs.js";
-
 
 const Heart = (props) => {
   return <div>

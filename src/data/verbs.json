@@ -1,20 +1,241 @@
 {
   "verbs": [
+
+    {
+      "infinitive": "bleiben",
+      "pastTense": "blieb",
+      "pastParticiple": "ist geblieben",
+      "vowel1": "ei",
+      "vowel2": "ie",
+      "vowel3": "ie",
+      "sentence": "Ein Bauer isst einen Apfel"
+    },
     {
       "infinitive": "essen",
       "pastTense": "aß",
-      "pastParticiple": "gegessen",
+      "pastParticiple": "hat gegessen",
       "vowel1": "e",
       "vowel2": "a",
-      "vowel3": "e"
+      "vowel3": "e",
+      "sentence": "Ein Bauer isst einen Apfel",
+      "group": "e - a - e"
     },
     {
-      "infinitive": "befehlen",
-      "pastTense": "befahl",
-      "pastParticiple": "befohl",
+      "infinitive": "sheiden",
+      "pastTense": "schied",
+      "pastParticiple": "hat/ist geschieden",
+      "vowel1": "ei",
+      "vowel2": "ie",
+      "vowel3": "ie",
+      "sentence": "Mike scheidet sich in Chile"
+    },
+    {
+      "infinitive": "fallen",
+      "pastTense": "fiel",
+      "pastParticiple": "ist gefallen",
+      "vowel1": "a",
+      "vowel2": "i",
+      "vowel3": "a",
+      "sentence": "Der Turm von Pisa ist gefallen"
+    },
+    {
+      "infinitive": "finden",
+      "pastTense": "fand",
+      "pastParticiple": "hat gefunden",
+      "vowel1": "i",
+      "vowel2": "a",
+      "vowel3": "u",
+      "sentence": "Hast du das blaue Auto gefunden?"
+    }
+    ,
+    {
+      "infinitive": "geben",
+      "pastTense": "gab",
+      "pastParticiple": "hat gegeben",
       "vowel1": "e",
       "vowel2": "a",
-      "vowel3": "o"
+      "vowel3": "e",
+      "sentence": "Ich gebe dir mein Lader"
+    }
+    ,
+    {
+      "infinitive": "gehen",
+      "pastTense": "ging",
+      "pastParticiple": "ist gegangen",
+      "vowel1": "e",
+      "vowel2": "i",
+      "vowel3": "a",
+      "sentence": "Ich gehe zum Seminar"
+    }
+    ,
+    {
+      "infinitive": "gewinnen",
+      "pastTense": "gewann",
+      "pastParticiple": "hat gewonnen",
+      "vowel1": "i",
+      "vowel2": "a",
+      "vowel3": "o",
+      "sentence": "Ich habe ein Abo gewonnen"
+    }
+    ,
+    {
+      "infinitive": "halten",
+      "pastTense": "hielt",
+      "pastParticiple": "hat gehalten",
+      "vowel1": "a",
+      "vowel2": "ie",
+      "vowel3": "a",
+      "sentence": "Ich halte Siena für schön"
+    }
+    ,
+    {
+      "infinitive": "heißen",
+      "pastTense": "hieß",
+      "pastParticiple": "hat geheißen",
+      "vowel1": "ei",
+      "vowel2": "ie",
+      "vowel3": "ei",
+      "sentence": "Die Tibeterin heißt Dolma"
+    }
+    ,
+    {
+      "infinitive": "helfen",
+      "pastTense": "half",
+      "pastParticiple": "hat geholfen",
+      "vowel1": "e",
+      "vowel2": "a",
+      "vowel3": "o",
+      "sentence": "Kakao hilft beim kochen"
+    }
+    ,
+    {
+      "infinitive": "kommen",
+      "pastTense": "kam",
+      "pastParticiple": "hat geholfen",
+      "vowel1": "o",
+      "vowel2": "a",
+      "vowel3": "o",
+      "sentence": "Amor ist gekommen!"
+    }
+    ,
+    {
+      "infinitive": "lassen",
+      "pastTense": "ließ",
+      "pastParticiple": "hat gelassen",
+      "vowel1": "a",
+      "vowel2": "ie",
+      "vowel3": "a",
+      "sentence": "Lass das Mineral in Ruhe!"
+    }
+    ,
+    {
+      "infinitive": "laufen",
+      "pastTense": "lief",
+      "pastParticiple": "hat gelaufen",
+      "vowel1": "u",
+      "vowel2": "ie",
+      "vowel3": "au",
+      "sentence": "Immer schneller laufen, niveauvoll laufen!"
+    }
+    ,
+    {
+      "infinitive": "liegen",
+      "pastTense": "lag",
+      "pastParticiple": "hat gelegen",
+      "vowel1": "ie",
+      "vowel2": "a",
+      "vowel3": "e",
+      "sentence": "Bayer liegt in Deutschland"
+    }
+    ,
+    {
+      "infinitive": "nehmen",
+      "pastTense": "nahm",
+      "pastParticiple": "hat genommen",
+      "vowel1": "e",
+      "vowel2": "a",
+      "vowel3": "o",
+      "sentence": "Nimmt das Fagott!"
+    }
+    ,
+    {
+      "infinitive": "sehen",
+      "pastTense": "sah",
+      "pastParticiple": "hat gesehen",
+      "vowel1": "e",
+      "vowel2": "a",
+      "vowel3": "e",
+      "sentence": "Ich sehe zu viele Gabel"
+    }
+    ,
+    {
+      "infinitive": "sitzen",
+      "pastTense": "saß",
+      "pastParticiple": "hat gesessen",
+      "vowel1": "i",
+      "vowel2": "a",
+      "vowel3": "e",
+      "sentence": "Ich sitze auf dem Vater"
+    }
+    ,
+    {
+      "infinitive": "sprechen",
+      "pastTense": "sprach",
+      "pastParticiple": "hat gesprochen",
+      "vowel1": "e",
+      "vowel2": "a",
+      "vowel3": "o",
+      "sentence": "Sie spricht über den Barock"
+    }
+    ,
+    {
+      "infinitive": "stehen",
+      "pastTense": "stand",
+      "pastParticiple": "hat gestanden",
+      "vowel1": "e",
+      "vowel2": "a",
+      "vowel3": "a",
+      "sentence": "Das Paar steht mit dem Fahrrad"
+    }
+    ,
+    {
+      "infinitive": "tragen",
+      "pastTense": "trug",
+      "pastParticiple": "hat getragen",
+      "vowel1": "a",
+      "vowel2": "u",
+      "vowel3": "a",
+      "sentence": "In den USA trage ich Hut und Schal"
+    }
+    ,
+    {
+      "infinitive": "tun",
+      "pastTense": "tat",
+      "pastParticiple": "hat getan",
+      "vowel1": "u",
+      "vowel2": "a",
+      "vowel3": "ea",
+      "sentence": "Was tust du mit der Kamera?"
+    }
+    ,
+    {
+      "infinitive": "verlieren",
+      "pastTense": "verlor",
+      "pastParticiple": "hat verloren",
+      "vowel1": "ie",
+      "vowel2": "o",
+      "vowel3": "o",
+      "sentence": "Ich habe dein Photo verloren"
+    }
+    ,
+    {
+      "infinitive": "ziehen",
+      "pastTense": "zog",
+      "pastParticiple": "hat/ist gezogen",
+      "vowel1": "ie",
+      "vowel2": "o",
+      "vowel3": "o",
+      "sentence": "Ein Doofe zieht mein Boot"
     }
   ]
 }

@@ -1,12 +1,12 @@
 import "./VerbsContainer.css";
 import React from "react";
-import Verbs from "./Verbs";
-import Heart from "./Heart";
-import Points from "./Points";
+import HeartPoints from "./HeartPoints";
 import {withRouter} from 'react-router-dom'
+import verbsData from '../../data/verbs.json';
 
-const INITIAL_VERBS = ['essen'];
-const NEW_VERBS = ['aß', 'gegessen'];
+const firstVerb = verbsData.verbs[0];
+const INITIAL_VERBS = [firstVerb.infinitive];
+const NEW_VERBS = [firstVerb.pastTense, firstVerb.pastParticiple];
 const WORDS_PER_POINT = 3;
 const REPETITIONS = 6;
 
@@ -68,7 +68,7 @@ class VerbsContainer extends React.Component {
 
   render() {
     return (<div onClick={this.addVerb} className="container verbs">
-      <Heart points={this.state.points}/> {
+      <HeartPoints points={this.state.points}/> {
         this.state.verbs.initialVerbs.map((verb) => <div>
           <h1>{verb}</h1>
         </div>)

@@ -2,13 +2,12 @@ import "./AppRouter.css";
 import React from "react";
 import LogIn from "./LogIn.js";
 import SignUp from "./SignUp.js";
-import Terms from "./Terms.js";
-import Rememberme from "./Rememberme.js";
 import VerbsContainer from "./verbs/VerbsContainer.js";
 import Navbar from "./Navbar.js";
 import Loading from "./Loading.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
-import Image from "./verbs/Image.js";
+import ImageEssen from "./verbs/ImageEssen.js";
+import ImageBleiben from "./verbs/ImageBleiben.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
@@ -23,6 +22,8 @@ const AppRouter = () => (<div>
       <Route path="/verbs" component={VerbsFilling}/>
       <Route path="/welcome" component={WelcomeContainer}/>
       <Route path="/verbs-memory" component={VerbsContainer}/>
+      <Route path="/image-essen" component={ImageEssen}/>
+      <Route path="/image-bleiben" component={ImageBleiben}/>
       <Route path="/testing" component={Image}/>
     </div>
   </Router>
