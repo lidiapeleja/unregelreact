@@ -1,12 +1,4 @@
 
-body {
-
-background-color: #FFDE03;
-font-style: roboto;
-border-radius: none;
-font-weight: light;
-}
-
 .form-control {
   background-color: transparent;
   border-bottom: solid 2px white;
@@ -75,6 +67,7 @@ h2 {
   margin-top: 3%;
   text-align: center;
   font-weight: bolder;
+  font-size: 1.5em;
 }
 
 

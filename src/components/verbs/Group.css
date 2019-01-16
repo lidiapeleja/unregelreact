@@ -1,15 +1,12 @@
-
- h5 {
+  h5 {
   color: white;
-  font-size: 0.6em;
+  font-size: 1.6em;
   text-align: center;
-  text-shadow: 1px 1px black;
  }
 
  @media (max-width: 600px) {
-
    h5 {
-     font-size: 0.8em;
-     text-shadow: 1px 1px black;
+     font-size: 1.2em;
+     text-align: center;
    }
  }

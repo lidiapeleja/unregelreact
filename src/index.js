@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 import AppRouter from "./components/AppRouter";
-
-export const INDEXATION_VERBS = 25;
-var key = 0;
 
 class App extends React.Component {
   constructor() {

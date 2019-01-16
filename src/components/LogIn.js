@@ -2,13 +2,11 @@ import "./LogIn.css";
 import React from "react";
 import Rememberme from "./Rememberme.js";
 
+
 class LogIn extends React.Component {
   state = {
     term: ""
   };
-
-
-
 
   render() {
     return (<form>

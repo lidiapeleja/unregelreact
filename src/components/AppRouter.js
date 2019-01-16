@@ -7,8 +7,7 @@ import Navbar from "./Navbar.js";
 import Tryagain from "./Tryagain.js";
 import Loading from "./Loading.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
-import ImageEssen from "./verbs/ImageEssen.js";
-import ImageBleiben from "./verbs/ImageBleiben.js";
+import ImagePhrase from "./verbs/ImagePhrase.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
@@ -23,9 +22,11 @@ const AppRouter = () => (<div>
       <Route path="/verbs" component={VerbsFilling}/>
       <Route path="/welcome" component={WelcomeContainer}/>
       <Route path="/verbs-memory" component={VerbsContainer}/>
-      <Route path="/image-essen" component={ImageEssen}/>
-      <Route path="/image-bleiben" component={ImageBleiben}/>
-      <Route path="/testing" component={Tryagain}/>
+      <Route path="/image" component={ImagePhrase}/>
+      <Route path="/try-again" component={Tryagain}/>
+      <Route path="/testing" component={VerbsFilling}/>
+
+
     </div>
   </Router>
 </div>);

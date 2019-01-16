@@ -1,8 +1,9 @@
 import React from "react";
 import "./Group.css";
 import verbsData from '../../data/verbs.json';
+import {INIT_IDX} from '../../config'
 
-const firstVerb = verbsData.verbs[0];
+const firstVerb = verbsData.verbs[INIT_IDX];
 
 class Group extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Group extends React.Component {
 
   render() {
     return (<div>
-      <h5>{firstVerb.vowel1} - {firstVerb.vowel2} - {firstVerb.vowel3}</h5>
+      <h5>{firstVerb.vowel1} - {firstVerb.vowel21}{firstVerb.vowel22} - {firstVerb.vowel31}{firstVerb.vowel32}</h5>
     </div>);
   }
 };
