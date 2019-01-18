@@ -14,6 +14,8 @@ class VerbsFilling extends React.Component {
     this.goToNextPage = this.goToNextPage.bind(this);
     this.goToTryAgain = this.goToTryAgain.bind(this);
     this.isItCorrect = this.isItCorrect.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+
   }
 
   goToNextPage() {
@@ -26,15 +28,21 @@ class VerbsFilling extends React.Component {
     return;
   };
 
+  handleKeyPress = (event) => {
+  if(event.key == 'Enter'){
+    console.log('enter has been clicked!')
+    this.isItCorrect();
+  }
+}
+
   state = {
     vowel2: "",
     vowel3: ""
   };
 
-  isItCorrect(e) {
+  isItCorrect() {
     const isVowelsCorrect = this.state.vowel2 === firstVerb.vowel2 && this.state.vowel3 === firstVerb.vowel3;
     const isVowelsNotEmpty = this.state.vowel2 !== '' && this.state.vowel3 !== '';
-
     if (isVowelsCorrect) {
       console.log("vowels correct!!!");
       this.goToNextPage();
@@ -46,7 +54,7 @@ class VerbsFilling extends React.Component {
   }
 
   render() {
-    return (<form onKeyPress={this.isItCorrect}><HeartPoints points={this.props.points}/>
+    return (<form onKeyPress={this.handleKeyPress}><HeartPoints points={this.props.points}/>
     <Marginpx/>
       <div className="verbsfilling">
         <h1>

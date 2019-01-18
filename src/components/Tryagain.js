@@ -1,6 +1,14 @@
 import React from "react";
 import "./Tryagain.css";
 import {withRouter} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPoop } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faPoop, faHeart)
+
 
 class Tryagain extends React.Component {
   constructor(props) {
@@ -15,8 +23,7 @@ class Tryagain extends React.Component {
 
   render() {
     return (<div onClick={this.goToNextPage} className="container tryagain">
-	<h1><span role="img">🙄</span></h1>
-
+     <div className="icon-poop"><FontAwesomeIcon icon={faPoop}/></div>
 </div>
 )
   }

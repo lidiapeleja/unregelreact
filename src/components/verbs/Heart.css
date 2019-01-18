@@ -1,18 +1,17 @@
-
 .container-heart {
   justify-content: flex-end;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding-bottom: 10px;
   padding-right: 30px;
   background-color: #FFDE03;
   display: block inline-block;
-
 }
+
 
 @media (max-width: 500px) {
   .container-heart {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -26,7 +25,7 @@ span {
   span {
     margin-left: 3%;
     display: block;
-    font-size: 1.7em;
+    font-size: 2em;
 
   }
 }
