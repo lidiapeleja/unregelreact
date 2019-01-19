@@ -11,24 +11,28 @@ import ImagePhrase from "./verbs/ImagePhrase.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-const AppRouter = () => (<div>
-  <Router>
-    <div>
-      <Navbar/>
-      <Route path="/" exact="exact" component={WelcomeContainer}/>
-      <Route path="/log-in" component={LogIn}/>
-      <Route path="/loading" component={Loading}/>
-      <Route path="/sign-up" component={SignUp}/>
-      <Route path="/verbs" component={VerbsFilling}/>
-      <Route path="/welcome" component={WelcomeContainer}/>
-      <Route path="/verbs-memory" component={VerbsContainer}/>
-      <Route path="/image" component={ImagePhrase}/>
-      <Route path="/try-again" component={Tryagain}/>
-      <Route path="/testing" component={VerbsFilling}/>
+const AppRouter = (props) => {
+  return (<div>
+    <Router>
+      <div>
+        <Navbar/>
+        <Route path="/" exact="exact" component={WelcomeContainer}/>
+        <Route path="/log-in" component={LogIn}/>
+        <Route path="/loading" component={Loading}/>
+        <Route path="/sign-up" component={SignUp}/>
+        <Route path="/verbs-filling" render={routeProps => <VerbsFilling {...routeProps}
+          firstVerb={props.firstVerb} isItCorrect={props.isItCorrect}
+          points={props.points} goToNextPage={props.goToNextPage}
+           goToTryAgain={props.goToTryAgain} handleKeyPress={props.handleKeyPress} />}/>
+        <Route path="/welcome" component={WelcomeContainer}/>
+        <Route path="/verbs-memory" render={routeProps => <VerbsContainer {...routeProps} points={props.points} verbs={props.verbs} addVerb={props.addVerb} incrementPoint={props.incrementPoint}/>}/>
+        <Route path="/image" render={routeProps => <ImagePhrase {...routeProps} points={props.points}/>}/>
+        <Route path="/try-again" component={Tryagain}/>
+        <Route path="/testing" component={VerbsFilling}/>
 
-
-    </div>
-  </Router>
-</div>);
+      </div>
+    </Router>
+  </div>)
+};
 
 export default AppRouter;

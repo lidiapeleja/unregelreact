@@ -23,4 +23,4 @@ import {IDX_ZIEHEN} from "./utils/verbs-mapping"
 import {IDX_TUN} from "./utils/verbs-mapping"
 
 // CHANGE HERE SECOND VARIABLE TO CHANGE THE VERB BEING PLAYED
-export const INIT_IDX = IDX_TRAGEN;
+export const INIT_IDX = IDX_NEHMEN;

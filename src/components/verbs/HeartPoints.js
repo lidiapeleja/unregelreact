@@ -2,15 +2,12 @@ import React from "react";
 import Points from "./Points.js";
 import Heart from "./Heart.js";
 
-class HeartPoints extends React.Component {
-
-  render() {
+const HeartPoints = props => {
     return (<div>
-      <Points points={this.props.points}/>
+      <Points points={props.points}/>
       <Heart/>
     </div>)
   };
 
-}
 
 export default HeartPoints;

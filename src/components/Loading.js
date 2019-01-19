@@ -11,7 +11,7 @@ class Loading extends React.Component {
   constructor(props) {
     super(props)
 
-    setTimeout(() => this.props.history.push('/image'), 3000)
+    setTimeout(() => this.props.history.push('/verbs-memory'), 2500)
   }
 
   render() {

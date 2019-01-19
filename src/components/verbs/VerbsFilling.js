@@ -4,70 +4,36 @@ import HeartPoints from "./HeartPoints";
 import Marginpx from "../Marginpx";
 import verbsData from '../../data/verbs.json';
 import {withRouter} from 'react-router-dom'
-import {INIT_IDX} from '../../config'
-
-const firstVerb = verbsData.verbs[INIT_IDX];
+import {handleKeyPress, isVowelsCorrect} from './verbs-helper'
 
 class VerbsFilling extends React.Component {
-  constructor(props) {
-    super(props)
-    this.goToNextPage = this.goToNextPage.bind(this);
-    this.goToTryAgain = this.goToTryAgain.bind(this);
-    this.isItCorrect = this.isItCorrect.bind(this);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
 
-  }
+  constructor() {
+    super();
 
-  goToNextPage() {
-    this.props.history.push('/image');
-    return;
-  };
-
-  goToTryAgain() {
-    this.props.history.push('/try-again');
-    return;
-  };
-
-  handleKeyPress = (event) => {
-  if(event.key == 'Enter'){
-    console.log('enter has been clicked!')
-    this.isItCorrect();
-  }
-}
-
-  state = {
-    vowel2: "",
-    vowel3: ""
-  };
-
-  isItCorrect() {
-    const isVowelsCorrect = this.state.vowel2 === firstVerb.vowel2 && this.state.vowel3 === firstVerb.vowel3;
-    const isVowelsNotEmpty = this.state.vowel2 !== '' && this.state.vowel3 !== '';
-    if (isVowelsCorrect) {
-      console.log("vowels correct!!!");
-      this.goToNextPage();
-    } else if (isVowelsNotEmpty) {
-      // precondition: vowels are not correct
-      console.log("try again!!!");
-      this.goToTryAgain();
+    this.state = {
+      vowel2: "",
+      vowel3: ""
     }
+
+    this.handleKeyPress = handleKeyPress.bind(this);
   }
 
   render() {
     return (<form onKeyPress={this.handleKeyPress}><HeartPoints points={this.props.points}/>
-    <Marginpx/>
+      <Marginpx/>
       <div className="verbsfilling">
         <h1>
-          {firstVerb.infinitive}
+          {this.props.firstVerb.infinitive}
         </h1>
         <h1>
-          {firstVerb.pastTense1}
-          <input type="text" value={this.state.vowel2} onChange={(e) => this.setState({vowel2: e.target.value})} maxLength="2"/>{firstVerb.pastTense2}
+          {this.props.firstVerb.pastTense1}
+          <input type="text" value={this.state.vowel2} onChange={(e) => this.setState({vowel2: e.target.value})} maxLength="2"/>{this.props.firstVerb.pastTense2}
         </h1>
         <h1>
-          {firstVerb.pastParticiple0}{" "}
-          {firstVerb.pastParticiple1}
-          <input type="text" value={this.state.vowel3} onChange={(e) => this.setState({vowel3: e.target.value})} maxLength="2"/>{firstVerb.pastParticiple2}
+          {this.props.firstVerb.pastParticiple0}{" "}
+          {this.props.firstVerb.pastParticiple1}
+          <input type="text" value={this.state.vowel3} onChange={(e) => this.setState({vowel3: e.target.value})} maxLength="2"/>{this.props.firstVerb.pastParticiple2}
         </h1>
       </div>
     </form>)
