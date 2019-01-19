@@ -44,13 +44,14 @@ class App extends React.Component {
     // This binding is necessary to make `this` work in the callback
     this.addVerb = this.addVerb.bind(this);
     this.incrementPoint = this.incrementPoint.bind(this);
+    this.addPoints = this.addPoints.bind(this);
 
     // This this are from Verbs filling
     this.goToNextPage = this.goToNextPage.bind(this);
     this.goToTryAgain = this.goToTryAgain.bind(this);
   }
 
-  // Logics from VerbsMemory
+  /////// Logics from VerbsMemory ////////
 
   addVerb(routerHistory) {
     this.setState(state => {
@@ -84,24 +85,31 @@ class App extends React.Component {
     }));
   };
 
+  /*
+  * logics from adding points when answer is correct in Filling Points
+  */
+  addPoints(points) {
+    this.setState(state => ({
+      points: this.state.points + points
+    }));
+  }
 
-  // Logics from verbsfilling
+  ////// Logics from verbsfilling //////
 
-// from verbsFilling to
+  // from verbsFilling to
   goToNextPage(routerHistory) {
     routerHistory.push('/image');
   };
 
-// from verbsFilling to
+  // from verbsFilling to
 
   goToTryAgain(routerHistory) {
     routerHistory.push('/try-again');
   };
 
-
   render() {
     return (<div>
-      <AppRouter points={this.state.points} firstVerb={firstVerb} verbs={this.state.verbs} addVerb={this.addVerb} incrementPoint={this.incrementPoint} goToNextPage={this.goToNextPage} goToTryAgain={this.goToTryAgain} handleKeyPress={this.handleKeyPress}/>
+      <AppRouter points={this.state.points} firstVerb={firstVerb} verbs={this.state.verbs} addVerb={this.addVerb} incrementPoint={this.incrementPoint} goToNextPage={this.goToNextPage} goToTryAgain={this.goToTryAgain} handleKeyPress={this.handleKeyPress} addPoints={this.addPoints}/>
     </div>)
   }
 };

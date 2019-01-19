@@ -7,6 +7,7 @@ import Navbar from "./Navbar.js";
 import Tryagain from "./Tryagain.js";
 import Loading from "./Loading.js";
 import VerbsFilling from "./verbs/VerbsFilling.js";
+import HeartPoints from "./verbs/HeartPoints.js";
 import ImagePhrase from "./verbs/ImagePhrase.js";
 import WelcomeContainer from "./WelcomeContainer.js";
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -21,6 +22,7 @@ const AppRouter = (props) => {
         <Route path="/loading" component={Loading}/>
         <Route path="/sign-up" component={SignUp}/>
         <Route path="/verbs-filling" render={routeProps => <VerbsFilling {...routeProps}
+          addPoints={props.addPoints}
           firstVerb={props.firstVerb} isItCorrect={props.isItCorrect}
           points={props.points} goToNextPage={props.goToNextPage}
            goToTryAgain={props.goToTryAgain} handleKeyPress={props.handleKeyPress} />}/>
@@ -28,7 +30,7 @@ const AppRouter = (props) => {
         <Route path="/verbs-memory" render={routeProps => <VerbsContainer {...routeProps} points={props.points} verbs={props.verbs} addVerb={props.addVerb} incrementPoint={props.incrementPoint}/>}/>
         <Route path="/image" render={routeProps => <ImagePhrase {...routeProps} points={props.points}/>}/>
         <Route path="/try-again" component={Tryagain}/>
-        <Route path="/testing" component={VerbsFilling}/>
+        <Route path="/testing" render={routeProps => <HeartPoints points={props.points}/>}/>
 
       </div>
     </Router>

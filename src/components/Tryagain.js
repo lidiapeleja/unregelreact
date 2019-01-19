@@ -17,7 +17,7 @@ class Tryagain extends React.Component {
   }
 
   goToNextPage(target) {
-    this.props.history.push('/verbs-memory');
+    this.props.history.push('/image');
     return;
   };
 

@@ -4,7 +4,7 @@ import HeartPoints from "./HeartPoints";
 import Marginpx from "../Marginpx";
 import verbsData from '../../data/verbs.json';
 import {withRouter} from 'react-router-dom'
-import {handleKeyPress, isVowelsCorrect} from './verbs-helper'
+import {isVowelsCorrect} from './verbs-helper'
 
 class VerbsFilling extends React.Component {
 
@@ -16,8 +16,20 @@ class VerbsFilling extends React.Component {
       vowel3: ""
     }
 
-    this.handleKeyPress = handleKeyPress.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
+
+  handleKeyPress(event) {
+    if (event.key == 'Enter') {
+      console.log('enter has been clicked!')
+      if (isVowelsCorrect(this.state.vowel2, this.props.firstVerb.vowel2, this.state.vowel3, this.props.firstVerb.vowel3)) {
+        this.props.addPoints(10);
+        this.props.goToNextPage(this.props.history);
+      } else {
+        this.props.goToTryAgain(this.props.history);
+      }
+    }
+  };
 
   render() {
     return (<form onKeyPress={this.handleKeyPress}><HeartPoints points={this.props.points}/>
