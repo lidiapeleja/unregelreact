@@ -5,21 +5,42 @@ import { withRouter } from "react-router-dom";
 import verbsData from "../../data/verbs.json";
 import "./MemorizeVerbs.css";
 
-const MemorizeVerbs = props => {
-  return (
-    <div
-      onClick={props.addVerb.bind(null, props.history)}
-      className="container-verbs"
-    >
-      <HeartPoints points={props.points} />
-      <Marginpx />
-      {props.verbs.initialVerbs.map(verb => (
-        <div>
-          <h1>{verb}</h1>
-        </div>
-      ))}
-    </div>
-  );
-};
+class MemorizeVerbs extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      untilIdx: 0
+    };
+
+    // verbs
+    this.nextVerb = this.nextVerb.bind(this);
+  }
+
+  nextVerb() {
+    this.setState(state => ({
+      untilIdx: state.untilIdx + 1
+    }));
+  }
+
+  render() {
+    const { points } = this.props;
+    const { untilIdx } = this.state;
+
+    return (
+      <div onClick={this.nextVerb} className="container-verbs">
+        <HeartPoints points={points} />
+        <Marginpx />
+        {verbsData.verbs
+          .filter((_, idx) => idx <= untilIdx)
+          .map(verb => (
+            <div>
+              <h1>{verb.infinitive}</h1>
+            </div>
+          ))}
+      </div>
+    );
+  }
+}
 
 export default withRouter(MemorizeVerbs);

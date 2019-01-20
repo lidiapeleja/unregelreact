@@ -121,16 +121,13 @@ class App extends React.Component {
     return (
       <div>
         <AppRouter
-          verbs={this.state.verbs}
-          addVerb={this.addVerb}
+          points={this.state.points}
           currentVerb={currentVerb}
           incrementCurrentVerbIdx={this.state.incrementCurrentVerbIdx}
-          points={this.state.points}
-          incrementPoint={this.incrementPoint}
+          addVerb={this.addVerb}
           addPoints={this.addPoints}
           goToNextPage={this.goToNextPage}
           goToTryAgain={this.goToTryAgain}
-          handleKeyPress={this.handleKeyPress}
         />
       </div>
     );

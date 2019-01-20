@@ -29,8 +29,6 @@ const AppRouter = props => {
               <MemorizeVerbs
                 {...routeProps}
                 points={props.points}
-                verbs={props.verbs}
-                addVerb={props.addVerb}
                 incrementPoint={props.incrementPoint}
               />
             )}
