@@ -25,6 +25,8 @@ class VerbsFilling extends React.Component {
       if (isVowelsCorrect(this.state.vowel2, this.props.firstVerb.vowel2, this.state.vowel3, this.props.firstVerb.vowel3)) {
         this.props.addPoints(10);
         this.props.goToNextPage(this.props.history);
+        this.props.goToNextVerb();
+
       } else {
         this.props.goToTryAgain(this.props.history);
       }
@@ -36,16 +38,16 @@ class VerbsFilling extends React.Component {
       <Marginpx/>
       <div className="verbsfilling">
         <h1>
-          {this.props.firstVerb.infinitive}
+          {this.props.currentVerb.infinitive}
         </h1>
         <h1>
-          {this.props.firstVerb.pastTense1}
-          <input type="text" value={this.state.vowel2} onChange={(e) => this.setState({vowel2: e.target.value})} maxLength="2"/>{this.props.firstVerb.pastTense2}
+          {this.props.currentVerb.pastTense1}
+          <input type="text" value={this.state.vowel2} onChange={(e) => this.setState({vowel2: e.target.value})} maxLength="2"/>{this.props.currentVerb.pastTense2}
         </h1>
         <h1>
-          {this.props.firstVerb.pastParticiple0}{" "}
-          {this.props.firstVerb.pastParticiple1}
-          <input type="text" value={this.state.vowel3} onChange={(e) => this.setState({vowel3: e.target.value})} maxLength="2"/>{this.props.firstVerb.pastParticiple2}
+          {this.props.currentVerb.pastParticiple0}{" "}
+          {this.props.currentVerb.pastParticiple1}
+          <input type="text" value={this.state.vowel3} onChange={(e) => this.setState({vowel3: e.target.value})} maxLength="2"/>{this.props.currentVerb.pastParticiple2}
         </h1>
       </div>
     </form>)
