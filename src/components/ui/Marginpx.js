@@ -3,14 +3,12 @@ import "./Marginpx.css";
 
 class Marginpx extends React.Component {
   constructor() {
-    super()
+    super();
   }
-
 
   render() {
-    return (<div className="marginpx">
-    </div>);
+    return <div className="marginpx" />;
   }
-};
+}
 
 export default Marginpx;

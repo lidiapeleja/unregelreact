@@ -2,15 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import AppRouter from "./components/AppRouter";
-import Points from "./components/verbs/Points";
-import VerbsContainer from "./components/verbs/VerbsContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { withRouter } from "react-router-dom";
-import Marginpx from "./components/Marginpx";
 import verbsData from "./data/verbs.json";
 // import {INIT_IDX} from './config'
 
@@ -61,7 +58,7 @@ class App extends React.Component {
     this.setState(state => {
       state.callCount = state.callCount + 1;
       if (state.callCount >= WORDS_PER_POINT * REPETITIONS) {
-        routerHistory.push("/verbs-filling");
+        routerHistory.push("/exercises/fill");
         return;
       }
 
@@ -107,7 +104,7 @@ class App extends React.Component {
 
   // from verbsFilling to
   goToNextPage(routerHistory) {
-    routerHistory.push("/verbs-memory");
+    routerHistory.push("/exercises/memorize");
   }
 
   // from verbsFilling to

@@ -1,33 +1,34 @@
 import React from "react";
 import "./Loading.css";
-import {withRouter} from 'react-router-dom'
+import { withRouter } from "react-router-dom";
 
 class Loading extends React.Component {
-
   getInitialState() {
-    return {position: 1};
+    return { position: 1 };
   }
 
   constructor(props) {
-    super(props)
+    super(props);
 
-    setTimeout(() => this.props.history.push('/verbs-memory'), 2500)
+    setTimeout(() => this.props.history.push("/exercises/memorize"), 1000);
   }
 
   render() {
-    return (<div className="loadingcontainer">
-      <div className="lds-heart">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    return (
+      <div className="loadingcontainer">
+        <div className="lds-heart">
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <div className="loadingtext">Loading...</div>
       </div>
-      <div className="loadingtext">Loading...</div>
-    </div>)
+    );
   }
 }
 

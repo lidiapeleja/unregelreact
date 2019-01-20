@@ -1,15 +1,16 @@
-import "./AppRouter.css";
 import React from "react";
 import LogIn from "./auth/LogIn.js";
 import SignUp from "./auth/SignUp.js";
-import VerbsContainer from "./verbs/VerbsContainer.js";
-import Navbar from "./navbar/Navbar.js";
-import Tryagain from "./Tryagain.js";
-import Loading from "./Loading.js";
-import VerbsFilling from "./verbs/VerbsFilling.js";
-import HeartPoints from "./verbs/HeartPoints.js";
-import ImagePhrase from "./verbs/ImagePhrase.js";
 import Home from "./home/Home.js";
+import Navbar from "./navbar/Navbar.js";
+import Loading from "./Loading.js";
+import Tryagain from "./Tryagain.js";
+import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
+import FillVerbs from "./exercises/FillVerbs.js";
+import HeartPoints from "./exercises/HeartPoints.js";
+import ImagePhrase from "./exercises/ImagePhrase.js";
+import "./AppRouter.css";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const AppRouter = props => {
@@ -23,9 +24,9 @@ const AppRouter = props => {
           <Route path="/log-in" component={LogIn} />
           <Route path="/sign-up" component={SignUp} />
           <Route
-            path="/verbs-memory"
+            path="/exercises/memorize"
             render={routeProps => (
-              <VerbsContainer
+              <MemorizeVerbs
                 {...routeProps}
                 points={props.points}
                 verbs={props.verbs}
@@ -37,9 +38,9 @@ const AppRouter = props => {
 
           {/* UNDER CONSTRUCTION */}
           <Route
-            path="/verbs-filling"
+            path="/exercises/fill"
             render={routeProps => (
-              <VerbsFilling
+              <FillVerbs
                 {...routeProps}
                 addPoints={props.addPoints}
                 currentVerb={props.currentVerb}
