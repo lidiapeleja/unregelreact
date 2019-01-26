@@ -1,8 +1,7 @@
 import React from "react";
 import HeartPoints from "./HeartPoints";
 import Marginpx from "../ui/Marginpx";
-import { withRouter } from "react-router-dom";
-import verbsData from "../../data/verbs.json";
+import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
 
 class MemorizeVerbs extends React.Component {
@@ -10,36 +9,48 @@ class MemorizeVerbs extends React.Component {
     super();
 
     this.state = {
-      untilIdx: 0
+      conjugationCount: 0
     };
 
     // verbs
-    this.nextVerb = this.nextVerb.bind(this);
+    this.nextConjugation = this.nextConjugation.bind(this);
   }
 
-  nextVerb() {
+  nextConjugation() {
     this.setState(state => ({
-      untilIdx: state.untilIdx + 1
+      conjugationCount: state.conjugationCount + 1
     }));
   }
 
   render() {
-    const { points } = this.props;
-    const { untilIdx } = this.state;
+    const {currentVerb, points} = this.props;
+    const {conjugationCount} = this.state;
+    
+    const conjugations = calcConjugations(conjugationCount, currentVerb);
 
-    return (
-      <div onClick={this.nextVerb} className="container-verbs">
-        <HeartPoints points={points} />
-        <Marginpx />
-        {verbsData.verbs
-          .filter((_, idx) => idx <= untilIdx)
-          .map(verb => (
-            <div>
-              <h1>{verb.infinitive}</h1>
-            </div>
-          ))}
-      </div>
-    );
+    return (<div onClick={this.nextConjugation
+} className="container-verbs">
+      <HeartPoints points={points}/>
+      <Marginpx/> {
+        conjugations.map(conjugation => (<div>
+          <h1>
+            {conjugation}
+          </h1>
+        </div>))
+      }
+    </div>);
+  }
+}
+
+function calcConjugations(count, verb) {
+  if (count === 0) {
+    return [verb.infinitive];
+  } else if (count === 1) {
+    return [verb.infinitive, verb.pastTense];
+  } else if (count === 2) {
+    return [verb.infinitive, verb.pastTense, verb.pastParticiple];
+  } else {
+    throw new Error(`Illegal conjugation count=${count}`)
   }
 }
 

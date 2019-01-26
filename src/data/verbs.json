@@ -1,6 +1,6 @@
 {
-  "verbs": [
-    {
+  "verbs": {
+    "bleiben": {
       "infinitive": "bleiben",
       "pastTense": "blieb",
       "pastParticiple": "ist geblieben",
@@ -24,7 +24,7 @@
       "pastParticiple1": "gebl",
       "pastParticiple2": "ben"
     },
-    {
+    "essen": {
       "infinitive": "essen",
       "pastTense": "aß",
       "pastParticiple": "hat gegessen",
@@ -49,8 +49,7 @@
       "pastParticiple2": "ssen",
       "image": ""
     },
-
-    {
+    "fallen": {
       "infinitive": "fallen",
       "pastTense": "fiel",
       "pastParticiple": "ist gefallen",
@@ -73,9 +72,8 @@
       "pastParticiple0": "ist",
       "pastParticiple1": "gef",
       "pastParticiple2": "llen"
-    }
-    ,
-    {
+    },
+    "finden": {
       "infinitive": "finden",
       "pastTense": "fand",
       "pastParticiple": "hat gefunden",
@@ -98,9 +96,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gef",
       "pastParticiple2": "nden"
-    }
-    ,
-    {
+    },
+    "geben": {
       "infinitive": "geben",
       "pastTense": "gab",
       "pastParticiple": "hat gegeben",
@@ -123,9 +120,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "geg",
       "pastParticiple2": "ben"
-    }
-    ,
-    {
+    },
+    "gehen": {
       "infinitive": "gehen",
       "pastTense": "ging",
       "pastParticiple": "ist gegangen",
@@ -148,9 +144,8 @@
       "pastParticiple0": "ist",
       "pastParticiple1": "geg",
       "pastParticiple2": "ngen"
-    }
-    ,
-    {
+    },
+    "gewinnen": {
       "infinitive": "gewinnen",
       "pastTense": "gewann",
       "pastParticiple": "hat gewonnen",
@@ -173,9 +168,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gew",
       "pastParticiple2": "nnen"
-    }
-    ,
-    {
+    },
+    "halten": {
       "infinitive": "halten",
       "pastTense": "hielt",
       "pastParticiple": "hat gehalten",
@@ -198,9 +192,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "geh",
       "pastParticiple2": "lten"
-    }
-    ,
-    {
+    },
+    "heißen": {
       "infinitive": "heißen",
       "pastTense": "hieß",
       "pastParticiple": "hat geheißen",
@@ -224,9 +217,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "geh",
       "pastParticiple2": "ßen"
-    }
-    ,
-    {
+    },
+    "helfen": {
       "infinitive": "helfen",
       "pastTense": "half",
       "pastParticiple": "hat geholfen",
@@ -249,9 +241,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "geh",
       "pastParticiple2": "lfen"
-    }
-    ,
-    {
+    },
+    "kommen": {
       "infinitive": "kommen",
       "pastTense": "kam",
       "pastParticiple": "hat gekommen",
@@ -274,9 +265,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gk",
       "pastParticiple2": "mmen"
-    }
-    ,
-    {
+    },
+    "lassen": {
       "infinitive": "lassen",
       "pastTense": "ließ",
       "pastParticiple": "hat gelassen",
@@ -299,16 +289,14 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gel",
       "pastParticiple2": "ssen"
-    }
-    ,
-    {
+    },
+    "laufen": {
       "infinitive": "laufen",
       "pastTense": "lief",
       "pastParticiple": "hat gelaufen",
       "vowel1": "au",
-      "vowel2": "ie",
-      "vowel21": "i",
       "vowel2": "e",
+      "vowel21": "i",
       "vowel3": "au",
       "vowel31": "a",
       "vowel32": "u",
@@ -324,9 +312,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gel",
       "pastParticiple2": "fen"
-    }
-    ,
-    {
+    },
+    "liegen": {
       "infinitive": "liegen",
       "pastTense": "lag",
       "pastParticiple": "hat gelegen",
@@ -349,9 +336,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gel",
       "pastParticiple2": "gen"
-    }
-    ,
-    {
+    },
+    "nehmen": {
       "infinitive": "nehmen",
       "pastTense": "nahm",
       "pastParticiple": "hat genommen",
@@ -374,32 +360,32 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gen",
       "pastParticiple2": "mmen"
-    }
-    ,  {
-       "infinitive": "scheiden",
-       "pastTense": "schied",
-       "pastParticiple": "hat/ist geschieden",
-       "vowel1": "ei",
-       "vowel2": "ie",
-       "vowel21": "i",
-       "vowel22": "e",
-       "vowel3": "ie",
-       "vowel31": "i",
-       "vowel32": "e",
-       "sentence": "Wieviel mal scheidest du dich noch?",
-       "sentence1": "W",
-       "sentence2": "",
-       "sentence3": "v",
-       "sentence4": "l mal scheidest du dich noch?",
-       "infinitive1": "sh",
-       "infinitive2": "den",
-       "pastTense1": "sch",
-       "pastTense2": "d",
-       "pastParticiple0": "hat/ist",
-       "pastParticiple1": "gesch",
-       "pastParticiple2": "den"
-     },
-    {
+    },
+    "scheiden": {
+      "infinitive": "scheiden",
+      "pastTense": "schied",
+      "pastParticiple": "hat/ist geschieden",
+      "vowel1": "ei",
+      "vowel2": "ie",
+      "vowel21": "i",
+      "vowel22": "e",
+      "vowel3": "ie",
+      "vowel31": "i",
+      "vowel32": "e",
+      "sentence": "Wieviel mal scheidest du dich noch?",
+      "sentence1": "W",
+      "sentence2": "",
+      "sentence3": "v",
+      "sentence4": "l mal scheidest du dich noch?",
+      "infinitive1": "sh",
+      "infinitive2": "den",
+      "pastTense1": "sch",
+      "pastTense2": "d",
+      "pastParticiple0": "hat/ist",
+      "pastParticiple1": "gesch",
+      "pastParticiple2": "den"
+    },
+    "sehen": {
       "infinitive": "sehen",
       "pastTense": "sah",
       "pastParticiple": "hat gesehen",
@@ -422,9 +408,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "ges",
       "pastParticiple2": "hen"
-    }
-    ,
-    {
+    },
+    "sitzen": {
       "infinitive": "sitzen",
       "pastTense": "saß",
       "pastParticiple": "hat gesessen",
@@ -447,9 +432,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "ges",
       "pastParticiple2": "ssen"
-    }
-    ,
-    {
+    },
+    "sprechen": {
       "infinitive": "sprechen",
       "pastTense": "sprach",
       "pastParticiple": "hat gesprochen",
@@ -468,9 +452,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gespr",
       "pastParticiple2": "chen"
-    }
-    ,
-    {
+    },
+    "stehen": {
       "infinitive": "stehen",
       "pastTense": "stand",
       "pastParticiple": "hat gestanden",
@@ -493,9 +476,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "gest",
       "pastParticiple2": "nden"
-    }
-    ,
-    {
+    },
+    "tragen": {
       "infinitive": "tragen",
       "pastTense": "trug",
       "pastParticiple": "hat getragen",
@@ -518,9 +500,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "getr",
       "pastParticiple2": "gen"
-    }
-    ,
-    {
+    },
+    "tun": {
       "infinitive": "tun",
       "pastTense": "tat",
       "pastParticiple": "hat getan",
@@ -543,9 +524,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "get",
       "pastParticiple2": "n"
-    }
-    ,
-    {
+    },
+    "verlieren": {
       "infinitive": "verlieren",
       "pastTense": "verlor",
       "pastParticiple": "hat verloren",
@@ -568,9 +548,8 @@
       "pastParticiple0": "hat",
       "pastParticiple1": "verl",
       "pastParticiple2": "ren"
-    }
-    ,
-    {
+    },
+    "ziehen": {
       "infinitive": "ziehen",
       "pastTense": "zog",
       "pastParticiple": "hat/ist gezogen",
@@ -594,5 +573,5 @@
       "pastParticiple1": "gez",
       "pastParticiple2": "gen"
     }
-  ]
+  }
 }

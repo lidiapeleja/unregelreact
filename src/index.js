@@ -8,32 +8,14 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { withRouter } from "react-router-dom";
-import verbsData from "./data/verbs.json";
-// import {INIT_IDX} from './config'
-
+import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS} from "./config"
 library.add(fab, faPoop, faHeart);
-
-const WORDS_PER_POINT = 3;
-const REPETITIONS = 6;
-
-// function deepCopy(o) {
-//   return JSON.parse(JSON.stringify(o));
-// }
-
-// function resetVerbs() {
-//   console.log("reset verbs has been executed");
-//   return {
-//     initialVerbs: deepCopy(INITIAL_VERBS),
-//     newVerbs: deepCopy(NEW_VERBS)
-//   };
-// }
 
 class App extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      // verbs: resetVerbs(),
       points: 0,
       callCount: 0,
       currentVerbIdx: 0
@@ -113,16 +95,13 @@ class App extends React.Component {
   }
 
   render() {
-    const currentVerb = {
-      idx: this.state.currentVerbIdx,
-      verb: verbsData.verbs[this.state.currentVerbIdx]
-    };
+    const currentVerb = VERBS_ORDERED[this.state.currentVerbIdx];
 
     return (
       <div>
         <AppRouter
-          points={this.state.points}
           currentVerb={currentVerb}
+          points={this.state.points}
           incrementCurrentVerbIdx={this.state.incrementCurrentVerbIdx}
           addVerb={this.addVerb}
           addPoints={this.addPoints}

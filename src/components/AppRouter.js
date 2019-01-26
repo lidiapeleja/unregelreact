@@ -30,6 +30,7 @@ const AppRouter = props => {
                 {...routeProps}
                 points={props.points}
                 incrementPoint={props.incrementPoint}
+                currentVerb={props.currentVerb}
               />
             )}
           />
