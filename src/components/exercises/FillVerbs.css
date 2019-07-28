@@ -1,13 +1,13 @@
-.verbs {
-  margin-left: 1%;
-  margin-right: 1%;
-  height: 470px;
-  margin-top: 40px;
+.verbsfilling {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 590px;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
-  .verbs {
-    margin-top: 10px;
+  .verbsfilling {
+    margin-top: 40px;
   }
 }
 
