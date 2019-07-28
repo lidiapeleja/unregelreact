@@ -14,7 +14,7 @@ class ImageBleiben extends React.Component {
   }
 
   goToNextPage() {
-    this.props.history.push('/verbs-memory');
+    this.props.history.push('/exercises/memorize');
     return;
   };
 
