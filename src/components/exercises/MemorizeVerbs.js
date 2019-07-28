@@ -9,7 +9,8 @@ class MemorizeVerbs extends React.Component {
     super();
 
     this.state = {
-      conjugationCount: 0
+      conjugationCount: 0,
+      roundsCompleted: 0
     };
 
     // verbs
@@ -17,15 +18,30 @@ class MemorizeVerbs extends React.Component {
   }
 
   nextConjugation() {
-    this.setState(state => ({
-      conjugationCount: state.conjugationCount + 1
-    }));
+    this.setState(state => {
+      if (state.roundsCompleted > 4) {
+        this.props.incrementPoint();
+        return ({
+            conjugationCount: 0,
+            roundsCompleted: 0
+          });
+      } else if (state.conjugationCount < 2) {
+        return ({
+            conjugationCount: state.conjugationCount + 1
+          });
+      } else {
+        return ({
+            conjugationCount: 0,
+            roundsCompleted: state.roundsCompleted + 1
+          });
+      }
+    });
   }
 
   render() {
     const {currentVerb, points} = this.props;
     const {conjugationCount} = this.state;
-    
+
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
     return (<div onClick={this.nextConjugation

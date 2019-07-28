@@ -34,8 +34,7 @@ class App extends React.Component {
     this.goToTryAgain = this.goToTryAgain.bind(this);
   }
 
-  /////// Logics from VerbsMemory ////
-
+  // Logics from VerbsMemory
   addVerb(routerHistory) {
     this.setState(state => {
       state.callCount = state.callCount + 1;
@@ -82,7 +81,7 @@ class App extends React.Component {
     }));
   }
 
-  ////// Logics from verbsfilling //
+  // Logics from verbsfilling
 
   // from verbsFilling to
   goToNextPage(routerHistory) {
@@ -105,6 +104,7 @@ class App extends React.Component {
           incrementCurrentVerbIdx={this.state.incrementCurrentVerbIdx}
           addVerb={this.addVerb}
           addPoints={this.addPoints}
+          incrementPoint={this.incrementPoint}
           goToNextPage={this.goToNextPage}
           goToTryAgain={this.goToTryAgain}
         />
