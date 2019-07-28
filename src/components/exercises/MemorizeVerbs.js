@@ -1,6 +1,5 @@
 import React from "react";
 import HeartPoints from "./HeartPoints";
-import Marginpx from "../ui/Marginpx";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
 
@@ -48,7 +47,7 @@ class MemorizeVerbs extends React.Component {
     return (<div onClick={this.nextConjugation
 } className="container-verbs">
       <HeartPoints points={points}/>
-      <Marginpx/> {
+       {
         conjugations.map(conjugation => (<div>
           <h1>
             {conjugation}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
-import Marginpx from "../ui/Marginpx";
 import verbsData from "../../data/verbs.json";
 import { withRouter } from "react-router-dom";
 
@@ -43,7 +42,6 @@ class FillVerbs extends React.Component {
     return (
       <form onKeyPress={this.handleKeyPress}>
         <HeartPoints points={this.props.points} />
-        <Marginpx />
         <div className="verbsfilling">
           <h1>{this.props.currentVerb.infinitive}</h1>
           <h1>
