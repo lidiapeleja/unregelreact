@@ -33,7 +33,7 @@ class FillVerbs extends React.Component {
         this.props.goToNextVerb();
       } else {
         this.props.goToTryAgain(this.props.history);
-        console.log("Wrong vowel!");
+        console.log("Wrong vowel! Try again");
       }
     }
   }
