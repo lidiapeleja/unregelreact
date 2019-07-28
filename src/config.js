@@ -4,7 +4,29 @@ const verbs = verbsData.verbs;
 
 export const VERBS_ORDERED = [
   verbs.bleiben,
-  verbs.essen
+  verbs.essen,
+  verbs.fallen,
+  verbs.finden,
+  verbs.geben,
+  verbs.gehen,
+  verbs.gewinnen,
+  verbs.halten,
+  verbs.heißen,
+  verbs.helfen,
+  verbs.kommen,
+  verbs.lassen,
+  verbs.laufen,
+  verbs.liegen,
+  verbs.nehmen,
+  verbs.scheiden,
+  verbs.sehen,
+  verbs.sitzen,
+  verbs.sprechen,
+  verbs.stehen,
+  verbs.tragen,
+  verbs.tun,
+  verbs.verlieren,
+  verbs.ziehen
 ];
 
 export const WORDS_PER_POINT = 3;

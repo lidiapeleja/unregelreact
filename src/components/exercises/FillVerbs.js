@@ -30,7 +30,7 @@ class FillVerbs extends React.Component {
       ) {
         this.props.addPoints(10);
         this.props.goToNextPage(this.props.history);
-        this.props.goToNextVerb();
+        this.props.incrementCurrentVerbIdx();
         console.log("TRUE! You are aweseme!");
       } else {
         this.props.goToTryAgain(this.props.history);

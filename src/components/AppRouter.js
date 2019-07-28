@@ -47,7 +47,7 @@ const AppRouter = props => {
                 points={props.points}
                 goToNextPage={props.goToNextPage}
                 goToTryAgain={props.goToTryAgain}
-                goToNextVerb={props.goToNextVerb}
+                incrementCurrentVerbIdx={props.incrementCurrentVerbIdx}
                 handleKeyPress={props.handleKeyPress}
               />
             )}
