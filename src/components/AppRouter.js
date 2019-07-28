@@ -5,6 +5,7 @@ import Home from "./home/Home.js";
 import Navbar from "./navbar/Navbar.js";
 import Loading from "./Loading.js";
 import Tryagain from "./Tryagain.js";
+import YouAreAwesome from "./YouAreAwesome.js";
 import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
 import HeartPoints from "./exercises/HeartPoints.js";
@@ -62,6 +63,7 @@ const AppRouter = props => {
             )}
           />
           <Route path="/try-again" component={Tryagain} />
+            <Route path="/well-done" component={YouAreAwesome} />
           <Route
             path="/testing"
             render={routeProps => <HeartPoints points={props.points} />}

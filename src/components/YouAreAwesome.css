@@ -1,0 +1,11 @@
+.tryagain{
+  height: 400px;
+  text-align: center;
+  margin-top: 240px;
+}
+
+.icon-poop {
+  color: #00FF7F;
+  font-size: 5em;
+  text-shadow: 3px 3px red;
+}
