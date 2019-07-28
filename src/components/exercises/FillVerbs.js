@@ -4,7 +4,6 @@ import HeartPoints from "./HeartPoints";
 import Marginpx from "../ui/Marginpx";
 import verbsData from "../../data/verbs.json";
 import { withRouter } from "react-router-dom";
-import { isVowelsCorrect } from "./verbs-helper";
 
 class FillVerbs extends React.Component {
   constructor() {
@@ -19,14 +18,14 @@ class FillVerbs extends React.Component {
   }
 
   handleKeyPress(event) {
-    if (event.key == "Enter") {
+    if (event.key == "Enter" && this.state.vowel2 != "" && this.state.vowel3 != "" ) {
       console.log("enter has been clicked!");
       if (
         isVowelsCorrect(
           this.state.vowel2,
-          this.props.firstVerb.vowel2,
+          this.props.currentVerb.vowel2,
           this.state.vowel3,
-          this.props.firstVerb.vowel3
+          this.props.currentVerb.vowel3
         )
       ) {
         this.props.addPoints(10);
@@ -34,6 +33,7 @@ class FillVerbs extends React.Component {
         this.props.goToNextVerb();
       } else {
         this.props.goToTryAgain(this.props.history);
+        console.log("Wrong vowel!");
       }
     }
   }
@@ -71,5 +71,9 @@ class FillVerbs extends React.Component {
     );
   }
 }
+
+function isVowelsCorrect(vowel2, inputVowel2, vowel3, inputVowel3) {
+  return inputVowel2 === vowel2 && inputVowel3 === vowel3;
+};
 
 export default withRouter(FillVerbs);
