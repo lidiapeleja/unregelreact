@@ -18,7 +18,7 @@ class Group extends React.Component {
 
   render() {
     return (<div>
-      <h5>{firstVerb.vowel1} - {firstVerb.vowel21}{firstVerb.vowel22} - {firstVerb.vowel31}{firstVerb.vowel32}</h5>
+      <h5>{this.props.currentVerb.vowel1} - {this.props.currentVerb.vowel21}{this.props.currentVerb.vowel22} - {this.props.currentVerb.vowel31}{this.props.currentVerb.vowel32}</h5>
     </div>);
   }
 };

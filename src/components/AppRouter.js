@@ -55,7 +55,10 @@ const AppRouter = props => {
           <Route
             path="/image"
             render={routeProps => (
-              <ImagePhrase {...routeProps} points={props.points} />
+              <ImagePhrase {...routeProps}
+                points={props.points}
+                currentVerb={props.currentVerb}
+                 />
             )}
           />
           <Route path="/try-again" component={Tryagain} />
