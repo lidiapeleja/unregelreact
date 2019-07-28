@@ -21,6 +21,7 @@ class MemorizeVerbs extends React.Component {
     this.setState(state => {
       if (state.roundsCompleted > 4) {
         this.props.incrementPoint();
+        this.props.history.push("/exercises/fill")
         return ({
             conjugationCount: 0,
             roundsCompleted: 0

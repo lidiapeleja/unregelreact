@@ -101,7 +101,7 @@ class App extends React.Component {
         <AppRouter
           currentVerb={currentVerb}
           points={this.state.points}
-          incrementCurrentVerbIdx={this.state.incrementCurrentVerbIdx}
+          incrementCurrentVerbIdx={this.incrementCurrentVerbIdx}
           addVerb={this.addVerb}
           addPoints={this.addPoints}
           incrementPoint={this.incrementPoint}
