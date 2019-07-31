@@ -18,7 +18,8 @@ class App extends React.Component {
     this.state = {
       points: 0,
       callCount: 0,
-      currentVerbIdx: 0
+      currentVerbIdx: 0,
+      hearts: 5
     };
 
     // verbs
@@ -32,6 +33,10 @@ class App extends React.Component {
     // routing
     this.goToNextPage = this.goToNextPage.bind(this);
     this.goToTryAgain = this.goToTryAgain.bind(this);
+
+    //hearts
+    this.loseHeart = this.loseHeart.bind(this);
+
   }
 
   // Logics from VerbsMemory
@@ -98,6 +103,20 @@ class App extends React.Component {
     routerHistory.push("/well-done");
   }
 
+  loseHeart(){
+    this.setState(state =>({
+      hearts: this.state.hearts - 1
+    }));
+    console.log("you have lost one heart");
+  }
+
+
+  incrementPoint() {
+    this.setState(state => ({
+      points: this.state.points + 1
+    }));
+  }
+
   render() {
     const currentVerb = VERBS_ORDERED[this.state.currentVerbIdx];
 
@@ -106,6 +125,7 @@ class App extends React.Component {
         <AppRouter
           currentVerb={currentVerb}
           points={this.state.points}
+          hearts={this.state.hearts}
           incrementCurrentVerbIdx={this.incrementCurrentVerbIdx}
           addVerb={this.addVerb}
           addPoints={this.addPoints}
@@ -113,6 +133,7 @@ class App extends React.Component {
           goToNextPage={this.goToNextPage}
           youAreAwesome={this.youAreAwesome}
           goToTryAgain={this.goToTryAgain}
+          loseHeart={this.loseHeart}
         />
       </div>
     );

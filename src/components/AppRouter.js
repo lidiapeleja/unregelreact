@@ -5,6 +5,7 @@ import Home from "./home/Home.js";
 import Navbar from "./navbar/Navbar.js";
 import Loading from "./Loading.js";
 import Tryagain from "./Tryagain.js";
+import Heart from "./exercises/Heart.js";
 import YouAreAwesome from "./YouAreAwesome.js";
 import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
@@ -51,6 +52,7 @@ const AppRouter = props => {
                 youAreAwesome={props.youAreAwesome}
                 incrementCurrentVerbIdx={props.incrementCurrentVerbIdx}
                 handleKeyPress={props.handleKeyPress}
+                loseHeart={props.loseHeart}
               />
             )}
           />
@@ -67,7 +69,13 @@ const AppRouter = props => {
           <Route path="/well-done" component={YouAreAwesome} />
           <Route
             path="/testing"
-            render={routeProps => <HeartPoints points={props.points} />}
+            render={routeProps => <HeartPoints points={props.points}
+            />}
+          />
+          <Route
+              path="/hearts"
+              render={routeProps => <Heart hearts={props.hearts}
+              />}
           />
         </div>
       </Router>

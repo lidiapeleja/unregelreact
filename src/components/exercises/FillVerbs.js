@@ -33,6 +33,7 @@ class FillVerbs extends React.Component {
         console.log("TRUE! You are aweseme!");
       } else {
         this.props.goToTryAgain(this.props.history);
+        this.props.loseHeart();
         console.log("Wrong vowel! Try again");
       }
     }

@@ -30,6 +30,12 @@ span {
     margin-left: 3%;
     display: block;
     font-size: 2em;
-
   }
 }
+
+.hiddingheart{
+  color: #FFDE03;
+    .svg-inline--fa{
+    }
+  }
+
