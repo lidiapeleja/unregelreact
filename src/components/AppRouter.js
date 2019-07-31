@@ -48,6 +48,7 @@ const AppRouter = props => {
                 points={props.points}
                 goToNextPage={props.goToNextPage}
                 goToTryAgain={props.goToTryAgain}
+                youAreAwesome={props.youAreAwesome}
                 incrementCurrentVerbIdx={props.incrementCurrentVerbIdx}
                 handleKeyPress={props.handleKeyPress}
               />
@@ -63,7 +64,7 @@ const AppRouter = props => {
             )}
           />
           <Route path="/try-again" component={Tryagain} />
-            <Route path="/well-done" component={YouAreAwesome} />
+          <Route path="/well-done" component={YouAreAwesome} />
           <Route
             path="/testing"
             render={routeProps => <HeartPoints points={props.points} />}

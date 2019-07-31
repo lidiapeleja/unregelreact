@@ -93,6 +93,11 @@ class App extends React.Component {
     routerHistory.push("/try-again");
   }
 
+  // from verbsFilling to
+  youAreAwesome(routerHistory) {
+    routerHistory.push("/well-done");
+  }
+
   render() {
     const currentVerb = VERBS_ORDERED[this.state.currentVerbIdx];
 
@@ -106,6 +111,7 @@ class App extends React.Component {
           addPoints={this.addPoints}
           incrementPoint={this.incrementPoint}
           goToNextPage={this.goToNextPage}
+          youAreAwesome={this.youAreAwesome}
           goToTryAgain={this.goToTryAgain}
         />
       </div>
