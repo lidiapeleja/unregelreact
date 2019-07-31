@@ -8,7 +8,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { withRouter } from "react-router-dom";
-import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS} from "./config"
+import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS} from "./config"
 library.add(fab, faPoop, faHeart);
 
 class App extends React.Component {
@@ -19,7 +19,7 @@ class App extends React.Component {
       points: 0,
       callCount: 0,
       currentVerbIdx: 0,
-      hearts: 5
+      hearts: INITIAL_HEARTS
     };
 
     // verbs
@@ -104,10 +104,19 @@ class App extends React.Component {
   }
 
   loseHeart(){
-    this.setState(state =>({
-      hearts: this.state.hearts - 1
-    }));
-    console.log("you have lost one heart");
+      debugger
+    if(this.state.hearts <= 1){
+        alert("Game over! You have reached the points" + this.state.points);
+    this.setState( state =>({
+        points: 0,
+    }))
+        return;
+    } else {
+        this.setState(state =>({
+            hearts: state.hearts - 1
+        }));
+        console.log("you have lost one heart");
+    }
   }
 
 

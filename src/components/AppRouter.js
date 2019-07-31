@@ -31,6 +31,7 @@ const AppRouter = props => {
               <MemorizeVerbs
                 {...routeProps}
                 points={props.points}
+                hearts={props.hearts}
                 incrementPoint={props.incrementPoint}
                 currentVerb={props.currentVerb}
               />
@@ -52,6 +53,7 @@ const AppRouter = props => {
                 youAreAwesome={props.youAreAwesome}
                 incrementCurrentVerbIdx={props.incrementCurrentVerbIdx}
                 handleKeyPress={props.handleKeyPress}
+                hearts={props.hearts}
                 loseHeart={props.loseHeart}
               />
             )}

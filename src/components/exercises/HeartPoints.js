@@ -7,7 +7,7 @@ const HeartPoints = props => {
     return (<div>
       <div className="wrapperheartpoints">
       <Points points={props.points}/>
-      <Heart/>
+      <Heart hearts={props.hearts}/>
       </div>
     </div>)
   };

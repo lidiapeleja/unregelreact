@@ -39,14 +39,14 @@ class MemorizeVerbs extends React.Component {
   }
 
   render() {
-    const {currentVerb, points} = this.props;
+    const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
     return (<div onClick={this.nextConjugation
 } className="container-verbs">
-      <HeartPoints points={points}/>
+      <HeartPoints points={points} hearts={hearts}/>
        {
         conjugations.map(conjugation => (<div>
           <h1>

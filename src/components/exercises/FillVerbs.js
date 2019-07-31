@@ -32,8 +32,8 @@ class FillVerbs extends React.Component {
         this.props.incrementCurrentVerbIdx();
         console.log("TRUE! You are aweseme!");
       } else {
-        this.props.goToTryAgain(this.props.history);
         this.props.loseHeart();
+        this.props.goToTryAgain(this.props.history);
         console.log("Wrong vowel! Try again");
       }
     }
@@ -43,7 +43,7 @@ class FillVerbs extends React.Component {
     return (
       <form onKeyPress={this.handleKeyPress}>
         <div className="container-verbs">
-          <HeartPoints points={this.props.points} />
+          <HeartPoints points={this.props.points} hearts={this.props.hearts} />
           <h1>{this.props.currentVerb.infinitive}</h1>
           <h1>
             {this.props.currentVerb.pastTense1}
