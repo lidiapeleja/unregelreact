@@ -1,6 +1,6 @@
 import React from "react";
-import LogIn from "./auth/LogIn.js";
-import SignUp from "./auth/SignUp.js";
+// import LogIn from "./auth/LogIn.js";
+// import SignUp from "./auth/SignUp.js";
 import Home from "./home/Home.js";
 import Navbar from "./navbar/Navbar.js";
 import Loading from "./Loading.js";

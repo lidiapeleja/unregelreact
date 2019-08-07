@@ -1,8 +1,8 @@
 import React from "react";
 import "./Group.css";
-import verbsData from '../../data/verbs.json';
+// import verbsData from '../../data/verbs.json';
 
-const firstVerb = verbsData.verbs[0];
+// const firstVerb = verbsData.verbs[0];
 
 class Group extends React.Component {
   constructor(props) {

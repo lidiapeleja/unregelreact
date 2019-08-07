@@ -2,10 +2,10 @@ import React from "react";
 import "./ImagePhrase.css";
 import Group from "./Group";
 import HeartPoints from "./HeartPoints";
-import verbsData from '../../data/verbs.json';
+// import verbsData from '../../data/verbs.json';
 import {calcVerbImgSrc} from '../../utils/verbs-image';
 
-const firstVerb = verbsData.verbs[0];
+// const firstVerb = verbsData.verbs[0];
 
 class ImageBleiben extends React.Component {
   constructor(props) {

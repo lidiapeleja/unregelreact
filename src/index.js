@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import AppRouter from "./components/AppRouter";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { withRouter } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS} from "./config"
 library.add(fab, faPoop, faHeart);
 
@@ -36,6 +36,8 @@ class App extends React.Component {
 
     //hearts
     this.loseHeart = this.loseHeart.bind(this);
+
+    this.startAgain = this.startAgain.bind(this);
 
   }
 
@@ -103,14 +105,20 @@ class App extends React.Component {
     routerHistory.push("/well-done");
   }
 
+  // from Game over to Play Again
+
+  startAgain(routerHistory) {
+    routerHistory.push("/");
+  }
+
   loseHeart(){
-      debugger
     if(this.state.hearts <= 1){
-        alert("Game over! You have reached the points" + this.state.points);
+        alert("Game over! POINTS: " + this.state.points);
     this.setState( state =>({
         points: 0,
-    }))
-        return;
+    }));
+    this.startAgain();
+      return;
     } else {
         this.setState(state =>({
             hearts: state.hearts - 1
@@ -120,11 +128,11 @@ class App extends React.Component {
   }
 
 
-  incrementPoint() {
-    this.setState(state => ({
-      points: this.state.points + 1
-    }));
-  }
+  // incrementPoint() {
+  //   this.setState(state => ({
+  //     points: this.state.points + 1
+  //   }));
+  // }
 
   render() {
     const currentVerb = VERBS_ORDERED[this.state.currentVerbIdx];

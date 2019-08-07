@@ -1,7 +1,7 @@
 import React from "react";
 import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
-import verbsData from "../../data/verbs.json";
+// import verbsData from "../../data/verbs.json";
 import { withRouter } from "react-router-dom";
 
 class FillVerbs extends React.Component {
@@ -17,7 +17,7 @@ class FillVerbs extends React.Component {
   }
 
   handleKeyPress(event) {
-    if (event.key === "Enter" && this.state.vowel2 != "" && this.state.vowel3 != "" ) {
+    if (event.key === "Enter" && this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
       console.log("enter has been clicked!");
       if (
         isVowelsCorrect(

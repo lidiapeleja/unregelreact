@@ -1,5 +1,5 @@
 import React from "react";
-import HeartPoints from "./HeartPoints";
+// import HeartPoints from "./HeartPoints";
 import "./Points.css";
 
 const Points = props => {
