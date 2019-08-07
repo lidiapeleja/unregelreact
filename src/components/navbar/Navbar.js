@@ -16,25 +16,20 @@ const Navbar = () => (<nav className="navbar navbar-default">
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
         <li>
-          <a href="/log-in/">log in
-            <span className="sr-only">(current)</span>
-          </a>
+          <a className="gamelink" href="/verbs-memory/">play!</a>
         </li>
         <li>
-          <a className="gamelink" href="/verbs-memory/">play!</a>
+          <a className="about" href="/about/">about UnregelApp</a>
         </li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li>
-          <a href="/testing/">log out</a>
+          <a href="whatsapp://send?text=<<https://unregelreact.herokuapp.com>>" data-action="share/whatsapp/share">share it</a>
         </li>
       </ul>
     </div>{/* /.navbar-collapse */}
   </div>{/* /.container-fluid */}
 </nav>)
 
-// <li className="active"><Link to="/">Home</Link></li>
-// <li className="active"><Link to="/signin/">Player</Link></li>
-// <li className="active"><Link to="/verbs/">Verbs</Link></li>
 
 export default Navbar;

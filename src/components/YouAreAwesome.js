@@ -22,7 +22,7 @@ class YouAreAwesome extends React.Component {
   render() {
     return (
       <div onClick={this.goToNextPage} className="container tryagain">
-        <div className="icon-poop">
+        <div className="icon-poop animated bounceIn">
           <h4>+10</h4>
           <FontAwesomeIcon icon={faThumbsUp} />
         </div>

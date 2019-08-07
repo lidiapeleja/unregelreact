@@ -10,7 +10,7 @@ class Loading extends React.Component {
   constructor(props) {
     super(props);
 
-    setTimeout(() => this.props.history.push("/exercises/memorize"), 1000);
+    setTimeout(() => this.props.history.push("/exercises/memorize"), 2000);
   }
 
   render() {

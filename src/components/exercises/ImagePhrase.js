@@ -19,7 +19,7 @@ class ImageBleiben extends React.Component {
   };
 
   render() {
-    return (<div className="containerall"><HeartPoints points={this.props.points}/><div onClick={this.goToNextPage
+    return (<div className="whole-container"><HeartPoints points={this.props.points}/><div onClick={this.goToNextPage
 } className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>

@@ -1,16 +1,12 @@
 
 .loadingcontainer{
-  height: 400px;
-  margin-right: 50%;
-  margin-left: 50%;
-  margin-top: 220px;
+  height: 500px;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 600px) {
-  .loadingcontainer {
-    margin-left: 45%;
-  }
-}
 
 .lds-heart {
   display: inline-block;
@@ -68,8 +64,6 @@
 }
 
 .loadingtext {
-  margin-top: -30%;
   font-weight: bold;
-  color: black;
   font-size: 1em;
 }
