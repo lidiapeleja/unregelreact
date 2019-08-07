@@ -5,7 +5,15 @@
 }
 
 .icon-poop {
-  color: #00FF7F;
   font-size: 5em;
-  text-shadow: 3px 3px red;
+  color: white;
+
+}
+
+.tryagain h4{
+  color: black;
+  text-shadow: none;
+  font-size: 3rem;
+  font-weight: bolder;
+
 }

@@ -7,7 +7,7 @@
   display: block inline-block;
 }
 
-.svg-inline--fa{
+.container-heart .svg-inline--fa{
   filter: drop-shadow(3px 3px 3px grey);
 }
 

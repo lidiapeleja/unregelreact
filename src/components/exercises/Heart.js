@@ -31,17 +31,6 @@ const Heart = (props) => {
             </div>
         </div>
     );
-
-    /*    return (<div>
-            <div className="container-heart">
-                <span role="img" aria-label="heart" className="heart5 hiddingheart"><FontAwesomeIcon icon={faHeart}
-                                                                                                     size="1x"/></span>
-                <span role="img" aria-label="heart" className="heart4"><FontAwesomeIcon icon={faHeart} size="1x"/></span>
-                <span role="img" aria-label="heart" className="heart3"><FontAwesomeIcon icon={faHeart} size="1x"/></span>
-                <span role="img" aria-label="heart" className="heart2"><FontAwesomeIcon icon={faHeart} size="1x"/></span>
-                <span role="img" aria-label="heart" className="heart1"><FontAwesomeIcon icon={faHeart} size="1x"/></span>
-            </div>
-        </div>)*/
 };
 
 export default Heart;

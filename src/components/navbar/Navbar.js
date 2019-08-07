@@ -24,7 +24,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li>
-          <a href="whatsapp://send?text=<<https://unregelreact.herokuapp.com>>" data-action="share/whatsapp/share">share it</a>
+          <a href="whatsapp://send?text=Hi, I just discovered a new learning Website for the Irregular German Verbs. It is pretty cool  😃 Check it out! It is for free ➡️ UnregelApp https://unregelreact.herokuapp.com" data-action="share/whatsapp/share">share it on Whatsapp</a>
         </li>
       </ul>
     </div>{/* /.navbar-collapse */}
