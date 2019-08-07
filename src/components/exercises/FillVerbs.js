@@ -32,7 +32,7 @@ class FillVerbs extends React.Component {
         this.props.incrementCurrentVerbIdx();
         console.log("TRUE! You are aweseme!");
       } else {
-        this.props.loseHeart();
+        this.props.loseHeart(this.props.history);
         this.props.goToTryAgain(this.props.history);
         console.log("Wrong vowel! Try again");
       }
@@ -79,7 +79,6 @@ class FillVerbs extends React.Component {
 }
 
 function isVowelsCorrect(vowel2, inputVowel2, vowel3, inputVowel3) {
-  console.log("you have typed " + inputVowel2 + " when Vowel2 is " + vowel2 + ". " + "You have typed " + inputVowel3 + " when Vowel3 is " + vowel3 )
   return inputVowel2 === vowel2 && inputVowel3 === vowel3;
 };
 

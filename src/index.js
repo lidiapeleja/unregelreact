@@ -111,13 +111,13 @@ class App extends React.Component {
     routerHistory.push("/");
   }
 
-  loseHeart(){
+  loseHeart(routerHistory){
     if(this.state.hearts <= 1){
         alert("Game over! POINTS: " + this.state.points);
     this.setState( state =>({
         points: 0,
     }));
-    this.startAgain();
+    this.startAgain(routerHistory);
       return;
     } else {
         this.setState(state =>({
@@ -127,12 +127,6 @@ class App extends React.Component {
     }
   }
 
-
-  // incrementPoint() {
-  //   this.setState(state => ({
-  //     points: this.state.points + 1
-  //   }));
-  // }
 
   render() {
     const currentVerb = VERBS_ORDERED[this.state.currentVerbIdx];

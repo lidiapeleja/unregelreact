@@ -11,7 +11,6 @@ import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
 import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
-import "./AppRouter.css";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
