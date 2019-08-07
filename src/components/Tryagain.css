@@ -1,7 +1,9 @@
 .tryagain{
-  height: 400px;
+  height: 590px;
   text-align: center;
-  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+align-items: center;
 }
 
 .icon-poop {

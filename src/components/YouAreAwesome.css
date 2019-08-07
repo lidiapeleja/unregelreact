@@ -1,19 +1,19 @@
-.tryagain{
-  height: 400px;
+.youareawesome{
+  height: 590px;
   text-align: center;
-  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-poop {
   font-size: 5em;
   color: white;
-
 }
 
-.tryagain h4{
+.youareawesome h4{
   color: black;
   text-shadow: none;
   font-size: 3rem;
   font-weight: bolder;
-
 }
