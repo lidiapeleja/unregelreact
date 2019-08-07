@@ -42,8 +42,9 @@ class FillVerbs extends React.Component {
   render() {
     return (
       <form onKeyPress={this.handleKeyPress}>
-        <div className="container-verbs">
+        <div className="whole-container">
           <HeartPoints points={this.props.points} hearts={this.props.hearts} />
+          <div className="container-verbs">
           <h1>{this.props.currentVerb.infinitive}</h1>
           <h1>
             {this.props.currentVerb.pastTense1}
@@ -70,6 +71,7 @@ class FillVerbs extends React.Component {
             />
             {this.props.currentVerb.pastParticiple2}
           </h1>
+          </div>
         </div>
       </form>
     );

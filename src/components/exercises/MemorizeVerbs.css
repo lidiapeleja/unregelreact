@@ -1,5 +1,5 @@
 
-.container-verbs {
+.whole-container {
   margin-left: 5%;
   margin-right: 5%;
   height: 590px;
@@ -8,12 +8,12 @@
 }
 
 @media (max-width: 600px) {
-  .container-verbs {
+  .whole-container {
   margin-top: 40px;
   }
 }
 
-.container-verbs h1 {
+.whole-container h1 {
   font-weight: bolder;
   height: 60px;
   font-size: 6rem;
@@ -22,8 +22,20 @@
 }
 
 @media (max-width: 600px) {
-  .container-verbs h1 {
+  .whole-container h1 {
     height: 60px;
     font-size: 5rem;
   }
+}
+
+.container-verbs{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-verbs h1{
+  align-items: center;
 }

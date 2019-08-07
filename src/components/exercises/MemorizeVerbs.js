@@ -45,8 +45,9 @@ class MemorizeVerbs extends React.Component {
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
     return (<div onClick={this.nextConjugation
-} className="container-verbs">
+} className="whole-container">
       <HeartPoints points={points} hearts={hearts}/>
+      <div className="container-verbs">
        {
         conjugations.map(conjugation => (<div>
           <h1>
@@ -54,6 +55,7 @@ class MemorizeVerbs extends React.Component {
           </h1>
         </div>))
       }
+      </div>
     </div>);
   }
 }

@@ -3,7 +3,6 @@
   display: flex;
   margin-bottom: 7px;
   padding-bottom: 10px;
-  padding-right: 30px;
   background-color: #FFDE03;
   display: block inline-block;
 }
@@ -16,6 +15,7 @@
 @media (max-width: 500px) {
   .container-heart {
     margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 

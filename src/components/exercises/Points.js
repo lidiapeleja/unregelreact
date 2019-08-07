@@ -4,7 +4,7 @@ import "./Points.css";
 
 const Points = props => {
   return <div className="container-points">
-    <div className="points">
+    <div className="points animated bounceIn delay-2s">
       {props.points}
     </div>
   </div>
