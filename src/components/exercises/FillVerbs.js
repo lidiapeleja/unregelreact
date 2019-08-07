@@ -50,6 +50,8 @@ class FillVerbs extends React.Component {
             <input
               type="text"
               value={this.state.vowel2}
+              autocorrect="off"
+              autocapitalize="none"
               onChange={e => this.setState({ vowel2: e.target.value })}
               maxLength="2"
             />
@@ -61,6 +63,8 @@ class FillVerbs extends React.Component {
             <input
               type="text"
               value={this.state.vowel3}
+              autocorrect="off"
+              autocapitalize="none"
               onChange={e => this.setState({ vowel3: e.target.value })}
               maxLength="2"
             />
