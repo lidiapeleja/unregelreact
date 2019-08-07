@@ -4,13 +4,6 @@
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/react-facebook-login" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/FillVerbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/FillVerbs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/Heart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Heart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/HeartPoints.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/HeartPoints.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +21,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="-200">
               <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
             </state>
           </provider>
@@ -224,16 +217,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564588494833</updated>
-      <workItem from="1564588496217" duration="7590000" />
+      <workItem from="1564588496217" duration="7880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7590000" />
+    <option name="totallyTimeSpent" value="7880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -355,7 +347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="-200">
           <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
         </state>
       </provider>
