@@ -44,3 +44,12 @@ body {
 .navbar-default .navbar-toggle {
   border-color: white;
 }
+
+.navbar-collapse{
+  border-top: 1px solid transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
