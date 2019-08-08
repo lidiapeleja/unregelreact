@@ -21,10 +21,11 @@ class Tryagain extends React.Component {
 
   render() {
     return (
-      <div onClick={this.goToNextPage} className="container tryagain">
+      <div className="container tryagain">
         <div className="icon-poop animated shake">
           <FontAwesomeIcon icon={faPoop} />
         </div>
+        <button onClick={this.goToNextPage} className="buttontip">Give me a tip </button>
       </div>
     );
   }

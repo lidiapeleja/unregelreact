@@ -1,13 +1,37 @@
 .tryagain{
-  height: 590px;
-  text-align: center;
+  height: 550px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 .icon-poop {
   color: brown;
   font-size: 5em;
   text-shadow: 3px 3px red;
+}
+
+.tryagain .buttontip {
+  color: white;
+  justify-content: center;
+  border: none;
+  padding: 15px 15px;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #FF0266;
+  font-weight: bold;
+  display: flex;
+}
+
+.tryagain .buttontip:hover {
+  background-color: white;
+  color: #FF0266;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.tip {
+  font-size: 2rem;
 }
