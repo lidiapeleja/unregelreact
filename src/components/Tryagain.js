@@ -25,7 +25,7 @@ class Tryagain extends React.Component {
         <div className="icon-poop animated shake">
           <FontAwesomeIcon icon={faPoop} />
         </div>
-        <button onClick={this.goToNextPage} className="buttontip">Give me a tip </button>
+        <button onClick={this.goToNextPage} className="buttontip animated bounceIn delay-1s">Give me a tip </button>
       </div>
     );
   }

@@ -23,6 +23,8 @@
   background-color: #FF0266;
   font-weight: bold;
   display: flex;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+
 }
 
 .tryagain .buttontip:hover {
