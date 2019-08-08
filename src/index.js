@@ -120,9 +120,6 @@ class App extends React.Component {
   this.setState(state => ({
   percentage: ((state.currentVerbIdx+1) / VERBS_ORDERED.length) * 100
 }));
-  console.log("fromIndextoPercentage has ben called");
-    console.log("percentage is: " + this.state.percentage);
-
   }
 
   loseHeart(routerHistory){
