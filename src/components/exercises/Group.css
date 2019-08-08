@@ -1,11 +1,11 @@
-  h5 {
-  color: white;
+  .group h5 {
+  color: black;
   font-size: 1.6em;
   text-align: center;
  }
 
  @media (max-width: 600px) {
-   h5 {
+     .group h5 {
      font-size: 1.2em;
      text-align: center;
    }

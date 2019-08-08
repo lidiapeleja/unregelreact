@@ -21,15 +21,12 @@ class ImageBleiben extends React.Component {
 } className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>
-      <div className="container-fluid box1">
-        <h5>{this.props.currentVerb.infinitive}</h5>
-        <h2>{this.props.currentVerb.sentence1}<font color="#FF0266">{this.props.currentVerb.vowel21}</font>{this.props.currentVerb.sentence2}<font color="#FF0266">{this.props.currentVerb.vowel22}</font>
-          {this.props.currentVerb.sentence3}<font color="#FF0266">{this.props.currentVerb.vowel31}</font>{this.props.currentVerb.sentence31}<font color="#FF0266">{this.props.currentVerb.vowel32}</font>{this.props.currentVerb.sentence4}{this.props.currentVerb.sentence5}</h2>
-      </div >
-      <div className="box2">
-        <Group currentVerb={this.props.currentVerb}
-/>
-      </div>
+          <div className="box2">
+              <h6>{this.props.currentVerb.infinitive}</h6>
+              <h2>{this.props.currentVerb.sentence1}<font color="#FF0266">{this.props.currentVerb.vowel21}</font>{this.props.currentVerb.sentence2}<font color="#FF0266">{this.props.currentVerb.vowel22}</font>
+                  {this.props.currentVerb.sentence3}<font color="#FF0266">{this.props.currentVerb.vowel31}</font>{this.props.currentVerb.sentence31}<font color="#FF0266">{this.props.currentVerb.vowel32}</font>{this.props.currentVerb.sentence4}{this.props.currentVerb.sentence5}</h2>
+              <Group currentVerb={this.props.currentVerb}/>
+          </div>
     </div>
   </div>);
   }
