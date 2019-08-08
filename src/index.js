@@ -20,7 +20,7 @@ class App extends React.Component {
       callCount: 0,
       currentVerbIdx: 0,
       hearts: INITIAL_HEARTS,
-      percentage: 0,
+      percentage: 1,
     };
 
     // verbs
@@ -56,7 +56,6 @@ class App extends React.Component {
       if (state.verbs.newVerbs.length === 0) {
         // state.verbs = resetVerbs();
         this.incrementPoint();
-        this.fromIndextoPercentage();
         return state;
       }
 
@@ -119,9 +118,11 @@ class App extends React.Component {
 
   fromIndextoPercentage(){
   this.setState(state => ({
-  percentage: this.state.currentVerbIdx * 4
+  percentage: ((state.currentVerbIdx+1) / VERBS_ORDERED.length) * 100
 }));
   console.log("fromIndextoPercentage has ben called");
+    console.log("percentage is: " + this.state.percentage);
+
   }
 
   loseHeart(routerHistory){
@@ -136,7 +137,6 @@ class App extends React.Component {
         this.setState(state =>({
             hearts: state.hearts - 1
         }));
-        console.log("you have lost one heart");
     }
   }
 
@@ -158,6 +158,7 @@ class App extends React.Component {
           youAreAwesome={this.youAreAwesome}
           goToTryAgain={this.goToTryAgain}
           loseHeart={this.loseHeart}
+          percentage={this.state.percentage}
           fromIndextoPercentage={this.fromIndextoPercentage}
         />
       </div>

@@ -56,6 +56,7 @@ const AppRouter = props => {
                 handleKeyPress={props.handleKeyPress}
                 hearts={props.hearts}
                 loseHeart={props.loseHeart}
+                fromIndextoPercentage={props.fromIndextoPercentage}
               />
             )}
           />

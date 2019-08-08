@@ -18,7 +18,6 @@ class FillVerbs extends React.Component {
 
   handleKeyPress(event) {
     if (event.key === "Enter" && this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
-      console.log("enter has been clicked!");
       if (
         isVowelsCorrect(
           this.state.vowel2,
@@ -28,13 +27,12 @@ class FillVerbs extends React.Component {
         )
       ) {
         this.props.addPoints(10);
+        this.props.fromIndextoPercentage();
         this.props.youAreAwesome(this.props.history);
         this.props.incrementCurrentVerbIdx();
-        console.log("TRUE! You are aweseme!");
       } else {
         this.props.loseHeart(this.props.history);
         this.props.goToTryAgain(this.props.history);
-        console.log("Wrong vowel! Try again");
       }
     }
   }
