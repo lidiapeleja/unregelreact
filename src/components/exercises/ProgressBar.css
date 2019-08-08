@@ -1,3 +1,12 @@
-.progressbar {
-background-color: red;
+#progressbar{
+    background-color: white;
+    width: 100%;
 }
+
+#bar {
+    width: 1%;
+    height: 6px;
+    background-color: #FF0266;
+}
+
+

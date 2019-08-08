@@ -19,7 +19,8 @@ class App extends React.Component {
       points: 0,
       callCount: 0,
       currentVerbIdx: 0,
-      hearts: INITIAL_HEARTS
+      hearts: INITIAL_HEARTS,
+      percentage: 0,
     };
 
     // verbs
@@ -38,6 +39,8 @@ class App extends React.Component {
     this.loseHeart = this.loseHeart.bind(this);
 
     this.startAgain = this.startAgain.bind(this);
+    this.fromIndextoPercentage = this.fromIndextoPercentage.bind(this);
+
 
   }
 
@@ -53,6 +56,7 @@ class App extends React.Component {
       if (state.verbs.newVerbs.length === 0) {
         // state.verbs = resetVerbs();
         this.incrementPoint();
+        this.fromIndextoPercentage();
         return state;
       }
 
@@ -111,6 +115,15 @@ class App extends React.Component {
     routerHistory.push("/");
   }
 
+  // multiply index of verbs * 4 so you get the % for progress bar
+
+  fromIndextoPercentage(){
+  this.setState(state => ({
+  percentage: this.state.currentVerbIdx * 4
+}));
+  console.log("fromIndextoPercentage has ben called");
+  }
+
   loseHeart(routerHistory){
     if(this.state.hearts <= 1){
         alert("Game over! POINTS: " + this.state.points);
@@ -145,6 +158,7 @@ class App extends React.Component {
           youAreAwesome={this.youAreAwesome}
           goToTryAgain={this.goToTryAgain}
           loseHeart={this.loseHeart}
+          fromIndextoPercentage={this.fromIndextoPercentage}
         />
       </div>
     );

@@ -1,8 +1,6 @@
 import React from "react";
 import "./ImagePhrase.css";
 import Group from "./Group";
-import HeartPoints from "./HeartPoints";
-// import verbsData from '../../data/verbs.json';
 import {calcVerbImgSrc} from '../../utils/verbs-image';
 
 // const firstVerb = verbsData.verbs[0];
@@ -19,7 +17,7 @@ class ImageBleiben extends React.Component {
   };
 
   render() {
-    return (<div className="whole-container"><HeartPoints points={this.props.points}/><div onClick={this.goToNextPage
+    return (<div className="whole-container"><div onClick={this.goToNextPage
 } className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>

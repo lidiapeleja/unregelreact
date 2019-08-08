@@ -11,6 +11,7 @@ import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
 import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
+import ProgressBar from "./exercises/ProgressBar.js";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -20,7 +21,8 @@ const AppRouter = props => {
       <Router>
         <div>
           <Navbar />
-          <Route path="/" exact="exact" component={Home} />
+          <ProgressBar percentage={props.percentage} />
+            <Route path="/" exact="exact" component={Home} />
           <Route path="/loading" component={Loading} />
           {/*<Route path="/log-in" component={LogIn} />*/}
           {/*<Route path="/sign-up" component={SignUp} />*/}
