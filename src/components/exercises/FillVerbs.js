@@ -13,33 +13,35 @@ class FillVerbs extends React.Component {
       vowel3: ""
     };
 
-    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.checkVowels = this.checkVowels.bind(this);
   }
 
-  handleKeyPress(event) {
-    if (event.key === "Enter" && this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
-      if (
-        isVowelsCorrect(
-          this.state.vowel2,
-          this.props.currentVerb.vowel2,
-          this.state.vowel3,
-          this.props.currentVerb.vowel3
-        )
-      ) {
-        this.props.addPoints(10);
-        this.props.fromIndextoPercentage();
-        this.props.youAreAwesome(this.props.history);
-        this.props.incrementCurrentVerbIdx();
-      } else {
-        this.props.loseHeart(this.props.history);
-        this.props.goToTryAgain(this.props.history);
-      }
+  checkVowels(event) {
+      event.preventDefault();
+    if (this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
+        console.log("you have pressed keyboard");
+        if (
+            isVowelsCorrect(
+                this.state.vowel2,
+                this.props.currentVerb.vowel2,
+                this.state.vowel3,
+                this.props.currentVerb.vowel3
+            )
+        ) {
+            this.props.addPoints(10);
+            this.props.fromIndextoPercentage();
+            this.props.youAreAwesome(this.props.history);
+            this.props.incrementCurrentVerbIdx();
+        } else {
+            this.props.loseHeart(this.props.history);
+            this.props.goToTryAgain(this.props.history);
+        }
     }
   }
 
   render() {
     return (
-      <form onKeyPress={this.handleKeyPress}>
+      <form onSubmit={this.checkVowels}>
         <div className="whole-container">
           <HeartPoints points={this.props.points} hearts={this.props.hearts} />
           <div className="container-verbs">
@@ -49,8 +51,8 @@ class FillVerbs extends React.Component {
             <input
               type="text"
               value={this.state.vowel2}
-              autocorrect="off"
-              autocapitalize="none"
+              autoCorrect="off"
+              autoCapitalize="none"
               onChange={e => this.setState({ vowel2: e.target.value })}
               maxLength="2"
             />
@@ -62,13 +64,16 @@ class FillVerbs extends React.Component {
             <input
               type="text"
               value={this.state.vowel3}
-              autocorrect="off"
-              autocapitalize="none"
+              autoCorrect="off"
+              autoCapitalize="none"
               onChange={e => this.setState({ vowel3: e.target.value })}
               maxLength="2"
             />
             {this.props.currentVerb.pastParticiple2}
           </h1>
+          </div>
+          <div className="containerbutton container">
+              <button type="submit" className="btn">Check answer</button>
           </div>
         </div>
       </form>

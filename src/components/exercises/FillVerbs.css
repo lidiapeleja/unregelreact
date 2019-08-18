@@ -38,3 +38,29 @@ input {
   background-color: transparent;
   padding: 0;
 }
+
+/*styling button*/
+
+.containerbutton {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 18px 40px;
+  background-color: #FF0266;
+  color: white;
+  font-weight: 300;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn:hover {
+  color: #FF0266;
+  background-color: white;
+}
