@@ -109,6 +109,12 @@ class App extends React.Component {
   // from Game over to Play Again
 
   startAgain(routerHistory) {
+    this.setState(state => {
+      state.currentVerbIdx = 0}
+  );
+    this.setState(state => {
+      state.hearts = INITIAL_HEARTS}
+    );
     routerHistory.push("/");
   }
 

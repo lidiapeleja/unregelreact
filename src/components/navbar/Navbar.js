@@ -22,7 +22,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
         <li>
-          <a className="gamelink" href="/verbs-memory/">play!</a>
+          <a className="gamelink" href="/exercises/memorize">play!</a>
         </li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
