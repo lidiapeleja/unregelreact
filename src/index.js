@@ -6,8 +6,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS} from "./config"
 library.add(fab, faPoop, faHeart);
+
+const MySwal = withReactContent(Swal)
+
 
 class App extends React.Component {
   constructor() {
@@ -128,7 +133,21 @@ class App extends React.Component {
 
   loseHeart(routerHistory){
     if(this.state.hearts <= 1){
-        alert("Game over! POINTS: " + this.state.points);
+        // alert("Game over! POINTS: " + this.state.points);
+
+      MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+          // `MySwal` is a subclass of `Swal`
+          //   with all the same instance & static methods
+          MySwal.clickConfirm()
+        }
+      }).then(() => {
+        return MySwal.fire(<p>Shorthand works too</p>)
+      })
+
+
     this.setState( state =>({
         points: 0,
     }));
