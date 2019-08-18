@@ -11,7 +11,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
         <span className="icon-bar"/>
         <span className="icon-bar"/>
       </button>
-      <a className="navbar-brand" href="/"><h1>UnregelApp</h1><h6>Lern by Playing</h6></a>
+      <a className="navbar-brand" href="http://unregelapp.com/"><h1>UnregelApp</h1><h6>Lern by Playing</h6></a>
     </div>
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
