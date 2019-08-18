@@ -1,5 +1,11 @@
 import "./Navbar.css";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faTimes);
+
 
 const Navbar = () => (<nav className="navbar navbar-default">
   <div className="container-fluid">
@@ -21,7 +27,7 @@ const Navbar = () => (<nav className="navbar navbar-default">
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li>
-          <a href="whatsapp://send?text=Hi, I just discovered a new learning Website for the Irregular German Verbs. It is pretty cool  😃 Check it out! It is for free ➡️ UnregelApp https://unregelreact.herokuapp.com" data-action="share/whatsapp/share">share it on Whatsapp</a>
+          <FontAwesomeIcon className="exitbutton" icon={faTimes}/>
         </li>
       </ul>
     </div>{/* /.navbar-collapse */}

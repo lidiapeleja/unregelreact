@@ -1,6 +1,4 @@
 import React from "react";
-// import LogIn from "./auth/LogIn.js";
-// import SignUp from "./auth/SignUp.js";
 import Home from "./home/Home.js";
 import Navbar from "./navbar/Navbar.js";
 import Loading from "./Loading.js";
@@ -12,7 +10,6 @@ import FillVerbs from "./exercises/FillVerbs.js";
 import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
 import ProgressBar from "./exercises/ProgressBar.js";
-import About from "./exercises/About.js";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -70,7 +67,6 @@ const AppRouter = props => {
                  />
             )}
           />
-          <Route path="/about" component={About} />
           <Route path="/try-again" component={Tryagain} />
           <Route path="/well-done" component={YouAreAwesome} />
           <Route
