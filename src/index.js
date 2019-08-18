@@ -133,7 +133,6 @@ class App extends React.Component {
   loseHeart(routerHistory){
     if(this.state.hearts <= 1){
         // alert("Game over! POINTS: " + this.state.points);
-
       MySwal.fire({
         type: 'warning',
         title: "GAME OVER",
