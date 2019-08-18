@@ -4,9 +4,6 @@
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/react-facebook-login" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="150" column="2" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
+            <state relative-caret-position="92">
+              <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -227,18 +224,18 @@
       <workItem from="1565593438105" duration="154000" />
       <workItem from="1565726089781" duration="108000" />
       <workItem from="1565850721054" duration="1150000" />
-      <workItem from="1566116924570" duration="15860000" />
+      <workItem from="1566116924570" duration="16319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52861000" />
+    <option name="totallyTimeSpent" value="53320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87606114" visible="true" weight="0.27753934" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87606114" visible="true" weight="0.27753934" />
       <window_info id="Structure" order="1" sideWeight="0.12393888" side_tool="true" visible="true" weight="0.27753934" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -253,7 +250,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2701363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2701363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -535,8 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="150" column="2" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
+        <state relative-caret-position="92">
+          <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
