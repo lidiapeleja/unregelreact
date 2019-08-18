@@ -13,7 +13,6 @@ library.add(fab, faPoop, faHeart);
 
 const MySwal = withReactContent(Swal)
 
-
 class App extends React.Component {
   constructor() {
     super();
@@ -136,17 +135,11 @@ class App extends React.Component {
         // alert("Game over! POINTS: " + this.state.points);
 
       MySwal.fire({
-        title: <p>Hello World</p>,
-        footer: 'Copyright 2018',
-        onOpen: () => {
-          // `MySwal` is a subclass of `Swal`
-          //   with all the same instance & static methods
-          MySwal.clickConfirm()
-        }
-      }).then(() => {
-        return MySwal.fire(<p>Shorthand works too</p>)
-      })
-
+        type: 'warning',
+        title: "GAME OVER",
+        confirmButtonColor: '#ff0266',
+        background: '#ffde03',
+      });
 
     this.setState( state =>({
         points: 0,
