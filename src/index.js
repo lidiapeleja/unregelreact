@@ -43,7 +43,8 @@ class App extends React.Component {
     this.startAgain = this.startAgain.bind(this);
     this.fromIndextoPercentage = this.fromIndextoPercentage.bind(this);
 
-
+    // game over
+    this.alertExit = this.alertExit.bind(this);
   }
 
   // Logics from VerbsMemory
@@ -145,12 +146,32 @@ class App extends React.Component {
     }));
     this.startAgain(routerHistory);
       return;
-    } else {
-        this.setState(state =>({
-            hearts: state.hearts - 1
-        }));
     }
   }
+
+  alertExit(routerHistory){
+    MySwal.fire({
+      type: 'info',
+      title: "Are you sure? 🙄",
+      text: "If you leave now you will lose your current points...",
+      showCancelButton: true,
+      background: '#ffde03',
+      confirmButtonColor: '#ff0266'
+    }).then((result) => {
+      if (result.value) {
+        console.log("i want to quit the game");
+        this.setState( state =>({
+          points: 0,
+          callCount: 0,
+          currentVerbIdx: 0,
+          hearts: INITIAL_HEARTS,
+          percentage: 1
+        }));
+        this.startAgain(routerHistory);
+        return;
+      }
+    });
+  };
 
 
   render() {
@@ -159,6 +180,7 @@ class App extends React.Component {
     return (
       <div>
         <AppRouter
+            alertExit={this.alertExit}
           currentVerb={currentVerb}
           points={this.state.points}
           hearts={this.state.hearts}

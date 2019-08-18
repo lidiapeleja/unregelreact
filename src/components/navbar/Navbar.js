@@ -3,23 +3,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {faTimes} from "@fortawesome/free-solid-svg-icons";
-import withReactContent from "sweetalert2-react-content";
-import Swal from "sweetalert2";
 
 library.add(faTimes);
-const MySwal = withReactContent(Swal);
 
-function alertExit(){
-  MySwal.fire({
-    type: 'info',
-    title: "Are you sure?",
-    text: "If you leave now you will lose your current points...",
-    confirmButtonColor: '#ff0266',
-    background: '#ffde03'
-  });
-};
-
-const Navbar = () => (<nav className="navbar navbar-default">
+const Navbar = (props) => (<nav className="navbar navbar-default">
   <div className="container-fluid">
     {/* Brand and toggle get grouped for better mobile display */}
     <div className="navbar-header">
@@ -39,7 +26,8 @@ const Navbar = () => (<nav className="navbar navbar-default">
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li>
-          <FontAwesomeIcon onClick={alertExit} className="exitbutton" icon={faTimes}/>
+          {/*<FontAwesomeIcon onClick={props.alertExit} className="exitbutton" icon={faTimes}/>*/}
+          <div className="exitbutton" onClick={props.alertExit}>Resume Game</div>
         </li>
       </ul>
     </div>{/* /.navbar-collapse */}

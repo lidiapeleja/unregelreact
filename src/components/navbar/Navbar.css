@@ -104,14 +104,14 @@ body {
 /* START styling brom navbar-right */
 
 .navbar-right {
-  margin: 19px;
+  margin: 22px;
 }
 
 .exitbutton {
   justify-content: center;
   align-items: center;
-  font-size: 150%;
   color: white;
+  cursor: pointer;
 
 }
 

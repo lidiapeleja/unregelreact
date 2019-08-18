@@ -18,7 +18,7 @@ const AppRouter = props => {
     <div>
       <Router>
         <div>
-          <Navbar />
+          <Navbar alertExit={props.alertExit} />
           <ProgressBar percentage={props.percentage} />
             <Route path="/" exact="exact" component={Home} />
           <Route path="/loading" component={Loading} />
