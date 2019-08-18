@@ -12,10 +12,19 @@ class Tryagain extends React.Component {
   constructor(props) {
     super(props);
     this.goToNextPage = this.goToNextPage.bind(this);
+    this.skipTipPage = this.skipTipPage.bind(this);
+
   }
 
   goToNextPage(target) {
     this.props.history.push("/image");
+    console.log("going to image tip page");
+    return;
+  }
+
+  skipTipPage(target) {
+    this.props.history.push("/exercises/memorize");
+    console.log("going to memory verbs directly");
     return;
   }
 
@@ -26,6 +35,7 @@ class Tryagain extends React.Component {
           <FontAwesomeIcon icon={faPoop} />
         </div>
         <button onClick={this.goToNextPage} className="buttontip animated bounceIn delay-1s">Give me a tip </button>
+        <p className="skiptext animated bounceIn delay-1s" onClick={this.skipTipPage}>Skip tip</p>
       </div>
     );
   }
