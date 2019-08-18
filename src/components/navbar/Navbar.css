@@ -53,3 +53,26 @@ body {
   border-color: transparent;
 }
 
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.navbar-brand h1 {
+  font-size: 135%;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.navbar-brand h6{
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 70%;
+}
+

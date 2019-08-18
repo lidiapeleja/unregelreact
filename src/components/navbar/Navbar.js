@@ -11,15 +11,12 @@ const Navbar = () => (<nav className="navbar navbar-default">
         <span className="icon-bar"/>
         <span className="icon-bar"/>
       </button>
-      <a className="navbar-brand" href="/">UnregelApp</a>
+      <a className="navbar-brand" href="/"><h1>UnregelApp</h1><h6>Lern by Playing</h6></a>
     </div>
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
         <li>
           <a className="gamelink" href="/verbs-memory/">play!</a>
-        </li>
-        <li>
-          <a className="about" href="/about/">about UnregelApp</a>
         </li>
       </ul>
       <ul className="nav navbar-nav navbar-right">

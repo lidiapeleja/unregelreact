@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import AppRouter from "./components/AppRouter";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-// import { withRouter } from "react-router-dom";
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS} from "./config"
 library.add(fab, faPoop, faHeart);
 
