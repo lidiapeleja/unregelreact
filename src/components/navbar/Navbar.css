@@ -18,6 +18,7 @@ body {
   padding-left: 30px;
   padding-right: 20px;
   font-size: 130%;
+  margin-bottom: 8px;
 }
 
 .gamelink {
@@ -55,7 +56,6 @@ body {
 
 /* START styling brom navbar brand */
 
-
 .navbar-brand {
   display: flex;
   flex-direction: column;
@@ -63,13 +63,34 @@ body {
   margin-top: 5px;
 }
 
-.navbar-brand h1 {
+@media (max-width: 576px){
+  .navbar-default .navbar-brand {
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0;
+  }
+}
+
+.navbar-default .navbar-brand h1 {
   font-size: 135%;
-  margin: 0;
+  margin-top: 0;
   text-align: center;
   font-weight: 800;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
+
+
+@media (max-width: 576px){
+  .navbar-default .navbar-brand h1 {
+    font-size: 100%;
+    margin-bottom: 2px;
+
+  }
+  .navbar-default .navbar-brand h6 {
+    font-size: 55%;
+  }
+}
+
 
 .navbar-brand h6{
   text-align: center;
