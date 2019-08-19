@@ -7,18 +7,9 @@ import {faTimes} from "@fortawesome/free-solid-svg-icons";
 library.add(faTimes);
 
 const Navbar = (props) => (<nav className="navbar">
-      <a className="navbar-brand" href="http://unregelapp.com/"><h1>UnregelApp</h1><h6>Lern by Playing</h6></a>
-      <ul className="nav navbar-nav">
-        <li>
-          <a className="gamelink" href="/exercises/memorize">New game</a>
-        </li>
-      </ul>
-      <ul className="navbar-right">
-        <li>
-          {/*<FontAwesomeIcon onClick={props.alertExit} className="exitbutton" icon={faTimes}/>*/}
-          <div className="exitbutton" onClick={props.alertExit}>Restart Game</div>
-        </li>
-      </ul>
+      <div className="navbar-brand logo" href="http://unregelapp.com/"><h1 className="logoh1">UnregelApp</h1><h6 className="logoh6">Lern by Playing</h6></div>
+          <div className="navbar-brand newgame" href="/exercises/memorize">New game</div>
+          <div className="navbar-brand restart" onClick={props.alertExit}>Restart</div>
 </nav>)
 
 

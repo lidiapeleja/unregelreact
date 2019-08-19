@@ -4,122 +4,175 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
-  border: none;
+  text-align: center;
+  margin: 0;
+  height: 60px;
+}
+
+.navbar-brand {
+  height: 100%;
+  line-height: 140%;
+  font-size: 16px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logoh1 {
+  margin: 0;
+  font-size: 120%;
   font-weight: bolder;
-  color: #ff0266;
-  margin: 0%;
-  font-size: 100%;
 }
 
-.navbar-default .navbar-brand {
-  color: #ff0266;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 20px;
-  font-size: 130%;
-  margin-bottom: 8px;
+.logoh6 {
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-.gamelink {
-  background-color: #ff0266;
+.newgame {
+  align-items: center;
+  font-size: 15px;
+  padding-top: 19px;
+  cursor: pointer;
+  background-color: black;
+  font-weight: 700;
 }
-
-.navbar-default .navbar-nav > li > a {
+.newgame:hover{
+   background-color: #FF0266;
   color: white;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
-@media (max-width: 750px) {
-  .navbar-default .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.restart{
+  font-size: 15px;
+  padding-top: 19px;
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+.restart:hover{
+  color: #FF0266;
 }
 
-.navbar-default .navbar-toggle {
-  border-color: white;
-}
+/*.navbar {*/
+/*  background-color: transparent;*/
+/*  border: none;*/
+/*  font-weight: bolder;*/
+/*  color: #ff0266;*/
+/*  font-size: 100%;*/
+/*}*/
 
-.navbar-collapse{
-  border-top: 1px solid transparent;
-}
+/*.navbar-default .navbar-brand {*/
+/*  color: #ff0266;*/
+/*  padding-top: 20px;*/
+/*  padding-left: 30px;*/
+/*  padding-right: 20px;*/
+/*  font-size: 130%;*/
+/*  margin-bottom: 8px;*/
+/*}*/
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: transparent;
-}
+/*.gamelink {*/
+/*  background-color: #ff0266;*/
+/*}*/
+
+/*.navbar-default .navbar-nav > li > a {*/
+/*  color: white;*/
+/*  padding-top: 22px;*/
+/*  padding-bottom: 22px;*/
+/*}*/
+
+/*@media (max-width: 750px) {*/
+/*  .navbar-default .navbar-nav > li > a {*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 10px;*/
+/*  }*/
+/*}*/
+
+/*.navbar-default .navbar-toggle .icon-bar {*/
+/*  background-color: white;*/
+/*}*/
+
+/*.navbar-default .navbar-toggle {*/
+/*  border-color: white;*/
+/*}*/
+
+/*.navbar-collapse{*/
+/*  border-top: 1px solid transparent;*/
+/*}*/
+
+/*.navbar-default .navbar-collapse, .navbar-default .navbar-form {*/
+/*  border-color: transparent;*/
+/*}*/
 
 /* START styling brom navbar brand */
 
-.navbar-brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 5px;
-}
+/*.navbar-brand {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  margin-top: 5px;*/
+/*}*/
 
-@media (max-width: 576px){
-  .navbar-default .navbar-brand {
-    padding: 0px;
-    padding-left: 10px;
-    margin: 0;
-  }
-}
+/*@media (max-width: 576px){*/
+/*  .navbar-default .navbar-brand {*/
+/*    padding: 0px;*/
+/*    padding-left: 10px;*/
+/*    margin: 0;*/
+/*  }*/
+/*}*/
 
-.navbar-default .navbar-brand h1 {
-  font-size: 135%;
-  margin-top: 0;
-  text-align: center;
-  font-weight: 800;
-  margin-bottom: 5px;
-}
-
-
-@media (max-width: 576px){
-  .navbar-default .navbar-brand h1 {
-    font-size: 100%;
-    margin-bottom: 2px;
-
-  }
-  .navbar-default .navbar-brand h6 {
-    font-size: 55%;
-  }
-}
+/*.navbar-default .navbar-brand h1 {*/
+/*  font-size: 135%;*/
+/*  margin-top: 0;*/
+/*  text-align: center;*/
+/*  font-weight: 800;*/
+/*  margin-bottom: 5px;*/
+/*}*/
 
 
-.navbar-brand h6{
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 70%;
-}
+/*@media (max-width: 576px){*/
+/*  .navbar-default .navbar-brand h1 {*/
+/*    font-size: 100%;*/
+/*    margin-bottom: 2px;*/
+
+/*  }*/
+/*  .navbar-default .navbar-brand h6 {*/
+/*    font-size: 55%;*/
+/*  }*/
+/*}*/
+
+
+/*.navbar-brand h6{*/
+/*  text-align: center;*/
+/*  margin: 0;*/
+/*  text-transform: uppercase;*/
+/*  font-weight: 300;*/
+/*  font-size: 70%;*/
+/*}*/
 
 /* END styling brom navbar brand */
 /* START styling brom navbar-right */
 
-.navbar-right {
-  margin: 22px;
-}
+/*.navbar-right {*/
+/*  margin: 22px;*/
+/*}*/
 
-.exitbutton {
-  justify-content: center;
-  align-items: center;
-  color: white;
-  cursor: pointer;
+/*.exitbutton {*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  color: white;*/
+/*  cursor: pointer;*/
 
-}
+/*}*/
 
-.exitbutton:hover {
-  color: black;
-}
+/*.exitbutton:hover {*/
+/*  color: black;*/
+/*}*/
 
-/*styling from hover button play!*/
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #FF0266;
-}
+/*!*styling from hover button play!*!*/
+/*.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {*/
+/*  color: #FF0266;*/
+/*}*/
