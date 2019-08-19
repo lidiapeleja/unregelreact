@@ -57,6 +57,19 @@ body {
   color: #FF0266;
 }
 
+@media (max-width: 576px){
+  .newgame, .restart {
+    font-size: 70%;
+  }
+  .navbar-brand{
+    line-height: 180%;
+    padding: 19px 8px 15px 8px;
+  }
+  .logo{
+    padding-top: 15px;
+  }
+}
+
 /*.navbar {*/
 /*  background-color: transparent;*/
 /*  border: none;*/
