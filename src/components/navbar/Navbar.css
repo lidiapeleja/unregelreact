@@ -47,14 +47,15 @@ body {
 .restart{
   font-size: 15px;
   padding-top: 19px;
-  color: white;
+  padding-right: 20px;
+  color: #FF0266;
   float: right;
   cursor: pointer;
   font-weight: 700;
 }
 
 .restart:hover{
-  color: #FF0266;
+  color: black;
 }
 
 @media (max-width: 576px){
