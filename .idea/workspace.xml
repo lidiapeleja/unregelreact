@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/react-facebook-login" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="114">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="324">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -211,12 +212,12 @@
       <workItem from="1566140173557" duration="8000" />
       <workItem from="1566142945746" duration="797000" />
       <workItem from="1566197851330" duration="327000" />
-      <workItem from="1566235401385" duration="3560000" />
+      <workItem from="1566235401385" duration="4453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58120000" />
+    <option name="totallyTimeSpent" value="59013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -497,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="114">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -507,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="324">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
         </state>
       </provider>
     </entry>
