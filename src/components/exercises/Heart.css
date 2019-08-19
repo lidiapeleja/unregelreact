@@ -5,6 +5,7 @@
   padding-bottom: 10px;
   background-color: #FFDE03;
   display: block inline-block;
+  cursor: none;
 }
 
 .container-heart .svg-inline--fa{
