@@ -31,9 +31,16 @@
 .container-verbs{
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: auto;
   justify-content: center;
   align-items: center;
+}
+
+
+@media (min-width: 1100px) {
+  .container-verbs {
+    height: 550px;
+  }
 }
 
 .container-verbs h1{
