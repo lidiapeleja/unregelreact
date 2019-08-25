@@ -32,6 +32,7 @@ class Tryagain extends React.Component {
     return (
       <div className="container tryagain">
         <div className="icon-poop animated shake">
+          <h4 className="animated bounceIn">-5</h4>
           <FontAwesomeIcon icon={faPoop} />
         </div>
         <button onClick={this.goToNextPage} className="buttontip animated bounceIn delay-1s">Give me a tip </button>

@@ -42,7 +42,7 @@ input {
 /*styling button*/
 
 .containerbutton {
-  height: 200px;
+  /*height: 200px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,4 +63,11 @@ input {
 .btn:hover {
   color: #FF0266;
   background-color: white;
+}
+
+.nonactive {
+  display: none;
+}
+.active {
+  display: block ;
 }

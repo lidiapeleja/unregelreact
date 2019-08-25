@@ -41,5 +41,12 @@
   margin-top: 20px;
   cursor: pointer;
   color: black;
+}
 
+.tryagain h4{
+  color: black;
+  text-shadow: none;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
 }

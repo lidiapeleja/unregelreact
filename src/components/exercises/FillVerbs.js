@@ -39,6 +39,10 @@ class FillVerbs extends React.Component {
             this.props.goToTryAgain(this.props.history);
         }
     }
+
+    if (this.state.vowel2 !== "" || this.state.vowel3 !== "" ){
+        console.log("some of your fiels are empty");
+    }
   }
 
   render() {
@@ -76,6 +80,7 @@ class FillVerbs extends React.Component {
           </div>
           <div className="containerbutton container">
               <button type="submit" className="btn">Check answer</button>
+              <h6 className="textbutton">Please fill up all the fields</h6>
           </div>
         </div>
       </form>
