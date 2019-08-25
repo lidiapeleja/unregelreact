@@ -150,6 +150,13 @@ class App extends React.Component {
     this.startAgain(routerHistory);
       return;
     }
+     else {
+      this.setState( state =>({
+        hearts: this.state.hearts - 1,
+        points: this.state.points - 5,
+      }));
+      console.log("this is the value for hearts: " + this.state.hearts);
+    }
   }
 
   alertExit(routerHistory){

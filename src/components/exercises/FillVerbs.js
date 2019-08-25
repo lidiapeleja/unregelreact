@@ -34,6 +34,8 @@ class FillVerbs extends React.Component {
             this.props.incrementCurrentVerbIdx();
         } else {
             this.props.loseHeart(this.props.history);
+            console.log("theoretically, loseHeart() has been executed");
+            console.log(this.props.history);
             this.props.goToTryAgain(this.props.history);
         }
     }
