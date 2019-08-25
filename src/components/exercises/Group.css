@@ -2,7 +2,15 @@
   color: black;
   font-size: 1.6em;
   text-align: center;
- }
+  }
+
+  .vowelspink{
+      color: #FF0266;
+      display: initial;
+      font-size: 14px;
+      margin-left: 0;
+
+  }
 
  @media (max-width: 600px) {
      .group h5 {

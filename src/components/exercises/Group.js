@@ -1,8 +1,5 @@
 import React from "react";
 import "./Group.css";
-// import verbsData from '../../data/verbs.json';
-
-// const firstVerb = verbsData.verbs[0];
 
 class Group extends React.Component {
   constructor(props) {
@@ -15,10 +12,9 @@ class Group extends React.Component {
     return;
   };
 
-
   render() {
     return (<div className="group">
-      <h5>{this.props.currentVerb.vowel1} - {this.props.currentVerb.vowel21}{this.props.currentVerb.vowel22} - {this.props.currentVerb.vowel31}{this.props.currentVerb.vowel32}</h5>
+      <h5>{this.props.currentVerb.vowel1} - <span className="vowelspink">{this.props.currentVerb.vowel21}{this.props.currentVerb.vowel22}</span> - <span className="vowelspink">{this.props.currentVerb.vowel31}{this.props.currentVerb.vowel32}</span></h5>
     </div>);
   }
 };

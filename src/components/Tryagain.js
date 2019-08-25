@@ -35,7 +35,7 @@ class Tryagain extends React.Component {
           <FontAwesomeIcon icon={faPoop} />
         </div>
         <button onClick={this.goToNextPage} className="buttontip animated bounceIn delay-1s">Give me a tip </button>
-        <p className="skiptext animated bounceIn delay-1s" onClick={this.skipTipPage}>Skip tip</p>
+        <p className="skiptext animated bounceIn delay-2s" onClick={this.skipTipPage}>Skip tip</p>
       </div>
     );
   }
