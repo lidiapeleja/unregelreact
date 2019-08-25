@@ -5,4 +5,14 @@
     color: black;
     background-color: #FFDE03;
     cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanpoints{
+    font-size: 50%;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
 }

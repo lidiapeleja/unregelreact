@@ -4,10 +4,9 @@
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/react-facebook-login" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tryagain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tryagain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/Group.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Group.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/ImagePhrase.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/ImagePhrase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exercises/Points.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Points.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exercises/Points.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Points.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,18 +22,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="446">
@@ -43,44 +30,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/exercises/Group.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="228">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exercises/Group.js">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="91" lean-forward="true" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Tryagain.css">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Tryagain.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/HeartPoints.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -114,21 +95,18 @@
         <option value="$PROJECT_DIR$/src/components/Loading.js" />
         <option value="$PROJECT_DIR$/src/components/YouAreAwesome.js" />
         <option value="$PROJECT_DIR$/src/components/YouAreAwesome.css" />
-        <option value="$PROJECT_DIR$/src/components/exercises/Points.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/ProgressBar.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/ProgressBar.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/Heart.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/About.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/About.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/ImagePhrase.js" />
-        <option value="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" />
         <option value="$PROJECT_DIR$/src/components/Tryagain.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/config.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/AppRouter.js" />
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.css" />
-        <option value="$PROJECT_DIR$/src/components/exercises/Points.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/Heart.css" />
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css" />
@@ -139,6 +117,9 @@
         <option value="$PROJECT_DIR$/src/components/exercises/ImagePhrase.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/Group.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/Group.css" />
+        <option value="$PROJECT_DIR$/src/components/exercises/Points.js" />
+        <option value="$PROJECT_DIR$/src/components/exercises/Points.css" />
+        <option value="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" />
       </list>
     </option>
   </component>
@@ -270,12 +251,12 @@
       <workItem from="1566235401385" duration="5551000" />
       <workItem from="1566285807588" duration="318000" />
       <workItem from="1566304486877" duration="627000" />
-      <workItem from="1566750140649" duration="3580000" />
+      <workItem from="1566750140649" duration="4166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64636000" />
+    <option name="totallyTimeSpent" value="65222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -395,13 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/HeartPoints.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -435,24 +409,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -524,37 +484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/Group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tryagain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -568,10 +501,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tryagain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/Group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/Group.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="228">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="91" lean-forward="true" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/Points.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/HeartPoints.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
