@@ -62,11 +62,11 @@ class MemorizeVerbs extends React.Component {
 
 function calcConjugations(count, verb) {
   if (count === 0) {
-    return [verb.infinitive];
+    return [verb.infinitive1 + verb.vowel1 + verb.infinitive2];
   } else if (count === 1) {
-    return [verb.infinitive, verb.pastTense];
+    return [verb.infinitive1 + verb.vowel1 + verb.infinitive2, verb.pastTense1 + verb.vowel2 + verb.pastTense2];
   } else if (count === 2) {
-    return [verb.infinitive, verb.pastTense, verb.pastParticiple];
+    return [verb.infinitive1 + verb.vowel1 + verb.infinitive2, verb.pastTense1 + verb.vowel2 + verb.pastTense2, verb.pastParticiple0 + " " + verb.pastParticiple1 + verb.vowel3 + verb.pastParticiple2];
   } else {
     throw new Error(`Illegal conjugation count=${count}`)
   }
