@@ -34,20 +34,21 @@
 }
 
 .box2 h6 {
-  background: lightpink;
+  background: white;
   font-size: 16px;
+    font-weight: 900;
 }
 
 .box2 h2 {
     color: black;
     font-size: 1.6em;
     text-align: center;
-  background: aqua;
+  background: #FFDE03;
   margin: 0;
     /*text-shadow: 2px 2px 4px #000000;*/
   }
 
 .box2 .group h5 {
-  background: greenyellow;
+  background: #FFDE03;
   font-size: 14px;
 }

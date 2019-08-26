@@ -94,7 +94,7 @@ class FillVerbs extends React.Component {
           <div className="containerbutton container">
               <button type="submit" onClick = {this.addClass} className="btn">Check answer</button>
               <h6 className="textbutton nonactive" className = {this.state.issentencedisplayed ? 'active':'nonactive'}
-                  >Please fill up all the fields</h6>
+                  >Fill up all the empty fields</h6>
           </div>
         </div>
       </form>
