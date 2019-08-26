@@ -10,10 +10,13 @@ class FillVerbs extends React.Component {
 
     this.state = {
       vowel2: "",
-      vowel3: ""
+      vowel3: "",
+        issentencedisplayed: false
     };
 
     this.checkVowels = this.checkVowels.bind(this);
+      this.addClass = this.addClass.bind(this);
+
   }
 
   checkVowels(event) {
@@ -41,11 +44,25 @@ class FillVerbs extends React.Component {
     }
 
     if (this.state.vowel2 !== "" || this.state.vowel3 !== "" ){
-        console.log("some of your fiels are empty");
-    }
+        console.log("some of your fields are empty");
+        this.addClass();
+    };
   }
 
-  render() {
+    addClass() {
+          this.setState(state => ({
+              issentencedisplayed : true
+          }));
+          console.log("issentencedisplayed is set to true");
+        return (
+            <div>
+                {list.map(item => <ListItem item={item} />)}
+            </div>
+        );
+      };
+
+
+      render() {
     return (
       <form onSubmit={this.checkVowels}>
         <div className="whole-container">
@@ -80,7 +97,7 @@ class FillVerbs extends React.Component {
           </div>
           <div className="containerbutton container">
               <button type="submit" className="btn">Check answer</button>
-              <h6 className="textbutton">Please fill up all the fields</h6>
+              <h6 className="textbutton nonactive">Please fill up all the fields</h6>
           </div>
         </div>
       </form>
