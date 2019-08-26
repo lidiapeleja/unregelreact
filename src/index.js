@@ -153,11 +153,14 @@ class App extends React.Component {
      else {
       this.setState( state =>({
         hearts: this.state.hearts - 1,
-        points: this.state.points - 5,
+      }));
+    }
+      if (this.state.points >= 5 ){
+        this.setState( state =>({
+        points: this.state.points - 5
       }));
       console.log("this is the value for hearts: " + this.state.hearts);
-    }
-  }
+  }};
 
   alertExit(routerHistory){
     MySwal.fire({

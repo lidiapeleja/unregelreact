@@ -66,5 +66,12 @@ input {
 }
 
 .nonactive {
+  background: red;
   display: none;
+}
+
+.active {
+  background: blue;
+  display: block;
+
 }

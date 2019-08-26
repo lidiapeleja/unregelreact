@@ -1,7 +1,7 @@
 import React from "react";
 import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
-// import verbsData from "../../data/verbs.json";
+import classNames from 'classnames';
 import { withRouter } from "react-router-dom";
 
 class FillVerbs extends React.Component {
@@ -48,12 +48,14 @@ class FillVerbs extends React.Component {
   }
 
     addClass() {
+      if (this.state.vowel2 !== "" || this.state.vowel3 !== "" ) {
           this.setState(state => ({
               issentencedisplayed : true
           }));
           console.log("issentencedisplayed is set to true");
-        const clicked = e.target.id;
-    };
+      };
+      }
+
 
 
       render() {
@@ -90,8 +92,9 @@ class FillVerbs extends React.Component {
           </h1>
           </div>
           <div className="containerbutton container">
-              <button type="submit" className="btn">Check answer</button>
-              <h6 className="textbutton nonactive">Please fill up all the fields</h6>
+              <button type="submit" onClick = {this.addClass} className="btn">Check answer</button>
+              <h6 className="textbutton nonactive" className = {this.state.addClass ? 'active':''}
+                  >Please fill up all the fields</h6>
           </div>
         </div>
       </form>
