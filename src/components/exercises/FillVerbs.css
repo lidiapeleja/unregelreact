@@ -72,6 +72,6 @@ input {
 
 .active {
   background: blue;
-  display: block;
+  display: inline-block;
 
 }
