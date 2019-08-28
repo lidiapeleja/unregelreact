@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-facebook-login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-facebook-login/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exercises/FillVerbs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/FillVerbs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,28 +22,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="64" column="77" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="77" />
+            <state relative-caret-position="346">
+              <caret line="185" column="7" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="467">
+              <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/verbs.json">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="253" column="21" lean-forward="true" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
+            <state relative-caret-position="352">
+              <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,13 +105,13 @@
         <option value="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" />
         <option value="$PROJECT_DIR$/src/components/Tryagain.js" />
         <option value="$PROJECT_DIR$/src/components/Tryagain.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/ImagePhrase.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/FillVerbs.js" />
-        <option value="$PROJECT_DIR$/src/components/exercises/FillVerbs.css" />
         <option value="$PROJECT_DIR$/src/data/verbs.json" />
-        <option value="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css" />
+        <option value="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/exercises/FillVerbs.css" />
       </list>
     </option>
   </component>
@@ -241,18 +248,21 @@
       <workItem from="1566809690748" duration="432000" />
       <workItem from="1566822579173" duration="3153000" />
       <workItem from="1566827036466" duration="106000" />
-      <workItem from="1566839533582" duration="5155000" />
+      <workItem from="1566839533582" duration="6117000" />
+      <workItem from="1566889329486" duration="447000" />
+      <workItem from="1566893707573" duration="6000" />
+      <workItem from="1566975316774" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78686000" />
+    <option name="totallyTimeSpent" value="80373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85470086" visible="true" weight="0.20516963" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85470086" visible="true" weight="0.2113951" />
       <window_info id="Structure" order="1" sideWeight="0.14529915" side_tool="true" weight="0.40306947" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -267,7 +277,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17256011" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17223911" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -493,16 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -510,20 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.js">
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+        <state relative-caret-position="242">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -536,15 +526,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="64" column="77" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="77" />
+        <state relative-caret-position="422">
+          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="346">
+          <caret line="185" column="7" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/FillVerbs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
         </state>
       </provider>
     </entry>

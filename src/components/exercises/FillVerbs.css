@@ -47,7 +47,13 @@ input {
   justify-content: center;
   align-items: center;
     flex-direction: column;
+}
 
+
+@media (max-width: 1100px) {
+  .containerbutton {
+    height: 200px;
+  }
 }
 
 .btn {

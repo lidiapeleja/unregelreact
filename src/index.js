@@ -180,7 +180,8 @@ class App extends React.Component {
           hearts: INITIAL_HEARTS,
           percentage: 1
         }));
-        history.go(0);
+        // window.location.reload();
+        // history.go(0);
         return;
       }
     });
