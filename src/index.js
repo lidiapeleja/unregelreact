@@ -23,7 +23,7 @@ class App extends React.Component {
     this.state = {
       points: 0,
       callCount: 0,
-      currentVerbIdx: 0,
+      currentVerbIdx: 23,
       hearts: INITIAL_HEARTS,
       percentage: 1,
     };
@@ -77,6 +77,12 @@ class App extends React.Component {
   }
 
   incrementCurrentVerbIdx() {
+    if (!this.state.currentVerbIdx + 1){
+      this.setState(state => ({
+        currentVerbIdx: 1
+      }));
+      alert("you have won!!!");
+    }
     this.setState(state => ({
       currentVerbIdx: this.state.currentVerbIdx + 1
     }));
