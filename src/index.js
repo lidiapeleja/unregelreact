@@ -76,16 +76,18 @@ class App extends React.Component {
     });
   }
 
-  incrementCurrentVerbIdx() {
+  incrementCurrentVerbIdx(routerHistory) {
     if (!this.state.currentVerbIdx + 1){
       this.setState(state => ({
         currentVerbIdx: 1
       }));
       alert("you have won!!!");
+      routerHistory.push("/congratulations");
+    } else {
+      this.setState(state => ({
+        currentVerbIdx: this.state.currentVerbIdx + 1
+      }));
     }
-    this.setState(state => ({
-      currentVerbIdx: this.state.currentVerbIdx + 1
-    }));
   }
 
   incrementPoint() {
