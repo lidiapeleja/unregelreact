@@ -29,6 +29,10 @@ export const VERBS_ORDERED = [
   verbs.ziehen
 ];
 
+export function lookupVerb(verbIdx) {
+  return VERBS_ORDERED[verbIdx];
+}
+
 export const WORDS_PER_POINT = 3;
 export const REPETITIONS = 6;
 export const INITIAL_HEARTS = 5;

@@ -9,6 +9,7 @@ import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
 import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
+import Congrats from "./exercises/congrats.js";
 import ProgressBar from "./exercises/ProgressBar.js";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -76,6 +77,8 @@ const AppRouter = props => {
               render={routeProps => <Heart hearts={props.hearts}
               />}
           />
+          <Route path="/congrats" component={Congrats} />
+
         </div>
       </Router>
     </div>
