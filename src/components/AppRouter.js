@@ -77,8 +77,8 @@ const AppRouter = props => {
               render={routeProps => <Heart hearts={props.hearts}
               />}
           />
-          <Route path="/congrats" component={Congrats} />
-
+          <Route path="/congrats" render={routeProps => <Congrats points={props.points}
+          />}/>
         </div>
       </Router>
     </div>
