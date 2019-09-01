@@ -37,6 +37,7 @@ input {
   color: #ff0266;
   background-color: transparent;
   padding: 0;
+  text-align: center;
 }
 
 /*styling button*/
@@ -81,4 +82,15 @@ input {
   display: inline-block;
     margin-top: 22px;
 
+}
+
+input[type=text]:focus {
+  border: 5px solid #FF0266;
+  outline-color: none;
+  transition: 0.5s;
+
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
