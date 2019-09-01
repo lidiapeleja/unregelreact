@@ -14,8 +14,30 @@
     text-transform: uppercase;
 }
 
-.whatsappshare{
+.congrats h2 {
+    text-align: center;
+    font-size: 160%;
+    letter-spacing: 2px;
+}
+
+
+.whatsappshare {
     justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 80%;
     align-items: center;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    text-transform: lowercase;
+}
+
+.whatsapp{
+    margin-bottom: 10px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(3px 3px 3px green);
 }

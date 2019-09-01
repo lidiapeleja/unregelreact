@@ -24,7 +24,6 @@ class YouAreAwesome extends React.Component {
       <div onClick={this.goToNextPage} className="container youareawesome">
         <div className="icon-poop animated bounceIn">
           <h4 className="animated bounceIn">+10</h4>
-          <FontAwesomeIcon icon={faThumbsUp} />
         </div>
       </div>
     );

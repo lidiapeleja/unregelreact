@@ -83,7 +83,6 @@ class App extends React.Component {
             const nextVerb = lookupVerb(nextVerbIdx);
 
             if (!nextVerb) {
-                alert("you have won!!!");
                 routerHistory.push("/congrats");
                 return {
                     currentVerbIdx: 1
