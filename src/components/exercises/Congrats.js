@@ -4,7 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 const Congrats = (props) => (<nav className="container">
     <div className="congrats">
-        hello
+        <div className="animation"><h2>Congratulations!</h2></div>
     </div>
 
 </nav>)
