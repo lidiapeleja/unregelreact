@@ -34,7 +34,7 @@ class FillVerbs extends React.Component {
             this.props.addPoints(10);
             this.props.fromIndextoPercentage();
             this.props.youAreAwesome(this.props.history);
-            this.props.incrementCurrentVerbIdx();
+            this.props.incrementCurrentVerbIdx(this.props.history);
         } else {
             this.props.loseHeart(this.props.history);
             this.props.goToTryAgain(this.props.history);

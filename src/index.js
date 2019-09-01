@@ -84,7 +84,7 @@ class App extends React.Component {
 
             if (!nextVerb) {
                 alert("you have won!!!");
-                routerHistory.push("/congratulations");
+                routerHistory.push("/congrats");
                 return {
                     currentVerbIdx: 1
                 };
