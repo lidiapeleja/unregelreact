@@ -3,11 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+
 }
 
-.congrats h2 {
-}
 
 .displaypoints{
     text-align: center;
+    color: black;
+    font-size: 90%;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
