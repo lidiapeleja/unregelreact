@@ -13,31 +13,50 @@ body {
   text-align: center;
   color: #FF0266;
   margin-top: 160px;
-
-
 }
 
 .w3 {
   font-size: 3rem;
-  margin-top: 100px;
-
+  /*margin-top: 100px;*/
 }
 
 .w1 {
   font-size: 10rem;
+  margin-top: -9px;
+}
+
+.w2{
+  font-size: 3rem;
   margin-top: -49px;
+  margin-bottom: -15px;
+}
+
+.w4{
+  margin-top: 0;
+  margin-bottom: -45px;
 }
 
 .w6 {
   font-size: 2.5rem;
   margin-top: -42px;
+  color: black;
 }
 
 .w5 {
   font-size: 3rem;
   margin-top: -21px;
+  color: black;
 }
 
 .containerwelcome {
   height: 480px;
+}
+
+.containerbuttonstart {
+  /*height: 200px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
