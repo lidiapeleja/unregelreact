@@ -13,7 +13,6 @@ class Tryagain extends React.Component {
     super(props);
     this.goToNextPage = this.goToNextPage.bind(this);
     this.skipTipPage = this.skipTipPage.bind(this);
-
   }
 
   goToNextPage(target) {

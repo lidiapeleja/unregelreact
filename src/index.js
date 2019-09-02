@@ -180,14 +180,13 @@ class App extends React.Component {
     alertExit(routerHistory) {
         MySwal.fire({
             type: 'info',
-            title: "Are you sure? 🙄",
-            text: "If you leave now you will lose your current points...",
+            title: "Are you sure?",
+            confirmButtonText: 'Yes',
             showCancelButton: true,
             background: '#ffde03',
             confirmButtonColor: '#ff0266'
         }).then((result) => {
             if (result.value) {
-                console.log("i want to quit the game");
                 this.setState(state => ({
                     points: 0,
                     callCount: 0,
