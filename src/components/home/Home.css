@@ -17,7 +17,6 @@ body {
 
 .w3 {
   font-size: 3rem;
-  /*margin-top: 100px;*/
 }
 
 .w1 {
@@ -28,11 +27,12 @@ body {
 .w2{
   font-size: 3rem;
   margin-top: -49px;
-  margin-bottom: -15px;
+  margin-bottom: -18px;
 }
 
 .w4{
   margin-top: 0;
+  font-size: 2rem;
   margin-bottom: -45px;
 }
 
