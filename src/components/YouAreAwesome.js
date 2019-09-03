@@ -3,9 +3,8 @@ import "./YouAreAwesome.css";
 import { withRouter } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faPoop, faThumbsUp);
+library.add(faPoop);
 
 class YouAreAwesome extends React.Component {
   constructor(props) {
@@ -22,7 +21,7 @@ class YouAreAwesome extends React.Component {
     return (
       <div onClick={this.goToNextPage} className="container youareawesome">
         <div className="icon-poop animated bounceIn">
-          <h4 className="animated bounceIn">+10</h4>
+          <h4 className="animated bounceIn">+10 <span className="spanpoints">Points</span></h4>
         </div>
       </div>
     );
