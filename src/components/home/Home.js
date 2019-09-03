@@ -25,7 +25,7 @@ class WelcomeContainer extends React.Component {
           <div className="w5 animation4 animated fadeIn">German</div>
           <div className="w5 animation5 animated fadeIn">Verbs</div>
         </div>
-          <div className="containerbuttonstart animated fadeIn delay-2s container">
+          <div className="containerbuttonstart animated fadeIn delay-1s container">
             <button type="submit" onClick = {this.toNextPage} className="btn">START PLAYING</button>
           </div>
       </div>

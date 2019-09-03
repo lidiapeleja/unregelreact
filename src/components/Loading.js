@@ -26,7 +26,7 @@ class Loading extends React.Component {
           <div />
           <div />
         </div>
-        <div className="loadingtext">Loading...</div>
+        <div className="loadingtext">Loading Game...</div>
       </div>
     );
   }

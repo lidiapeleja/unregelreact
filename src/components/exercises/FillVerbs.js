@@ -21,7 +21,6 @@ class FillVerbs extends React.Component {
   checkVowels(event) {
       event.preventDefault();
     if (this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
-        console.log("you have pressed keyboard");
         if (
             isVowelsCorrect(
                 this.state.vowel2,
@@ -41,7 +40,6 @@ class FillVerbs extends React.Component {
     }
 
     if (this.state.vowel2 !== "" || this.state.vowel3 !== "" ){
-        console.log("some of your fields are empty");
         this.addClass();
     };
   }
@@ -51,7 +49,6 @@ class FillVerbs extends React.Component {
           this.setState(state => ({
               issentencedisplayed : true
           }));
-          console.log("issentencedisplayed is set to true");
       };
       }
 

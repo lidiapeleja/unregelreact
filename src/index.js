@@ -192,9 +192,10 @@ class App extends React.Component {
                     hearts: INITIAL_HEARTS,
                     percentage: 1
                 }));
+                routerHistory.push("/loading");
+                return;
             }
         });
-        // routerHistory.push("/");
     };
 
 
