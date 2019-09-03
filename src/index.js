@@ -9,12 +9,10 @@ import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS, lookupVerb} from "./config"
-import createHistory from 'history/createBrowserHistory'
 
 library.add(fab, faPoop, faHeart);
 
 const MySwal = withReactContent(Swal)
-const history = createHistory();
 
 class App extends React.Component {
     constructor() {
@@ -138,7 +136,7 @@ class App extends React.Component {
                 state.hearts = INITIAL_HEARTS
             }
         );
-        routerHistory.push("/");
+        routerHistory.push("/loading");
     }
 
     // multiply index of verbs * 4 so you get the % for progress bar
@@ -194,11 +192,9 @@ class App extends React.Component {
                     hearts: INITIAL_HEARTS,
                     percentage: 1
                 }));
-                // window.location.reload();
-                // history.go(0);
-                return;
             }
         });
+        // routerHistory.push("/");
     };
 
 

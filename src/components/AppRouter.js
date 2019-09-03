@@ -11,20 +11,22 @@ import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
 import Congrats from "./exercises/Congrats.js";
 import ProgressBar from "./exercises/ProgressBar.js";
+import NotFound from "./exercises/NotFound.js";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const AppRouter = props => {
   return (
     <div>
       <Router>
+        <Switch>
         <div>
           <Navbar alertExit={props.alertExit} />
           <ProgressBar percentage={props.percentage} />
-            <Route path="/" exact="exact" component={Home} />
-          <Route path="/loading" component={Loading} />
+            <Route exact path="/" component={Home} />
+          <Route exact path="/loading" component={Loading} />
           <Route
-            path="/exercises/memorize"
+            exact path="/exercises/memorize"
             render={routeProps => (
               <MemorizeVerbs
                 {...routeProps}
@@ -37,7 +39,7 @@ const AppRouter = props => {
           />
 
           <Route
-            path="/exercises/fill"
+            exact path="/exercises/fill"
             render={routeProps => (
               <FillVerbs
                 {...routeProps}
@@ -57,7 +59,7 @@ const AppRouter = props => {
             )}
           />
           <Route
-            path="/image"
+              exact path="/image"
             render={routeProps => (
               <ImagePhrase {...routeProps}
                 points={props.points}
@@ -65,21 +67,23 @@ const AppRouter = props => {
                  />
             )}
           />
-          <Route path="/try-again" component={Tryagain} />
-          <Route path="/well-done" component={YouAreAwesome} />
+          <Route exact path="/try-again" component={Tryagain} />
+          <Route exact path="/well-done" component={YouAreAwesome} />
           <Route
-            path="/testing"
+              exact path="/testing"
             render={routeProps => <HeartPoints points={props.points}
             />}
           />
           <Route
-              path="/hearts"
+              exact path="/hearts"
               render={routeProps => <Heart hearts={props.hearts}
               />}
           />
-          <Route path="/congrats" render={routeProps => <Congrats points={props.points}
+          <Route exact path="/congrats" render={routeProps => <Congrats points={props.points}
           />}/>
+          <Route component={NotFound} />
         </div>
+        </Switch>
       </Router>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
-import classNames from 'classnames';
 import { withRouter } from "react-router-dom";
 
 class FillVerbs extends React.Component {
