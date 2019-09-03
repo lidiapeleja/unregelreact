@@ -19,11 +19,12 @@ const AppRouter = props => {
   return (
     <div>
       <Router>
-        <Switch>
         <div>
           <Navbar alertExit={props.alertExit} />
           <ProgressBar percentage={props.percentage} />
-            <Route exact path="/" component={Home} />
+          <Switch>
+
+          <Route exact path="/" component={Home} />
           <Route exact path="/loading" component={Loading} />
           <Route
             exact path="/exercises/memorize"
@@ -82,8 +83,8 @@ const AppRouter = props => {
           <Route exact path="/congrats" render={routeProps => <Congrats points={props.points}
           />}/>
           <Route component={NotFound} />
+          </Switch>
         </div>
-        </Switch>
       </Router>
     </div>
   );
