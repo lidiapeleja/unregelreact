@@ -68,7 +68,7 @@ class FillVerbs extends React.Component {
               value={this.state.vowel2}
               autoCorrect="off"
               autoCapitalize="none"
-              onChange={e => this.setState({ vowel2: e.target.value })}
+              onChange={e => this.setState({ vowel2: e.target.value.toLowerCase() })}
               maxLength="2"
             />
             {this.props.currentVerb.pastTense2}
@@ -81,7 +81,7 @@ class FillVerbs extends React.Component {
               value={this.state.vowel3}
               autoCorrect="off"
               autoCapitalize="none"
-              onChange={e => this.setState({ vowel3: e.target.value })}
+              onChange={e => this.setState({ vowel3: e.target.value.toLowerCase() })}
               maxLength="2"
             />
             {this.props.currentVerb.pastParticiple2}
