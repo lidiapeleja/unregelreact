@@ -87,7 +87,7 @@ class FillVerbs extends React.Component {
             {this.props.currentVerb.pastParticiple2}
           </h1>
           </div>
-          <div className="containerbutton container">
+          <div className="containerbutton">
               <button type="submit" onClick = {this.addClass} className="btn">Check answer</button>
               <h6 className="textbutton nonactive" className = {this.state.issentencedisplayed ? 'active':'nonactive'}
                   >Fill up all the empty fields</h6>
