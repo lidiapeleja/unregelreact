@@ -6,22 +6,24 @@ import {library} from "@fortawesome/fontawesome-svg-core";
 import {fab} from "@fortawesome/free-brands-svg-icons";
 import {faPoop} from "@fortawesome/free-solid-svg-icons";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS, lookupVerb} from "./config"
 
 library.add(fab, faPoop, faHeart);
 
-const MySwal = withReactContent(Swal)
+const MySwal = withReactContent(Swal);
 
 class App extends React.Component {
+
+
     constructor() {
         super();
 
         this.state = {
             points: 0,
             callCount: 0,
-            currentVerbIdx: 0,
+            currentVerbIdx: 23,
             hearts: INITIAL_HEARTS,
             percentage: 1,
         };
@@ -178,8 +180,9 @@ class App extends React.Component {
     alertExit(routerHistory) {
         MySwal.fire({
             type: 'info',
-            title: "Are you sure?",
-            confirmButtonText: 'Yes',
+            title: "Are you sure that you want to restart?",
+            text: "All progress will be lost",
+            confirmButtonText: 'Restart',
             showCancelButton: true,
             background: '#ffde03',
             confirmButtonColor: '#ff0266'
@@ -192,10 +195,9 @@ class App extends React.Component {
                     hearts: INITIAL_HEARTS,
                     percentage: 1
                 }));
-                routerHistory.push("/loading");
-                return;
-            }
-        });
+            } console.log("history loading we should be happening");
+                this.props.history.push('/loading');}
+            );
     };
 
 
