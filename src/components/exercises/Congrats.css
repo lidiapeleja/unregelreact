@@ -5,7 +5,7 @@
     align-items: center;
     text-transform: uppercase;
     flex-direction: column;
-    background-color: #FF0266;
+    background: linear-gradient(#FFDE03, #FF0266);
 }
 
 .displaypoints{
@@ -21,7 +21,6 @@
     text-align: center;
     font-size: 260%;
     color: white;
-    text-shadow: 1px 1px 1px #000000;
 }
 
 .congrats a {
