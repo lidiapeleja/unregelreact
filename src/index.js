@@ -23,7 +23,7 @@ class App extends React.Component {
         this.state = {
             points: 0,
             callCount: 0,
-            currentVerbIdx: 23,
+            currentVerbIdx: 0,
             hearts: INITIAL_HEARTS,
             percentage: 1,
         };
