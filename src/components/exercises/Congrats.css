@@ -22,7 +22,8 @@
 }
 
 .congrats a {
-font-size: 75%
+font-size: 75%;
+    width: 25%;
 }
 
 
