@@ -20,7 +20,7 @@ const AppRouter = props => {
     <div>
       <Router>
         <div>
-          <Navbar alertExit={props.alertExit} />
+          <Navbar resetState={props.resetState} />
           <ProgressBar percentage={props.percentage} />
           <Switch>
 

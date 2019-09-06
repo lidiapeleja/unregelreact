@@ -47,7 +47,7 @@ class App extends React.Component {
         this.fromIndextoPercentage = this.fromIndextoPercentage.bind(this);
 
         // game over
-        this.alertExit = this.alertExit.bind(this);
+        this.resetState = this.resetState.bind(this);
     }
 
     // Logics from VerbsMemory
@@ -177,27 +177,14 @@ class App extends React.Component {
         }
     };
 
-    alertExit(routerHistory) {
-        MySwal.fire({
-            type: 'info',
-            title: "Are you sure that you want to restart?",
-            text: "All progress will be lost",
-            confirmButtonText: 'Restart',
-            showCancelButton: true,
-            background: '#ffde03',
-            confirmButtonColor: '#ff0266'
-        }).then((result) => {
-            if (result.value) {
-                this.setState(state => ({
-                    points: 0,
-                    callCount: 0,
-                    currentVerbIdx: 0,
-                    hearts: INITIAL_HEARTS,
-                    percentage: 1
-                }));
-            } console.log("history loading we should be happening");
-                this.props.history.push('/loading');}
-            );
+    resetState() {
+        this.setState(state => ({
+            points: 0,
+            callCount: 0,
+            currentVerbIdx: 0,
+            hearts: INITIAL_HEARTS,
+            percentage: 1
+        }));
     };
 
 
@@ -205,7 +192,7 @@ class App extends React.Component {
         return (
             <div>
                 <AppRouter
-                    alertExit={this.alertExit}
+                    resetState={this.resetState}
                     currentVerb={lookupVerb(this.state.currentVerbIdx)}
                     points={this.state.points}
                     hearts={this.state.hearts}

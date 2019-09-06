@@ -1,15 +1,39 @@
 import "./Navbar.css";
 import React from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import {library} from "@fortawesome/fontawesome-svg-core";
 import {faTimes} from "@fortawesome/free-solid-svg-icons";
+import {withRouter} from "react-router-dom";
+import withReactContent from "sweetalert2-react-content";
+import Swal from "sweetalert2";
 
 library.add(faTimes);
 
-const Navbar = (props) => (<nav className="navbar">
-      <div className="navbar-brand logo"><a href="https://unregelapp.com/"><h1 className="logoh1">UnregelApp</h1><h6 className="logoh6">Lern by Playing</h6></a></div>
-  <div className="navbar-brand newgame" onClick={props.alertExit}>New Game</div>
-          <div className="navbar-brand restart" onClick={props.alertExit}>Restart</div>
-</nav>)
+const MySwal = withReactContent(Swal);
 
+const Navbar = withRouter((props) => (<nav className="navbar">
+    <div className="navbar-brand logo"><a href="https://unregelapp.com/"><h1 className="logoh1">UnregelApp</h1><h6
+        className="logoh6">Lern by Playing</h6></a></div>
+    <div className="navbar-brand newgame" onClick={() => alertReset(props.resetState, props.history)}>New Game</div>
+    <div className="navbar-brand restart" onClick={() => alertReset(props.resetState, props.history)}>Restart</div>
+</nav>));
+
+
+function alertReset(resetState, routerHistory) {
+    MySwal.fire({
+        type: 'info',
+        title: "Are you sure that you want to restart?",
+        text: "All progress will be lost",
+        confirmButtonText: 'Restart',
+        showCancelButton: true,
+        background: '#ffde03',
+        confirmButtonColor: '#ff0266'
+    }).then((result) => {
+            if (result.value) {
+                resetState();
+                routerHistory.push('/loading');
+            }
+        }
+    );
+}
 
 export default Navbar;
