@@ -56,3 +56,4 @@ function alertNewGame(resetState, routerHistory) {
 }
 
 export default Navbar;
+

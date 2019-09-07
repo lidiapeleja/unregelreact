@@ -3,13 +3,14 @@ import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
 import { withRouter } from "react-router-dom";
 
+
 class FillVerbs extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      vowel2: "",
-      vowel3: "",
+        vowel2: "",
+        vowel3: "",
         issentencedisplayed: false
     };
 
@@ -18,9 +19,9 @@ class FillVerbs extends React.Component {
 
   }
 
-  checkVowels(event) {
+  checkVowels(event, routerHistory) {
       event.preventDefault();
-    if (this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
+      if (this.state.vowel2 !== "" && this.state.vowel3 !== "" ) {
         if (
             isVowelsCorrect(
                 this.state.vowel2,
@@ -37,11 +38,17 @@ class FillVerbs extends React.Component {
             this.props.loseHeart(this.props.history);
             this.props.goToTryAgain(this.props.history);
         }
-    }
+      }
 
     if (this.state.vowel2 !== "" || this.state.vowel3 !== "" ){
         this.addClass();
     };
+
+      if(this.props.hearts <= 1 ){
+          this.props.resetState();
+          this.props.history.push("/loading");
+          return;
+      }
   }
 
     addClass() {

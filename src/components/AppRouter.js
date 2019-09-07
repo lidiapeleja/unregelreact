@@ -56,6 +56,7 @@ const AppRouter = props => {
                 hearts={props.hearts}
                 loseHeart={props.loseHeart}
                 fromIndextoPercentage={props.fromIndextoPercentage}
+                resetState={props.resetState}
               />
             )}
           />

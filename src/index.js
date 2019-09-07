@@ -130,15 +130,17 @@ class App extends React.Component {
     // from Game over to Play Again
 
     startAgain(routerHistory) {
-        this.setState(state => {
-                state.currentVerbIdx = 0
-            }
-        );
-        this.setState(state => {
-                state.hearts = INITIAL_HEARTS
-            }
-        );
+        console.log("startAgain() from lostHeart() has been called");
         routerHistory.push("/loading");
+        debugger;
+        // this.setState(state => {
+        //         state.currentVerbIdx = 0
+        //     }
+        // );
+        // this.setState(state => {
+        //         state.hearts = INITIAL_HEARTS
+        //     }
+        // );
     }
 
     // multiply index of verbs * 4 so you get the % for progress bar
@@ -151,29 +153,25 @@ class App extends React.Component {
 
     loseHeart(routerHistory) {
         if (this.state.hearts <= 1) {
-            // alert("Game over! POINTS: " + this.state.points);
             MySwal.fire({
                 type: 'warning',
                 title: "GAME OVER",
                 confirmButtonColor: '#ff0266',
                 background: '#ffde03',
             });
-
-            this.setState(state => ({
-                points: 0,
-            }));
             this.startAgain(routerHistory);
             return;
         } else {
             this.setState(state => ({
                 hearts: this.state.hearts - 1,
             }));
+            return;
         }
         if (this.state.points >= 5) {
             this.setState(state => ({
                 points: this.state.points - 5
             }));
-            console.log("this is the value for hearts: " + this.state.hearts);
+            return;
         }
     };
 
@@ -206,6 +204,7 @@ class App extends React.Component {
                     loseHeart={this.loseHeart}
                     percentage={this.state.percentage}
                     fromIndextoPercentage={this.fromIndextoPercentage}
+                    startAgain={this.startAgain}
                 />
             </div>
         );

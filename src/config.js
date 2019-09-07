@@ -34,5 +34,5 @@ export function lookupVerb(verbIdx) {
 }
 
 export const WORDS_PER_POINT = 3;
-export const REPETITIONS = 6;
-export const INITIAL_HEARTS = 5;
+export const REPETITIONS = 2;
+export const INITIAL_HEARTS = 1;
