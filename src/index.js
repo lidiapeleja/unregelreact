@@ -132,7 +132,6 @@ class App extends React.Component {
     startAgain(routerHistory) {
         console.log("startAgain() from lostHeart() has been called");
         routerHistory.push("/loading");
-        debugger;
         // this.setState(state => {
         //         state.currentVerbIdx = 0
         //     }
@@ -160,19 +159,19 @@ class App extends React.Component {
                 background: '#ffde03',
             });
             this.startAgain(routerHistory);
+            console.log("startAgain() has been called");
             return;
-        } else {
-            this.setState(state => ({
-                hearts: this.state.hearts - 1,
-            }));
-            return;
-        }
-        if (this.state.points >= 5) {
+        }  if (this.state.points >= 5) {
             this.setState(state => ({
                 points: this.state.points - 5
             }));
-            return;
+            console.log("- 5 points");
         }
+        this.setState(state => ({
+            hearts: this.state.hearts - 1,
+            }));
+        console.log("-1 heart");
+        return;
     };
 
     resetState() {
