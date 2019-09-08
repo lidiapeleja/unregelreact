@@ -24,10 +24,10 @@ const AppRouter = props => {
           <ProgressBar percentage={props.percentage} />
           <Switch>
 
-          <Route exact path="/" component={Home} />
+          <Route exact path="irregularverbs/" component={Home} />
           <Route exact path="/loading" component={Loading} />
           <Route
-            exact path="/exercises/memorize"
+            exact path="/irregularverbs/memorize"
             render={routeProps => (
               <MemorizeVerbs
                 {...routeProps}
@@ -40,7 +40,7 @@ const AppRouter = props => {
           />
 
           <Route
-            exact path="/exercises/fill"
+            exact path="/irregularverbs/test"
             render={routeProps => (
               <FillVerbs
                 {...routeProps}
@@ -61,7 +61,7 @@ const AppRouter = props => {
             )}
           />
           <Route
-              exact path="/image"
+              exact path="/irregularverbs/tip"
             render={routeProps => (
               <ImagePhrase {...routeProps}
                 points={props.points}
@@ -69,8 +69,8 @@ const AppRouter = props => {
                  />
             )}
           />
-          <Route exact path="/try-again" component={Tryagain} />
-          <Route exact path="/well-done" component={YouAreAwesome} />
+          <Route exact path="/irregularverbs/try-again" component={Tryagain} />
+          <Route exact path="/irregularverbs/verbcorrect" component={YouAreAwesome} />
           <Route
               exact path="/testing"
             render={routeProps => <HeartPoints points={props.points}
@@ -81,7 +81,7 @@ const AppRouter = props => {
               render={routeProps => <Heart hearts={props.hearts}
               />}
           />
-          <Route exact path="/congrats" render={routeProps => <Congrats points={props.points}
+          <Route exact path="/irregularverbs/congratulations" render={routeProps => <Congrats points={props.points}
           />}/>
           <Route component={NotFound} />
           </Switch>

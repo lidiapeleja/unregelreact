@@ -13,7 +13,7 @@ class YouAreAwesome extends React.Component {
   }
 
   goToNextPage(target) {
-    this.props.history.push("/exercises/memorize");
+    this.props.history.push("/irregularverbs/memorize");
     return;
   }
 

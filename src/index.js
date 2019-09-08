@@ -114,17 +114,17 @@ class App extends React.Component {
 
     // from verbsFilling to
     goToNextPage(routerHistory) {
-        routerHistory.replace("/exercises/memorize");
+        routerHistory.replace("/irregularverbs/memorize");
     }
 
     // from verbsFilling to
     goToTryAgain(routerHistory) {
-        routerHistory.replace("/try-again");
+        routerHistory.replace("/irregularverbs/try-again");
     }
 
     // from verbsFilling to
     youAreAwesome(routerHistory) {
-        routerHistory.replace("/well-done");
+        routerHistory.replace("/irregularverbs/verbcorrect");
     }
 
     // from Game over to Play Again

@@ -10,7 +10,7 @@ class WelcomeContainer extends React.Component {
   }
 
   toNextPage() {
-      this.props.history.push("/loading");
+      this.props.history.replace("/loading");
       return;
   }
 

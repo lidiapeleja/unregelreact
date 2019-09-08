@@ -16,13 +16,13 @@ class Tryagain extends React.Component {
   }
 
   goToNextPage(target) {
-    this.props.history.push("/image");
+    this.props.history.push("/irregularverbs/tip");
     console.log("going to image tip page");
     return;
   }
 
   skipTipPage(target) {
-    this.props.history.push("/exercises/memorize");
+    this.props.history.push("/irregularverbs/memorize");
     console.log("going to memory verbs directly");
     return;
   }

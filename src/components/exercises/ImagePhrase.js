@@ -12,7 +12,7 @@ class ImageBleiben extends React.Component {
   }
 
   goToNextPage() {
-    this.props.history.push('/exercises/memorize');
+    this.props.history.push('/irregularverbs/memorize');
     return;
   };
 

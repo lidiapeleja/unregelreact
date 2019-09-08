@@ -19,7 +19,7 @@ class MemorizeVerbs extends React.Component {
   nextConjugation() {
     this.setState(state => {
       if (state.roundsCompleted > 4) {
-        this.props.history.push("/exercises/fill")
+        this.props.history.push("/irregularverbs/test")
         return ({
             conjugationCount: 0,
             roundsCompleted: 0
