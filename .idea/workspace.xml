@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/Congrats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Congrats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exercises/Congrats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Congrats.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="78" lean-forward="true" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -25,15 +37,6 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -112,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/src/components/exercises/Congrats.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/Points.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/Heart.css" />
         <option value="$PROJECT_DIR$/src/components/exercises/HeartPoints.css" />
@@ -127,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/components/YouAreAwesome.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/ImagePhrase.js" />
         <option value="$PROJECT_DIR$/src/components/exercises/Congrats.css" />
+        <option value="$PROJECT_DIR$/src/components/exercises/Congrats.js" />
       </list>
     </option>
   </component>
@@ -298,18 +301,18 @@
       <workItem from="1567813088471" duration="297000" />
       <workItem from="1567849413398" duration="5362000" />
       <workItem from="1567875380880" duration="239000" />
-      <workItem from="1567936405149" duration="3910000" />
+      <workItem from="1567936405149" duration="3976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139107000" />
+    <option name="totallyTimeSpent" value="139173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.2967864" visible="true" weight="0.27625203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.2967864" visible="true" weight="0.27625203" />
       <window_info id="Structure" order="1" sideWeight="0.70321363" side_tool="true" weight="0.27059773" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -324,7 +327,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3182461" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3182461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -573,16 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -673,6 +666,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/ImagePhrase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -683,10 +683,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.css">
+    <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-end-line="28" />
+        <state relative-caret-position="95">
+          <caret line="5" column="78" lean-forward="true" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
