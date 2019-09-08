@@ -7,9 +7,9 @@
 }
 
 .dotsuiactive{
-  border: #FF0266 5px dashed;
+  border: #FF0266 3px dashed;
   height: 610px;
-  padding: 10px;
+  padding: 8px 20px;
 }
 
 .dotsuiinactive {
