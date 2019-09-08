@@ -24,7 +24,7 @@ const AppRouter = props => {
           <ProgressBar percentage={props.percentage} />
           <Switch>
 
-          <Route exact path="irregularverbs/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/loading" component={Loading} />
           <Route
             exact path="/irregularverbs/memorize"
