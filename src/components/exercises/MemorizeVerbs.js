@@ -14,19 +14,18 @@ class MemorizeVerbs extends React.Component {
 
     this.state = {
       conjugationCount: 0,
-      roundsCompleted: 0
+      roundsCompleted: 0,
+      isBorderDisplayed: true
     };
 
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
-
   };
 
 
     componentDidMount() {
       const {currentVerbIdx} = this.props;
       if (currentVerbIdx === 0) {
-        console.log("component dod mount");
         setTimeout(() => {
           Swal.fire(
               {
@@ -38,6 +37,18 @@ class MemorizeVerbs extends React.Component {
           )
 
         }, 1500);
+        this.setState(state => ({
+          isBorderDisplayed : true
+        }));
+        console.log("issentencedisplayed is now set to true");
+      }
+
+      else {
+        this.setState(state => ({
+          isBorderDisplayed : false
+        }));
+        console.log("issentencedisplayed is now set to false");
+
       }
     }
 
@@ -73,7 +84,8 @@ class MemorizeVerbs extends React.Component {
 
     return (<div onClick={this.nextConjugation
 } className="whole-container">
-      <div className="dotsuiactive dotsuinonactive">
+      <div className={this.state.isBorderDisplayed ? 'dotsuiactive' : ""}>
+
       <HeartPoints points={points} hearts={hearts}/>
       <div className="container-verbs">
        {
