@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211d63e8-1f11-4d81-8798-a3cf6390ab60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tryagain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tryagain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/YouAreAwesome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/YouAreAwesome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/exercises/Congrats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/Congrats.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/ImagePhrase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/ImagePhrase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exercises/MemorizeVerbs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+            <state relative-caret-position="349">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -306,12 +298,12 @@
       <workItem from="1567813088471" duration="297000" />
       <workItem from="1567849413398" duration="5362000" />
       <workItem from="1567875380880" duration="239000" />
-      <workItem from="1567936405149" duration="3542000" />
+      <workItem from="1567936405149" duration="3910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138739000" />
+    <option name="totallyTimeSpent" value="139107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -693,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exercises/Congrats.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        <state relative-caret-position="349">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-end-line="28" />
         </state>
       </provider>
     </entry>
