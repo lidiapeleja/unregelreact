@@ -35,6 +35,7 @@ const AppRouter = props => {
                 hearts={props.hearts}
                 incrementPoint={props.incrementPoint}
                 currentVerb={props.currentVerb}
+                currentVerbIdx={props.currentVerbIdx}
               />
             )}
           />

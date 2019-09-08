@@ -6,9 +6,19 @@
   margin-top: 20px;
 }
 
+.dotsuiactive{
+  border: #FF0266 5px dashed;
+  height: 610px;
+  padding: 10px;
+}
+
+.dotsuiinactive {
+  border: none;
+}
+
 @media (max-width: 600px) {
   .whole-container {
-  margin-top: 20px;
+  margin-top: 10px;
   }
 }
 
@@ -59,3 +69,4 @@
 font-size: 3.5rem;
   }
 }
+

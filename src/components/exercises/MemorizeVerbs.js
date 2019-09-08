@@ -2,6 +2,11 @@ import React from "react";
 import HeartPoints from "./HeartPoints";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
+import withReactContent from "sweetalert2-react-content";
+import Swal from "sweetalert2";
+
+const MySwal = withReactContent(Swal);
+
 
 class MemorizeVerbs extends React.Component {
   constructor() {
@@ -14,7 +19,29 @@ class MemorizeVerbs extends React.Component {
 
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
-  }
+
+  };
+
+
+    componentDidMount() {
+      const {currentVerbIdx} = this.props;
+      if (currentVerbIdx === 0) {
+        console.log("component dod mount");
+        setTimeout(() => {
+          Swal.fire(
+              {
+                title: 'Click on screen 👆🏽',
+                text: 'Click on screen to make verbs appear',
+                background: '#ffde03',
+                confirmButtonColor: '#ff0266'
+              }
+          )
+
+        }, 1500);
+      }
+    }
+
+
 
   nextConjugation() {
     this.setState(state => {
@@ -46,6 +73,7 @@ class MemorizeVerbs extends React.Component {
 
     return (<div onClick={this.nextConjugation
 } className="whole-container">
+      <div className="dotsuiactive dotsuinonactive">
       <HeartPoints points={points} hearts={hearts}/>
       <div className="container-verbs">
        {
@@ -55,6 +83,7 @@ class MemorizeVerbs extends React.Component {
           </h1>
         </div>))
       }
+      </div>
       </div>
     </div>);
   }

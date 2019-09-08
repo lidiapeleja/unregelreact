@@ -190,6 +190,7 @@ class App extends React.Component {
             <div>
                 <AppRouter
                     resetState={this.resetState}
+                    currentVerbIdx={this.state.currentVerbIdx}
                     currentVerb={lookupVerb(this.state.currentVerbIdx)}
                     points={this.state.points}
                     hearts={this.state.hearts}
