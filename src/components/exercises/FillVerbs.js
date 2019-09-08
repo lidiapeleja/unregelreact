@@ -46,7 +46,7 @@ class FillVerbs extends React.Component {
 
       if(this.props.hearts <= 1 ){
           this.props.resetState();
-          this.props.history.push("/loading");
+          this.props.history.replace("/loading");
           return;
       }
   }

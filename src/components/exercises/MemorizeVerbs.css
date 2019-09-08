@@ -2,7 +2,7 @@
 .whole-container {
   margin-left: 5%;
   margin-right: 5%;
-  height: 650px;
+  height: 620px;
   margin-top: 20px;
 }
 
@@ -52,4 +52,10 @@
 
 .container-verbs h1{
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .container-verbs h1 {
+font-size: 3.5rem;
+  }
 }

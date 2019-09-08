@@ -55,7 +55,7 @@ class App extends React.Component {
         this.setState(state => {
             state.callCount = state.callCount + 1;
             if (state.callCount >= WORDS_PER_POINT * REPETITIONS) {
-                routerHistory.push("/exercises/fill");
+                routerHistory.replace("/exercises/fill");
                 return;
             }
 
@@ -83,7 +83,7 @@ class App extends React.Component {
             const nextVerb = lookupVerb(nextVerbIdx);
 
             if (!nextVerb) {
-                routerHistory.push("/congrats");
+                routerHistory.replace("/congrats");
                 return {
                     currentVerbIdx: 1
                 };
@@ -114,24 +114,24 @@ class App extends React.Component {
 
     // from verbsFilling to
     goToNextPage(routerHistory) {
-        routerHistory.push("/exercises/memorize");
+        routerHistory.replace("/exercises/memorize");
     }
 
     // from verbsFilling to
     goToTryAgain(routerHistory) {
-        routerHistory.push("/try-again");
+        routerHistory.replace("/try-again");
     }
 
     // from verbsFilling to
     youAreAwesome(routerHistory) {
-        routerHistory.push("/well-done");
+        routerHistory.replace("/well-done");
     }
 
     // from Game over to Play Again
 
     startAgain(routerHistory) {
         console.log("startAgain() from lostHeart() has been called");
-        routerHistory.push("/loading");
+        routerHistory.replace("/loading");
         // this.setState(state => {
         //         state.currentVerbIdx = 0
         //     }
