@@ -13,6 +13,7 @@ body {
   text-align: center;
   color: #FF0266;
   margin-top: 160px;
+  height: 100%;
 }
 
 .w3 {
@@ -49,7 +50,7 @@ body {
 }
 
 .containerwelcome {
-  height: 480px;
+  height: 90vh;
 }
 
 .containerbuttonstart {
