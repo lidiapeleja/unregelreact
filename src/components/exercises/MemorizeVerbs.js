@@ -25,7 +25,7 @@ class MemorizeVerbs extends React.Component {
 
     componentDidMount() {
       const {currentVerbIdx} = this.props;
-      if (currentVerbIdx === 0) {
+      if (currentVerbIdx === 0 && this.props.hearts >= 5) {
         setTimeout(() => {
           Swal.fire(
               {
@@ -40,14 +40,12 @@ class MemorizeVerbs extends React.Component {
         this.setState(state => ({
           isBorderDisplayed : true
         }));
-        console.log("issentencedisplayed is now set to true");
       }
 
       else {
         this.setState(state => ({
           isBorderDisplayed : false
         }));
-        console.log("issentencedisplayed is now set to false");
 
       }
     }
