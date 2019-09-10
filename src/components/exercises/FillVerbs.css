@@ -43,7 +43,6 @@ input {
 /*styling button*/
 
 .containerbutton {
-  /*height: 200px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +52,7 @@ input {
 
 @media (max-width: 1100px) {
   .containerbutton {
-    height: 200px;
+    height: 25vh;
   }
 }
 
