@@ -31,10 +31,7 @@
 }
 
 .whole-container .vowelspink{
-  /*margin-left: 0;*/
   font-size: inherit;
-  /*color: #FF0266;*/
-  /*display: inline-block;*/
 }
 
 @media (max-width: 600px) {
@@ -47,7 +44,7 @@
 .container-verbs{
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 50vh;
   justify-content: center;
   align-items: center;
 }
