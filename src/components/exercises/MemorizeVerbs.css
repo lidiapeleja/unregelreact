@@ -1,15 +1,13 @@
 
 .whole-container {
-  margin-left: 5%;
-  margin-right: 5%;
   height: 83vh;
   margin-top: 20px;
+  padding: 8px 20px;
 }
 
 .dotsuiactive{
-  border: #FF0266 3px dashed;
+  border: #FF0266 2px dashed;
   height: 83vh;
-  padding: 8px 20px;
 }
 
 .dotsuiunactive {

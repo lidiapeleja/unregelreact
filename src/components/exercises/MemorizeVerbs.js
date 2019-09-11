@@ -36,6 +36,7 @@ class MemorizeVerbs extends React.Component {
           this.setState(state => ({
             isBorderDisplayed : true
           }));
+          console.log(this.state.isBorderDisplayed)
           setTimeout(() => {
             this.setState(state => ({
               isBorderDisplayed : false
@@ -44,6 +45,7 @@ class MemorizeVerbs extends React.Component {
             } 
         );
         }, 2000);
+        console.log(this.state.isBorderDisplayed)
       }
       else {
         this.setState(state => ({
