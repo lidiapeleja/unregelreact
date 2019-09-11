@@ -20,7 +20,7 @@ const Navbar = withRouter((props) => (<nav className="navbar">
 
 function alertReset(resetState, routerHistory) {
     MySwal.fire({
-        title: "Are you sure that you want to Restart?",
+        title: "Are you sure <br> you want to Restart?",
         text: "All current progress will be lost",
         confirmButtonText: 'Restart',
         showCancelButton: true,
@@ -38,7 +38,7 @@ function alertReset(resetState, routerHistory) {
 
 function alertNewGame(resetState, routerHistory) {
     MySwal.fire({
-        title: "Are you sure that you want to play a New Game?",
+        title: "Are you sure <br> you want a New Game?",
         text: "All current progress will be lost",
         confirmButtonText: 'New Game',
         showCancelButton: true,

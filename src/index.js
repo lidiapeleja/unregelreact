@@ -11,9 +11,7 @@ import withReactContent from 'sweetalert2-react-content';
 import {VERBS_ORDERED, WORDS_PER_POINT, REPETITIONS, INITIAL_HEARTS, lookupVerb} from "./config"
 
 library.add(fab, faPoop, faHeart);
-
 const MySwal = withReactContent(Swal);
-
 class App extends React.Component {
 
 
