@@ -15,7 +15,7 @@ class MemorizeVerbs extends React.Component {
     this.state = {
       conjugationCount: 0,
       roundsCompleted: 0,
-      isBorderDisplayed: true
+      isBorderDisplayed: false
     };
 
     // verbs
@@ -27,29 +27,30 @@ class MemorizeVerbs extends React.Component {
       const {currentVerbIdx} = this.props;
       if (currentVerbIdx === 0 && this.props.hearts >= 5) {
         setTimeout(() => {
-          Swal.fire(
-              {
-                title: 'Click on screen 👆🏽',
-                text: 'Click on screen to make verbs appear',
-                background: '#ffde03',
-                confirmButtonColor: '#ff0266'
-              }
-          )
-
-        }, 1500);
-        this.setState(state => ({
-          isBorderDisplayed : true
-        }));
+          MySwal.fire({
+            title: 'Click on screen 👆🏽',
+            text: 'Click to make verbs appear',
+            background: '#ffde03',
+            confirmButtonColor: '#ff0266'
+        }).then((result) => {
+          this.setState(state => ({
+            isBorderDisplayed : true
+          }));
+          setTimeout(() => {
+            this.setState(state => ({
+              isBorderDisplayed : false
+            }));
+          }, 3000);
+            } 
+        );
+        }, 2000);
       }
-
       else {
         this.setState(state => ({
           isBorderDisplayed : false
         }));
-
       }
     }
-
 
 
   nextConjugation() {
@@ -82,7 +83,7 @@ class MemorizeVerbs extends React.Component {
 
     return (<div onClick={this.nextConjugation
 } className="whole-container">
-      <div className={this.state.isBorderDisplayed ? 'dotsuiactive' : ""}>
+      <div className={this.state.isBorderDisplayed ? 'dotsuiactive' : "dotsuiunactive"}>
 
       <HeartPoints points={points} hearts={hearts}/>
       <div className="container-verbs">
