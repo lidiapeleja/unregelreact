@@ -20,7 +20,7 @@ class MemorizeVerbs extends React.Component {
         },
         {
           target: '.steps-verbs',
-          content: 'Click on screen 👆🏽 to make verbs appear.',
+          content: 'Click on screen 👆🏽to make verbs appear.  HAPPY LEARNING!  🎉',
         }
       ]
     };
@@ -41,7 +41,7 @@ class MemorizeVerbs extends React.Component {
         }));
       }
     }
-
+j
 
   nextConjugation() {
     this.setState(state => {
