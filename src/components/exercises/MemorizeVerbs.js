@@ -4,9 +4,9 @@ import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
 import withReactContent from "sweetalert2-react-content";
 import Swal from "sweetalert2";
+import Joyride, { ACTIONS, EVENTS } from 'react-joyride';
 
 const MySwal = withReactContent(Swal);
-
 
 class MemorizeVerbs extends React.Component {
   constructor() {
@@ -15,7 +15,18 @@ class MemorizeVerbs extends React.Component {
     this.state = {
       conjugationCount: 0,
       roundsCompleted: 0,
-      isBorderDisplayed: false
+      isBorderDisplayed: false,
+      run: true,
+      steps: [
+        {
+          target: '.steps-pointshearts',
+          content: 'Your points in the left –– your lives in the right',
+        },
+        {
+          target: '.steps-verbs',
+          content: 'Memorise 5x the Present, Past Tense and Present Perfect',
+        }
+      ]
     };
 
     // verbs
@@ -49,7 +60,8 @@ class MemorizeVerbs extends React.Component {
       }
       else {
         this.setState(state => ({
-          isBorderDisplayed : false
+          isBorderDisplayed : false,
+          run: false
         }));
       }
     }
@@ -80,15 +92,30 @@ class MemorizeVerbs extends React.Component {
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
+    const { steps, run, styles } = this.state;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
     return (<div onClick={this.nextConjugation
 } className="whole-container">
       <div className={this.state.isBorderDisplayed ? 'dotsuiactive' : "dotsuiunactive"}>
-
-      <HeartPoints points={points} hearts={hearts}/>
-      <div className="container-verbs">
+      <Joyride
+          run={run}
+          steps={steps}
+          styles={{
+            options: {
+              arrowColor: 'black',
+              backgroundColor: 'black',
+              overlayColor: 'rgba(79, 26, 0, 0.4)',
+              primaryColor: '#FF0266',
+              textColor: '#FFDE03',
+              width: 900,
+              zIndex: 1000,
+            }
+          }}
+        />
+      <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
+      <div className="container-verbs steps-verbs">
        {
         conjugations.map(conjugation => (<div>
           <h1>
