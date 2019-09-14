@@ -17,8 +17,8 @@ class ImageBleiben extends React.Component {
   };
 
   render() {
-    return (<div className="whole-container"><div onClick={this.goToNextPage
-} className="containerimage container-fluid" style={{
+    return (<div className="whole-container">
+      <div className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>
           <div className="box2">
@@ -28,6 +28,9 @@ class ImageBleiben extends React.Component {
               <Group currentVerb={this.props.currentVerb}/>
           </div>
     </div>
+    <div className="containerbuttonimg">
+              <button type="submit" onClick={this.goToNextPage} className="btn">Ok</button>
+          </div>
   </div>);
   }
 };

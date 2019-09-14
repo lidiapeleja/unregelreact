@@ -2,7 +2,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 83vh;
+    height: 70vh;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -50,4 +50,16 @@
 .box2 .group h5 {
   background: #FFDE03;
   font-size: 14px;
+}
+
+.containerbuttonimg{
+  margin-top: 40px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerbuttonimg .btn {
+  padding: 15px 70px;
+
 }
