@@ -30,6 +30,7 @@
 
 .whole-container .vowelspink{
   font-size: inherit;
+  margin-left: 1px;
 }
 
 @media (max-width: 600px) {

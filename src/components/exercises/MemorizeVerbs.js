@@ -104,8 +104,8 @@ class MemorizeVerbs extends React.Component {
 
 function calcConjugations(count, verb) {
   const conj1 = (<React.Fragment>{verb.infinitive1}<span className="vowelspink">{verb.vowel1}</span>{verb.infinitive2}</React.Fragment>);
-  const conj2 = (<React.Fragment>{verb.pastTense1}<span className="vowelspink">{verb.vowel2}</span>{verb.pastTense2}</React.Fragment>);
-  const conj3 = (<React.Fragment>{verb.pastParticiple0} {verb.pastParticiple1}<span className="vowelspink">{verb.vowel3}</span>{verb.pastParticiple2}</React.Fragment>);
+  const conj2 = (<React.Fragment>{verb.pastTense1}<span className="vowelspink">{verb.vowel21 + verb.vowel22 }</span>{verb.pastTense2}</React.Fragment>);
+  const conj3 = (<React.Fragment>{verb.pastParticiple0} {verb.pastParticiple1}<span className="vowelspink">{verb.vowel31 + verb.vowel32}</span>{verb.pastParticiple2}</React.Fragment>);
 
   if (count === 0) {
     return [conj1];
