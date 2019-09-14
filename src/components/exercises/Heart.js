@@ -11,7 +11,6 @@ const Heart = (props) => {
     const lostHearts = Array.from({ length: INITIAL_HEARTS - props.hearts });
 
     return (
-        <div>
             <div className="container-heart">
                 {
                     lostHearts.map(_ =>
@@ -26,7 +25,6 @@ const Heart = (props) => {
                         </span>))
                 }
             </div>
-        </div>
     );
 };
 

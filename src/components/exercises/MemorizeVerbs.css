@@ -5,15 +5,6 @@
   padding: 8px 20px;
 }
 
-.dotsuiactive{
-  border: #FF0266 2px dashed;
-  height: 83vh;
-}
-
-.dotsuiunactive {
-  border: none;
-}
-
 @media (max-width: 600px) {
   .whole-container {
   margin-top: 10px;
@@ -65,3 +56,6 @@ font-size: 3.5rem;
   }
 }
 
+.react-joyride__spotlight {
+  background-color: rgba(255, 2, 102, 0.3)!important;
+}

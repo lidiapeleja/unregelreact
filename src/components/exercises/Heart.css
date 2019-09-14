@@ -6,6 +6,7 @@
   background-color: #FFDE03;
   display: block inline-block;
   cursor: none;
+  width: 25%;
 }
 
 .container-heart .svg-inline--fa{

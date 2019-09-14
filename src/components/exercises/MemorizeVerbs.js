@@ -3,10 +3,7 @@ import HeartPoints from "./HeartPoints";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
 import withReactContent from "sweetalert2-react-content";
-import Swal from "sweetalert2";
 import Joyride, { ACTIONS, EVENTS } from 'react-joyride';
-
-const MySwal = withReactContent(Swal);
 
 class MemorizeVerbs extends React.Component {
   constructor() {
@@ -15,16 +12,15 @@ class MemorizeVerbs extends React.Component {
     this.state = {
       conjugationCount: 0,
       roundsCompleted: 0,
-      isBorderDisplayed: false,
       run: true,
       steps: [
         {
           target: '.steps-pointshearts',
-          content: 'Your points in the left –– your lives in the right',
+          content: 'Your points in the left –– your lifes ❤️ in the right.',
         },
         {
           target: '.steps-verbs',
-          content: 'Memorise 5x the Present, Past Tense and Present Perfect',
+          content: 'Click on screen 👆🏽 to make verbs appear.',
         }
       ]
     };
@@ -37,26 +33,6 @@ class MemorizeVerbs extends React.Component {
     componentDidMount() {
       const {currentVerbIdx} = this.props;
       if (currentVerbIdx === 0 && this.props.hearts >= 5) {
-        setTimeout(() => {
-          MySwal.fire({
-            title: 'Click on screen 👆🏽',
-            text: 'Click to make verbs appear',
-            background: '#ffde03',
-            confirmButtonColor: '#ff0266'
-        }).then((result) => {
-          this.setState(state => ({
-            isBorderDisplayed : true
-          }));
-          console.log(this.state.isBorderDisplayed)
-          setTimeout(() => {
-            this.setState(state => ({
-              isBorderDisplayed : false
-            }));
-          }, 3000);
-            } 
-        );
-        }, 2000);
-        console.log(this.state.isBorderDisplayed)
       }
       else {
         this.setState(state => ({
@@ -97,8 +73,8 @@ class MemorizeVerbs extends React.Component {
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
     return (<div onClick={this.nextConjugation
-} className="whole-container">
-      <div className={this.state.isBorderDisplayed ? 'dotsuiactive' : "dotsuiunactive"}>
+} className="whole-container steps-verbs">
+      <div>
       <Joyride
           run={run}
           steps={steps}
@@ -115,7 +91,7 @@ class MemorizeVerbs extends React.Component {
           }}
         />
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
-      <div className="container-verbs steps-verbs">
+      <div className="container-verbs">
        {
         conjugations.map(conjugation => (<div>
           <h1>
