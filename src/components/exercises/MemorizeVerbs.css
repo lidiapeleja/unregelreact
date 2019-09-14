@@ -1,6 +1,6 @@
 
 .whole-container {
-  height: 83vh;
+  height: calc(100vh - 60px);
   margin-top: 5px;
   padding: 8px 20px;
 }
