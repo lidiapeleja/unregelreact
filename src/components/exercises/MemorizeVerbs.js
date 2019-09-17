@@ -16,11 +16,11 @@ class MemorizeVerbs extends React.Component {
       steps: [
         {
           target: '.steps-pointshearts',
-          content: 'Your points in the left –– your lifes ❤️ in the right.',
+          content: 'Your points on the left –– your lifes ❤️️ on the right',
         },
         {
           target: '.steps-verbs',
-          content: 'Click on screen 👆🏽to make verbs appear.',
+          content: 'Click on screen 👇🏼 to make verbs appear - 5x times 🔄 ',
         }
       ]
     };
