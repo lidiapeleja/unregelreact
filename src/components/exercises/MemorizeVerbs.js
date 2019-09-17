@@ -68,7 +68,7 @@ j
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
-    const { steps, run, styles } = this.state;
+    const { steps, run } = this.state;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
@@ -78,6 +78,7 @@ j
       <Joyride
           run={run}
           steps={steps}
+          continuous={true}
           styles={{
             options: {
               arrowColor: 'black',
