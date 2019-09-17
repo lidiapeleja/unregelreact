@@ -17,7 +17,7 @@ class ImageBleiben extends React.Component {
   };
 
   render() {
-    return (<div className="whole-container">
+    return (<div onClick={this.goToNextPage} className="whole-container">
       <div className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>
