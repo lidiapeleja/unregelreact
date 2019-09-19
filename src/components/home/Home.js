@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { withRouter } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 class WelcomeContainer extends React.Component {
   constructor(props) {
@@ -18,8 +19,8 @@ class WelcomeContainer extends React.Component {
     return (
       <div className="containerwelcome">
          <Helmet>
-        <title>Loading Unregel App: learn the german irregular verbs in a fun way</title>
-        <meta name="description" content="Loading new game in order to learn the list of irregular verbs in German - die unregelmäßige Verben " />
+        <title>Start Playing with Unregel App: learn the german irregular verbs in a fun way</title>
+        <meta name="description" content="Start Playing in order to learn the list of irregular verbs in German - die unregelmäßige Verben " />
         </Helmet>
         <div className="welcomecontainer">
           <div className="w2 animation1 animated fadeIn">Learn</div>

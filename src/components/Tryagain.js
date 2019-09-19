@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPoop } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import {Helmet} from "react-helmet";
+
 
 library.add(faPoop, faHeart);
 
@@ -30,6 +32,10 @@ class Tryagain extends React.Component {
   render() {
     return (
       <div className="container tryagain">
+         <Helmet>
+        <title>Incorrect verb: you must try again!</title>
+        <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
+    </Helmet>
         <div className="icon-poop animated shake">
           <h4 className="animated bounceIn">-5</h4>
           <FontAwesomeIcon icon={faPoop} />

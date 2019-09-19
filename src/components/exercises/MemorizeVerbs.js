@@ -2,7 +2,6 @@ import React from "react";
 import HeartPoints from "./HeartPoints";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
-import withReactContent from "sweetalert2-react-content";
 import Joyride, { ACTIONS, EVENTS } from 'react-joyride';
 import {Helmet} from "react-helmet";
 
@@ -80,7 +79,6 @@ j
         <title>Memorise and train the german irregular verbs</title>
         <meta name="description" content="practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
-
       <div>
       <Joyride
           run={run}

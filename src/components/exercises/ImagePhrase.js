@@ -4,8 +4,6 @@ import Group from "./Group";
 import {calcVerbImgSrc} from '../../utils/verbs-image';
 import {Helmet} from "react-helmet";
 
-// const firstVerb = verbsData.verbs[0];
-
 class ImageBleiben extends React.Component {
   constructor(props) {
     super(props)

@@ -2,6 +2,7 @@ import React from "react";
 import "./FillVerbs.css";
 import HeartPoints from "./HeartPoints";
 import { withRouter } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 
 class FillVerbs extends React.Component {
@@ -65,6 +66,10 @@ class FillVerbs extends React.Component {
     return (
       <form onSubmit={this.checkVowels}>
         <div className="whole-container">
+        <Helmet>
+        <title>Test your knowledge - Learn the irregular verbs by playing</title>
+        <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
+    </Helmet>
           <HeartPoints points={this.props.points} hearts={this.props.hearts} />
           <div className="container-verbs">
           <h1>{this.props.currentVerb.infinitive}</h1>
