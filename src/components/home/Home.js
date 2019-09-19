@@ -17,6 +17,10 @@ class WelcomeContainer extends React.Component {
   render() {
     return (
       <div className="containerwelcome">
+         <Helmet>
+        <title>Loading Unregel App: learn the german irregular verbs in a fun way</title>
+        <meta name="description" content="Loading new game in order to learn the list of irregular verbs in German - die unregelmäßige Verben " />
+        </Helmet>
         <div className="welcomecontainer">
           <div className="w2 animation1 animated fadeIn">Learn</div>
           <div className="w4 animation1 animated fadeIn">the</div>

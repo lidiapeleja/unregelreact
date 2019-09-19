@@ -2,6 +2,7 @@ import React from "react";
 import "./ImagePhrase.css";
 import Group from "./Group";
 import {calcVerbImgSrc} from '../../utils/verbs-image';
+import {Helmet} from "react-helmet";
 
 // const firstVerb = verbsData.verbs[0];
 
@@ -18,6 +19,10 @@ class ImageBleiben extends React.Component {
 
   render() {
     return (<div onClick={this.goToNextPage} className="whole-container">
+          <Helmet>
+        <title>Get a memorise tip in a form of image</title>
+        <meta name="description" content="Get a tip in order to recall and memorise the list of german irregular verbs" />
+    </Helmet>
       <div className="containerimage container-fluid" style={{
         backgroundImage: `url(${calcVerbImgSrc(this.props.currentVerb.infinitive)})`
       }}>
