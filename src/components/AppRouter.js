@@ -12,6 +12,7 @@ import ImagePhrase from "./exercises/ImagePhrase.js";
 import Congrats from "./exercises/Congrats.js";
 import ProgressBar from "./exercises/ProgressBar.js";
 import NotFound from "./exercises/NotFound.js";
+import Menu from "./Menu"; 
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -74,12 +75,14 @@ const AppRouter = props => {
           <Route exact path="/irregularverbs/verbcorrect" component={YouAreAwesome} />
           <Route
               exact path="/testing"
-            render={routeProps => <HeartPoints points={props.points}
+            render={routeProps => <Menu
             />}
           />
           <Route
               exact path="/hearts"
-              render={routeProps => <Heart hearts={props.hearts}
+              render={routeProps => <Heart 
+                hearts={props.hearts}
+                points={props.points}
               />}
           />
           <Route exact path="/irregularverbs/congratulations" render={routeProps => <Congrats points={props.points}
