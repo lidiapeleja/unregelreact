@@ -9,7 +9,7 @@ class Menu extends React.Component {
   }
 
   goToNextPage() {
-    this.props.history.push('/irregularverbs/memorize');
+    this.props.history.push('/loading');
     return;
   };
 

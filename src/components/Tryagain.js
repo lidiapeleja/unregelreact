@@ -37,7 +37,7 @@ class Tryagain extends React.Component {
         <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
         <div className="icon-poop animated shake">
-          <h4 className="animated bounceIn">-5</h4>
+          <h4 className="animated bounceIn">-10</h4>
           <FontAwesomeIcon icon={faPoop} />
         </div>
         <button onClick={this.goToNextPage} className="buttontip animated bounceIn delay-1s">Give me a tip </button>

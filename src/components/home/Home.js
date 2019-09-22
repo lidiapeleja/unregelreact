@@ -11,7 +11,7 @@ class WelcomeContainer extends React.Component {
   }
 
   toNextPage() {
-      this.props.history.replace("/loading");
+      this.props.history.replace("/menu");
       return;
   }
 

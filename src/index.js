@@ -95,7 +95,7 @@ class App extends React.Component {
 
     incrementPoint() {
         this.setState(state => ({
-            points: this.state.points + 1
+            points: this.state.points + 0
         }));
     }
 
@@ -159,9 +159,9 @@ class App extends React.Component {
             this.startAgain(routerHistory);
             console.log("startAgain() has been called");
             return;
-        }  if (this.state.points >= 5) {
+        }  if (this.state.points >= 10) {
             this.setState(state => ({
-                points: this.state.points - 5
+                points: this.state.points - 10
             }));
             console.log("- 5 points");
         }

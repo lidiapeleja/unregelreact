@@ -74,8 +74,8 @@ const AppRouter = props => {
           <Route exact path="/irregularverbs/try-again" component={Tryagain} />
           <Route exact path="/irregularverbs/verbcorrect" component={YouAreAwesome} />
           <Route
-              exact path="/testing"
-            render={routeProps => <Menu
+              exact path="/menu"
+            component={Menu}
             />}
           />
           <Route
