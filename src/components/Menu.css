@@ -12,15 +12,19 @@
 }
 
 .containermenu h4 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 1px 0;
     color: slategray;
     text-align: center;
+    opacity: 0.4;
+    font-weight: 200;
 }
 
 .containermenu .h4bleiben {
     color:#FF0266;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.3);
+    /* text-shadow: 2px 2px 3px rgba(255,255,255,0.3); */
+    opacity: 1;
+    font-weight: 500;
 }
 
 .containermenu spanh4 {
