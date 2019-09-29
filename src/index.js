@@ -163,12 +163,10 @@ class App extends React.Component {
             this.setState(state => ({
                 points: this.state.points - 10
             }));
-            console.log("- 5 points");
         }
         this.setState(state => ({
             hearts: this.state.hearts - 1,
             }));
-        console.log("-1 heart");
         return;
     };
 
