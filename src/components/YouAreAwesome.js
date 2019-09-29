@@ -22,7 +22,6 @@ class YouAreAwesome extends React.Component {
     return (
       <div onClick={this.goToNextPage} className="container youareawesome">
          <Helmet>
-        <title>Correct answer: you just learned a new irregular verb</title>
         <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
         <div className="icon-poop animated bounceIn">

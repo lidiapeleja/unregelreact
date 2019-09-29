@@ -76,7 +76,6 @@ j
     return (<div onClick={this.nextConjugation
 } className="whole-container steps-verbs">
      <Helmet>
-        <title>Memorise and train the german irregular verbs</title>
         <meta name="description" content="practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
       <div>

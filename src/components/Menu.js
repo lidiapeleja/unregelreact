@@ -16,7 +16,6 @@ class Menu extends React.Component {
   render() {
     return (<div className="whole-container">
           <Helmet>
-        <title>List of irregular verbs</title>
         <meta name="description" content="Start memorising the list of irregular verbs with Unregel App" />
     </Helmet>
       <div className="containermenu container-fluid">

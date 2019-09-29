@@ -31,7 +31,6 @@ class Tryagain extends React.Component {
     return (
       <div className="container tryagain">
          <Helmet>
-        <title>Incorrect verb: you must try again!</title>
         <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
         <div className="icon-poop animated shake">

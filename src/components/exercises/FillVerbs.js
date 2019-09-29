@@ -67,7 +67,6 @@ class FillVerbs extends React.Component {
       <form onSubmit={this.checkVowels}>
         <div className="whole-container">
         <Helmet>
-        <title>Test your knowledge - Learn the irregular verbs by playing</title>
         <meta name="description" content="learn by playing: practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
           <HeartPoints points={this.props.points} hearts={this.props.hearts} />
