@@ -101,7 +101,7 @@ class FillVerbs extends React.Component {
           </div>
           <div className="containerbutton">
               <button type="submit" onClick = {this.addClass} className="btn">Check answer</button>
-              <h6 className="textbutton nonactive" className = {this.state.issentencedisplayed ? 'active':'nonactive'}
+              <h6 className={`textbutton nonactive ${this.state.issentencedisplayed ? 'active':'nonactive'}`}
                   >Fill up all the empty fields</h6>
           </div>
         </div>

@@ -84,7 +84,6 @@ input {
 }
 
 .nonactive {
-  background: red;
   display: none;
 }
 
