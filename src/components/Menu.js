@@ -21,30 +21,30 @@ class Menu extends React.Component {
     </Helmet>
       <div className="containermenu container-fluid">
           <div className="menu-list-verbs">
-            <h4 className="h4bleiben"><spanh4>1.</spanh4>bleiben</h4>
-            <h4><spanh4>2.</spanh4>essen</h4>
-            <h4><spanh4>3.</spanh4>scheiden</h4>
-            <h4><spanh4>4.</spanh4>fallen</h4>
-            <h4><spanh4>5.</spanh4>finden</h4>
-            <h4><spanh4>6.</spanh4>geben</h4>
-            <h4><spanh4>7.</spanh4>gehen</h4>
-            <h4><spanh4>8.</spanh4>gewinnen</h4>
-            <h4><spanh4>9.</spanh4>halten</h4>
-            <h4><spanh4>10.</spanh4>heißen</h4>
-            <h4><spanh4>11.</spanh4>helfen</h4>
-            <h4><spanh4>12.</spanh4>kommen</h4>
-            <h4><spanh4>13.</spanh4>lassen</h4>
-            <h4><spanh4>14.</spanh4>laufen</h4>
-            <h4><spanh4>15.</spanh4>liegen</h4>
-            <h4><spanh4>16.</spanh4>nehmen</h4>
-            <h4><spanh4>17.</spanh4>sehen</h4>
-            <h4><spanh4>18.</spanh4>sitzen</h4>
-            <h4><spanh4>19.</spanh4>sprechen</h4>
-            <h4><spanh4>20.</spanh4>stehen</h4>
-            <h4><spanh4>21.</spanh4>tragen</h4>
-            <h4><spanh4>22.</spanh4>tun</h4>
-            <h4><spanh4>23.</spanh4>verlieren</h4>
-            <h4><spanh4>24.</spanh4>ziehen</h4>      
+            <h4 className="h4bleiben"><span className="spanh4">1.</span>bleiben</h4>
+            <h4><span className="spanh4">2.</span>essen</h4>
+            <h4><span className="spanh4">3.</span>scheiden</h4>
+            <h4><span className="spanh4">4.</span>fallen</h4>
+            <h4><span className="spanh4">5.</span>finden</h4>
+            <h4><span className="spanh4">6.</span>geben</h4>
+            <h4><span className="spanh4">7.</span>gehen</h4>
+            <h4><span className="spanh4">8.</span>gewinnen</h4>
+            <h4><span className="spanh4">9.</span>halten</h4>
+            <h4><span className="spanh4">10.</span>heißen</h4>
+            <h4><span className="spanh4">11.</span>helfen</h4>
+            <h4><span className="spanh4">12.</span>kommen</h4>
+            <h4><span className="spanh4">13.</span>lassen</h4>
+            <h4><span className="spanh4">14.</span>laufen</h4>
+            <h4><span className="spanh4">15.</span>liegen</h4>
+            <h4><span className="spanh4">16.</span>nehmen</h4>
+            <h4><span className="spanh4">17.</span>sehen</h4>
+            <h4><span className="spanh4">18.</span>sitzen</h4>
+            <h4><span className="spanh4">19.</span>sprechen</h4>
+            <h4><span className="spanh4">20.</span>stehen</h4>
+            <h4><span className="spanh4">21.</span>tragen</h4>
+            <h4><span className="spanh4">22.</span>tun</h4>
+            <h4><span className="spanh4">23.</span>verlieren</h4>
+            <h4><span className="spanh4">24.</span>ziehen</h4>      
           </div>
     </div>
     <div className="containerbuttonmenu">

@@ -25,21 +25,25 @@
     opacity: 1;
 }
 
-.containermenu spanh4 {
+.containermenu .spanh4 {
     font-weight: 300;
     font-size: 20px;
+    display: inline-block;
 }
 
 .menu-list-verbs {
     height: 100%;
+    width: 100%;
 }
 
 
 .containerbuttonmenu{
     margin-top: 40px;
+    width: 100%;
   display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 
  div::-webkit-scrollbar {
