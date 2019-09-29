@@ -98,7 +98,7 @@ j
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <div className="container-verbs">
        {
-        conjugations.map(conjugation => (<div>
+        conjugations.map((conjugation, idx) => (<div key={idx.toString()}>
           <h1>
             {conjugation}
           </h1>
