@@ -7,7 +7,6 @@ import Heart from "./exercises/Heart.js";
 import YouAreAwesome from "./YouAreAwesome.js";
 import MemorizeVerbs from "./exercises/MemorizeVerbs.js";
 import FillVerbs from "./exercises/FillVerbs.js";
-import HeartPoints from "./exercises/HeartPoints.js";
 import ImagePhrase from "./exercises/ImagePhrase.js";
 import Congrats from "./exercises/Congrats.js";
 import ProgressBar from "./exercises/ProgressBar.js";

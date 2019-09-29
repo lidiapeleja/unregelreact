@@ -2,7 +2,7 @@ import React from "react";
 import HeartPoints from "./HeartPoints";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
-import Joyride, { ACTIONS, EVENTS } from 'react-joyride';
+import Joyride from 'react-joyride';
 import {Helmet} from "react-helmet";
 
 
