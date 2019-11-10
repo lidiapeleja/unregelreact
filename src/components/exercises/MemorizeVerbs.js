@@ -2,9 +2,11 @@ import React from "react";
 import HeartPoints from "./HeartPoints";
 import {withRouter} from "react-router-dom";
 import "./MemorizeVerbs.css";
-import Joyride from 'react-joyride';
 import {Helmet} from "react-helmet";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
+const MySwal = withReactContent(Swal);
 
 class MemorizeVerbs extends React.Component {
   constructor() {
@@ -14,34 +16,13 @@ class MemorizeVerbs extends React.Component {
       conjugationCount: 0,
       roundsCompleted: 0,
       run: true,
-      steps: [
-        {
-          target: '.wrapperheartpoints',
-          content: 'Your POINTS on the left –– your LIFES ❤️️ on the right',
-        },
-        {
-          target: '.container-verbs',
-          content: 'Click on screen 👇🏼 to make verbs appear',
-        }
-      ]
     };
 
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
+    this.showUIalert = this.showUIalert.bind(this);
+
   };
-
-
-    componentDidMount() {
-      const {currentVerbIdx} = this.props;
-      if (currentVerbIdx === 0 && this.props.hearts >= 5) {
-      }
-      else {
-        this.setState(state => ({
-          isBorderDisplayed : false,
-          run: false
-        }));
-      }
-    }
 j
 
   nextConjugation() {
@@ -66,6 +47,26 @@ j
     });
   }
 
+    showUIalert(){
+      if (this.props.currentVerbIdx === 0) {
+        console.log ("currentVerbIdx is 0");
+        MySwal.fire({
+          title: "Click on screen 👆to show conjugation verbs",
+          confirmButtonColor: '#ff0266',
+          // background: '#ffde03',
+          background: 'black',
+          confirmButtonText: 'Understood'
+
+
+      });
+      }
+    }
+
+    componentDidMount(){
+      this.showUIalert();
+    }
+ 
+
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
@@ -79,11 +80,10 @@ j
         <meta name="description" content="practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
       <div>
-      <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
-      <Joyride
+        <div className="joyridewrapper">
+      {/* <Joyride
           steps={steps}
           continuous={true}
-          disableOverlay={false}
           styles={{
             options: {
               arrowColor: 'black',
@@ -97,7 +97,9 @@ j
               zIndex: 1000,
             }
           }}
-        />
+        /> */}
+        </div>
+      <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <div className="container-verbs">
        {
         conjugations.map((conjugation, idx) => (<div key={idx.toString()}>
