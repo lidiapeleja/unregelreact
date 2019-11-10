@@ -21,7 +21,6 @@ class MemorizeVerbs extends React.Component {
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
     this.showUIalert = this.showUIalert.bind(this);
-
   };
 j
 
@@ -51,21 +50,19 @@ j
       if (this.props.currentVerbIdx === 0) {
         console.log ("currentVerbIdx is 0");
         MySwal.fire({
-          title: "Click on screen 👆to show conjugation verbs",
+          title: "Click on screen 👆to make verbs appear",
           confirmButtonColor: '#ff0266',
           // background: '#ffde03',
           background: 'black',
           confirmButtonText: 'Understood'
-
-
       });
       }
     }
-
-    componentDidMount(){
-      this.showUIalert();
+    
+    componentDidMount() {
+      this.showUIalert(); 
     }
- 
+
 
   render() {
     const {currentVerb, points, hearts} = this.props;
@@ -80,25 +77,6 @@ j
         <meta name="description" content="practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
       <div>
-        <div className="joyridewrapper">
-      {/* <Joyride
-          steps={steps}
-          continuous={true}
-          styles={{
-            options: {
-              arrowColor: 'black',
-              backgroundColor: 'black',
-              overlayColor: 'rgba(79, 26, 0, 0.4)',
-              primaryColor: '#FF0266',
-              textColor: '#FFDE03',
-              next_button: true,
-              prev_button: true,
-              width: 900,
-              zIndex: 1000,
-            }
-          }}
-        /> */}
-        </div>
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <div className="container-verbs">
        {
