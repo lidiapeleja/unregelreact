@@ -16,12 +16,12 @@ class MemorizeVerbs extends React.Component {
       run: true,
       steps: [
         {
-          target: '.steps-pointshearts',
-          content: 'Your points on the left –– your lifes ❤️️ on the right',
+          target: '.wrapperheartpoints',
+          content: 'Your POINTS on the left –– your LIFES ❤️️ on the right',
         },
         {
-          target: '.steps-verbs',
-          content: 'Click on screen 👇🏼 to make verbs appear - 5x times 🔄 ',
+          target: '.container-verbs',
+          content: 'Click on screen 👇🏼 to make verbs appear',
         }
       ]
     };
@@ -79,10 +79,11 @@ j
         <meta name="description" content="practise and memorise the list of german irregular verbs in a fun way" />
     </Helmet>
       <div>
+      <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <Joyride
-          run={run}
           steps={steps}
           continuous={true}
+          disableOverlay={false}
           styles={{
             options: {
               arrowColor: 'black',
@@ -90,12 +91,13 @@ j
               overlayColor: 'rgba(79, 26, 0, 0.4)',
               primaryColor: '#FF0266',
               textColor: '#FFDE03',
+              next_button: true,
+              prev_button: true,
               width: 900,
               zIndex: 1000,
             }
           }}
         />
-      <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <div className="container-verbs">
        {
         conjugations.map((conjugation, idx) => (<div key={idx.toString()}>
