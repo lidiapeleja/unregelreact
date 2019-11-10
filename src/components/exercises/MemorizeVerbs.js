@@ -47,7 +47,7 @@ j
   }
 
     showUIalert(){
-      if (this.props.currentVerbIdx === 0) {
+      if (this.props.currentVerbIdx === 0 && this.props.hearts > 4) {
         console.log ("currentVerbIdx is 0");
         MySwal.fire({
           title: "Click on screen 👆to make verbs appear",
