@@ -14,7 +14,7 @@ const Navbar = withRouter((props) => (<nav className="navbar">
     <div className="navbar-brand logo"><a href="https://unregelapp.com/"><h1 className="logoh1">UnregelApp</h1><h6
         className="logoh6">Lern by Playing</h6></a></div>
     <div className="navbar-brand newgame" onClick={() => alertNewGame(props.resetState, props.history)}>New Game</div>
-    <div className="navbar-brand restart" onClick={() => alertQuit(props.resetState, props.history) }>Quit</div>
+    <div className="navbar-brand restart" onClick={() => alertQuit(props.resetState, props.history) }>Quit Game</div>
 </nav>));
 
 

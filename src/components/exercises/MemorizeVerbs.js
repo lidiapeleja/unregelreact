@@ -67,7 +67,6 @@ j
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
-    const { steps, run } = this.state;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
