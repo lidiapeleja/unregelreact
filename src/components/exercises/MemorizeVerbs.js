@@ -16,15 +16,20 @@ class MemorizeVerbs extends React.Component {
     super();
 
     this.state = {
+      // Global value for whole list of verbs in App
       conjugationCount: 0,
+      //  Round counted after 3 times clicked 
       roundsCompleted: 0,
       run: true,
+      // Count everytime you click the screen and new sub-conjugation appears
+      clickonscreen: 0
     };
 
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
     this.showUIalert = this.showUIalert.bind(this);
   };
+
 j
 
   nextConjugation() {
@@ -69,7 +74,9 @@ j
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
-    const percentage = 66;
+    const {roundsCompleted} = this.state;
+
+    // const percentage = 66;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
@@ -80,11 +87,34 @@ j
     </Helmet>
       <div>
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
+      <CircularProgressbar
+  value={`${roundsCompleted}`}
+  maxValue={5}
+  text={`${roundsCompleted}`}
+  styles={buildStyles({
+    // Rotation of path and trail, in number of turns (0-1)
+    rotation: 0.25,
+ 
+    // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+    strokeLinecap: 'round',
+ 
+    // Text size
+    textSize: '20px',
+ 
+    // How long animation takes to go from one percentage to another, in seconds
+    pathTransitionDuration: 0.5,
+ 
+    // Can specify path transition in more detail, or remove it entirely
+    // pathTransition: 'none',
+ 
+    // Colors
+    pathColor: `rgba(255, 2, 102, 1)`,
+    textColor: 'black',
+    trailColor: 'white',
+    backgroundColor: 'white',
+  })}
+/>
       <div className="container-verbs">
-
-
-
-
        {
         conjugations.map((conjugation, idx) => (<div key={idx.toString()}>
           <h1>
@@ -94,37 +124,6 @@ j
       }
       </div>
       </div>
-
-      <CircularProgressbar
-  value={percentage}
-  text={`${percentage}%`}
-  styles={buildStyles({
-    // Rotation of path and trail, in number of turns (0-1)
-    rotation: 0.25,
- 
-    // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-    strokeLinecap: 'round',
- 
-    // Text size
-    textSize: '16px',
- 
-    // How long animation takes to go from one percentage to another, in seconds
-    pathTransitionDuration: 0.5,
- 
-    // Can specify path transition in more detail, or remove it entirely
-    // pathTransition: 'none',
- 
-    // Colors
-    pathColor: `rgba(255, 2, 102, ${percentage / 100})`,
-    textColor: 'black',
-    trailColor: 'white',
-    backgroundColor: 'white',
-  })}
-/>
-
-
-
-
     </div>);
   }
 }
