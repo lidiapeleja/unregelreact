@@ -5,6 +5,9 @@ import "./MemorizeVerbs.css";
 import {Helmet} from "react-helmet";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 const MySwal = withReactContent(Swal);
 
@@ -48,7 +51,6 @@ j
 
     showUIalert(){
       if (this.props.currentVerbIdx === 0 && this.props.hearts > 4) {
-        console.log ("currentVerbIdx is 0");
         MySwal.fire({
           title: "Click on screen 👆to make verbs appear",
           confirmButtonColor: '#ff0266',
@@ -67,6 +69,7 @@ j
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
+    const percentage = 66;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
@@ -78,6 +81,10 @@ j
       <div>
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
       <div className="container-verbs">
+
+
+
+
        {
         conjugations.map((conjugation, idx) => (<div key={idx.toString()}>
           <h1>
@@ -87,6 +94,37 @@ j
       }
       </div>
       </div>
+
+      <CircularProgressbar
+  value={percentage}
+  text={`${percentage}%`}
+  styles={buildStyles({
+    // Rotation of path and trail, in number of turns (0-1)
+    rotation: 0.25,
+ 
+    // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+    strokeLinecap: 'round',
+ 
+    // Text size
+    textSize: '16px',
+ 
+    // How long animation takes to go from one percentage to another, in seconds
+    pathTransitionDuration: 0.5,
+ 
+    // Can specify path transition in more detail, or remove it entirely
+    // pathTransition: 'none',
+ 
+    // Colors
+    pathColor: `rgba(255, 2, 102, ${percentage / 100})`,
+    textColor: 'black',
+    trailColor: 'white',
+    backgroundColor: 'white',
+  })}
+/>
+
+
+
+
     </div>);
   }
 }
