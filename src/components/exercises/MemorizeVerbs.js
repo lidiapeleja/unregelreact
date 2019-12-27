@@ -34,18 +34,24 @@ j
 
   nextConjugation() {
     this.setState(state => {
-      if (state.roundsCompleted > 4) {
+      if (state.roundsCompleted >= 5) {
+        console.log("rounds compleated: " + state.roundsCompleted);
         this.props.history.push("/irregularverbs/test")
         return ({
             conjugationCount: 0,
             roundsCompleted: 0
           });
       } else if (state.conjugationCount < 2) {
+        console.log("state.conjugationCount is < 2 so els if is called; return: conjungationCount is: " + state.conjugationCount);
         return ({
             conjugationCount: state.conjugationCount + 1
           });
+      } else if (state.roundsCompleted === 4 && state.conjugationCount === 2 ) {
+        console.log("lets see what happens, and i am going to test");
+        this.props.history.push("/irregularverbs/test");
+        return;
       } else {
-        this.props.incrementPoint();
+        console.log("else statement has entered");
         return ({
             conjugationCount: 0,
             roundsCompleted: state.roundsCompleted + 1
@@ -59,24 +65,19 @@ j
         MySwal.fire({
           title: "Click on screen 👆to make verbs appear",
           confirmButtonColor: '#ff0266',
-          // background: '#ffde03',
           background: 'black',
           confirmButtonText: 'Understood'
       });
       }
     }
-    
     componentDidMount() {
       this.showUIalert(); 
     }
-
 
   render() {
     const {currentVerb, points, hearts} = this.props;
     const {conjugationCount} = this.state;
     const {roundsCompleted} = this.state;
-
-    // const percentage = 66;
 
     const conjugations = calcConjugations(conjugationCount, currentVerb);
 
