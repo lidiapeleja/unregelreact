@@ -87,7 +87,9 @@ j
     </Helmet>
       <div>
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
-      <CircularProgressbar
+      <div className="wrapper_circularprogressbar animated bounceIn delay-2s">
+        <span className="repetitions animated bounceIn delay-2s">Repetitions: </span>
+        <CircularProgressbar
   value={`${roundsCompleted}`}
   maxValue={5}
   text={`${roundsCompleted}`}
@@ -99,7 +101,7 @@ j
     strokeLinecap: 'round',
  
     // Text size
-    textSize: '20px',
+    textSize: '30px',
  
     // How long animation takes to go from one percentage to another, in seconds
     pathTransitionDuration: 0.5,
@@ -114,6 +116,7 @@ j
     backgroundColor: 'white',
   })}
 />
+</div>
       <div className="container-verbs">
        {
         conjugations.map((conjugation, idx) => (<div key={idx.toString()}>

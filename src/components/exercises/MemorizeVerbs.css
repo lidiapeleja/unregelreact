@@ -57,9 +57,25 @@ font-size: 3.5rem;
 
  /* Styling from CircularProgessbar */
 
+.wrapper_circularprogressbar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper_circularprogressbar span{
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
 .CircularProgressbar{
   position: relative;
   float: right;
   width: 5rem !important;
+  right: 15px;
 }
 
