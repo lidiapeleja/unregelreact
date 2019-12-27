@@ -100,7 +100,7 @@ j
         <CircularProgressbar
   value={`${roundsCompleted}`}
   maxValue={4}
-  text={`${conjugationCount + 1}` + " | " + `${roundsCompleted}`}
+  text={`${roundsCompleted}`}
   styles={buildStyles({
     // Rotation of path and trail, in number of turns (0-1)
     rotation: 0.25,
