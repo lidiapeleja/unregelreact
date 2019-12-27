@@ -109,7 +109,7 @@ j
     strokeLinecap: 'round',
  
     // Text size
-    textSize: '30px',
+    textSize: '3rem',
  
     // How long animation takes to go from one percentage to another, in seconds
     pathTransitionDuration: 0.5,
