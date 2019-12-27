@@ -6,6 +6,8 @@
 #bar {
     height: 6px;
     background-color: #FF0266;
+    transition-duration: 3s;
+
 }
 
 
