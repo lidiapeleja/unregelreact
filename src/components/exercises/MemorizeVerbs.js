@@ -19,15 +19,14 @@ class MemorizeVerbs extends React.Component {
       // Global value for whole list of verbs in App
       conjugationCount: 0,
       //  Round counted after 3 times clicked 
-      roundsCompleted: 0,
+      roundsCompleted: 1,
       run: true,
-      // Count everytime you click the screen and new sub-conjugation appears
-      clickonscreen: 0
     };
 
     // verbs
     this.nextConjugation = this.nextConjugation.bind(this);
     this.showUIalert = this.showUIalert.bind(this);
+
   };
 
 j
@@ -47,11 +46,19 @@ j
             conjugationCount: state.conjugationCount + 1
           });
       } else if (state.roundsCompleted === 4 && state.conjugationCount === 2 ) {
-        console.log("lets see what happens, and i am going to test");
+        console.log("I am going to test NOWWWW!!!");
         this.props.history.push("/irregularverbs/test");
+
+      //   setTimeout(
+      //     function() {
+      //       this.props.history.push("/irregularverbs/test");
+      //     }
+      //     .bind(this),
+      //     3000
+      // );
         return;
       } else {
-        console.log("else statement has entered");
+        console.log("else statement has entered, where value for conjugationCount is: " + state.conjugationCount + "and value for roundsCompleted is: " + state.roundsCompleted);
         return ({
             conjugationCount: 0,
             roundsCompleted: state.roundsCompleted + 1
@@ -88,12 +95,12 @@ j
     </Helmet>
       <div>
       <div className="steps-pointshearts"><HeartPoints points={points} hearts={hearts} /></div>
-      <div className="wrapper_circularprogressbar animated bounceIn delay-2s">
-        <span className="repetitions animated bounceIn delay-2s">Repetitions: </span>
+      <div className="wrapper_circularprogressbar animated bounceIn">
+        <span className="repetitions animated bounceIn">Repetitions: </span>
         <CircularProgressbar
   value={`${roundsCompleted}`}
-  maxValue={5}
-  text={`${roundsCompleted}`}
+  maxValue={4}
+  text={`${conjugationCount + 1}` + " | " + `${roundsCompleted}`}
   styles={buildStyles({
     // Rotation of path and trail, in number of turns (0-1)
     rotation: 0.25,
