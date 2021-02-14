@@ -2,7 +2,7 @@ name: build and deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -14,18 +14,18 @@ jobs:
       CI: true
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - name: Upload build files
-      uses: actions/upload-artifact@v1
-      with:
-        name: build
-        path: build
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - name: Upload build files
+        uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: build
 
   deploy:
     needs: build
@@ -43,7 +43,7 @@ jobs:
           name: build
       - run: echo "Deploy to ${REMOTE_HOST}"
       - name: Add ssh key
-        uses: webfactory/ssh-agent@v0.2.0
+        uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.SLISSNER_CI_PRIVATE_KEY }}
       - run: ssh-keyscan ${REMOTE_HOST} >> ~/.ssh/known_hosts
